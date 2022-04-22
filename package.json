@@ -1,6 +1,7 @@
 {
   "name": "@vanyauhalin/eslint-config",
   "version": "0.0.0",
+  "private": true,
   "description": "ESLint config by @vanyauhalin",
   "keywords": [
     "eslint",
