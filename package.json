@@ -12,6 +12,11 @@
   "workspaces": [
     "packages"
   ],
+  "scripts": {
+    "compile": "tsc -p packages/eslint-config-${npm_config_package}/tsconfig.json",
+    "build": "node .esbuildrc.mjs ${npm_config_package}",
+    "build-base": "pnpm compile --package=base && pnpm build --package=base"
+  },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
     "@commitlint/cli": "^16.2.3",
