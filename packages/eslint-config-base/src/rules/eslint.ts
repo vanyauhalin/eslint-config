@@ -1,0 +1,32 @@
+const rules = {
+  /**
+   * Enforces a maximum line length.
+   * @see https://eslint.org/docs/rules/max-len
+   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/style.js#L199
+   */
+  'max-len': ['error', 80, 2, {
+    ignoreUrls: true,
+    ignoreComments: true,
+    ignoreRegExpLiterals: true,
+    ignoreStrings: false,
+    ignoreTemplateLiterals: true,
+  }],
+  /**
+   * Disallows dangling underscores in identifiers.
+   * @see https://eslint.org/docs/rules/no-underscore-dangle
+   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/style.js#L370
+   */
+  'no-underscore-dangle': 'off',
+  /**
+   * Enforces sorted import declarations within modules.
+   * @see https://eslint.org/docs/rules/sort-imports
+   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/es6.js#L166
+   */
+  'sort-imports': ['error', {
+    ignoreDeclarationSort: true,
+  }],
+};
+
+export {
+  rules,
+};
