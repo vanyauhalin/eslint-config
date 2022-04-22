@@ -1,0 +1,20 @@
+{
+  "name": "@vanyauhalin/eslint-config",
+  "version": "0.0.0",
+  "description": "ESLint config by @vanyauhalin",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "repository": "github:vanyauhalin/eslint-config",
+  "license": "MIT",
+  "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
+  "type": "module",
+  "workspaces": [
+    "packages"
+  ],
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=6"
+  }
+}
