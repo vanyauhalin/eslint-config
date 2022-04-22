@@ -1,7 +1,7 @@
 import { addRules, override } from './utils';
 
 const root = override({
-  files: './*.{cjs,js}',
+  files: './*.{cjs,js,mjs}',
   env: {
     es2022: true,
   },
