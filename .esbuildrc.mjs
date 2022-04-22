@@ -10,7 +10,7 @@ if (!pack) {
 build({
   allowOverwrite: true,
   bundle: true,
-  entryPoints: [root],
+  entryPoints: [`${root}/src`],
   outfile: `${root}/lib/index.js`,
   platform: 'node',
 }).catch((error) => {

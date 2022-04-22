@@ -1,4 +1,4 @@
-import { addRules, override } from './src/utils';
+import { addRules, override } from './utils';
 
 const root = override({
   files: './*.{cjs,js}',
