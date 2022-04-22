@@ -1,11 +1,6 @@
 import { build } from 'esbuild';
 
-const [, , pack] = process.argv;
-const root = `./packages/eslint-config-${pack}`;
-
-if (!pack) {
-  throw new Error('Please specify a package to build');
-}
+const [, , root] = process.argv;
 
 build({
   allowOverwrite: true,
