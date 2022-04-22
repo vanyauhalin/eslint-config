@@ -18,11 +18,14 @@ importers:
 
   packages/eslint-config-base:
     specifiers:
+      eslint: ^8.13.0
       eslint-config-airbnb-base: ^15.0.0
       eslint-plugin-import: ^2.26.0
     dependencies:
       eslint-config-airbnb-base: 15.0.0_25dbcfb8cfecb7418ebda712664abe37
       eslint-plugin-import: 2.26.0_eslint@8.13.0
+    devDependencies:
+      eslint: 8.13.0
 
 packages:
 
