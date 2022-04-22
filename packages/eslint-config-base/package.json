@@ -13,5 +13,9 @@
   "engines": {
     "node": ">=16",
     "pnpm": ">=6"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
