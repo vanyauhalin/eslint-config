@@ -10,10 +10,6 @@
   "license": "MIT",
   "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
   "main": "lib/index.js",
-  "engines": {
-    "node": ">=16",
-    "pnpm": ">=6"
-  },
   "dependencies": {
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"
@@ -25,5 +21,10 @@
   },
   "peerDependencies": {
     "eslint": "^7.32.0"
+  },
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6",
+    "pnpm": ">=4"
   }
 }
