@@ -13,6 +13,9 @@
   "workspaces": [
     "packages"
   ],
+  "devDependencies": {
+    "@arkweid/lefthook": "^0.7.7"
+  },
   "engines": {
     "node": ">=16",
     "pnpm": ">=6"
