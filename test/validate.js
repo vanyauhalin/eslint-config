@@ -1,7 +1,7 @@
 import { notEqual } from 'assert';
 import { ESLint } from 'eslint';
 // Disabled until @types/node is updated to v18.
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line import/no-unresolved, import/order
 import test from 'node:test';
 import { getOptions } from '../.esbuildrc';
 
