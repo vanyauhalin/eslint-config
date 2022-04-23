@@ -40,7 +40,7 @@ const config = {
 };
 
 config.overrides.push({
-  files: './*.{cjs,js,mjs}',
+  files: '*.{cjs,js,mjs}',
   extends: [
     'airbnb-base',
   ],
