@@ -32,6 +32,7 @@ const config = {
   },
   ignorePatterns: [
     '!.*',
+    '.local',
     'dist',
     'lib',
     'node_modules',
