@@ -53,24 +53,6 @@ config.overrides.push({
     'import/no-extraneous-dependencies',
     'import/order',
     'import/prefer-default-export',
-    'max-len',
-    'sort-imports',
-  ]),
-});
-
-config.overrides.push({
-  files: '**/src/**/*.js',
-  extends: [
-    'airbnb-base',
-  ],
-  rules: addRules([
-    'import/exports-last',
-    'import/group-exports',
-    'import/no-commonjs',
-    'import/no-default-export',
-    'import/no-deprecated',
-    'import/order',
-    'import/prefer-default-export',
     'import/unambiguous',
     'max-len',
     'sort-imports',
@@ -78,23 +60,16 @@ config.overrides.push({
 });
 
 config.overrides.push({
-  files: '**/test/*.js',
+  files: '*.{js,mjs}',
   extends: [
     'airbnb-base',
   ],
-  rules: addRules([
-    'import/exports-last',
-    'import/group-exports',
-    'import/no-commonjs',
-    'import/no-default-export',
-    'import/no-deprecated',
-    'import/no-extraneous-dependencies',
-    'import/order',
-    'import/prefer-default-export',
-    'import/unambiguous',
-    'max-len',
-    'sort-imports',
-  ]),
+  rules: {
+    ...config.overrides[0].rules,
+    ...addRules([
+      'import/no-commonjs',
+    ]),
+  },
 });
 
 export const {
