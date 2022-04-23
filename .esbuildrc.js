@@ -6,7 +6,7 @@ build({
   allowOverwrite: true,
   bundle: true,
   entryPoints: [`${root}/src`],
-  outfile: `${root}/lib/index.js`,
+  outfile: `${root}/lib/index.cjs`,
   platform: 'node',
 }).catch((error) => {
   process.stderr.write(error.stderr);
