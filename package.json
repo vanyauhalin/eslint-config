@@ -15,7 +15,7 @@
     "packages"
   ],
   "scripts": {
-    "build": "node .esbuildrc.mjs ./packages/eslint-config-${npm_config_package}",
+    "build": "node .esbuildrc.js ./packages/eslint-config-${npm_config_package}",
     "build-base": "pnpm build --package=base"
   },
   "devDependencies": {
