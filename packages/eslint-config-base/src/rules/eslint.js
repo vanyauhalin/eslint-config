@@ -12,12 +12,6 @@ const rules = {
     ignoreTemplateLiterals: true,
   }],
   /**
-   * Disallows dangling underscores in identifiers.
-   * @see https://eslint.org/docs/rules/no-underscore-dangle
-   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/style.js#L370
-   */
-  'no-underscore-dangle': 'off',
-  /**
    * Enforces sorted import declarations within modules.
    * @see https://eslint.org/docs/rules/sort-imports
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/es6.js#L166
