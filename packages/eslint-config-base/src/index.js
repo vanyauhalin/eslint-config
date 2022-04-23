@@ -57,7 +57,7 @@ config.overrides.push({
 });
 
 config.overrides.push({
-  files: './src/**/*.js',
+  files: '**/src/**/*.js',
   env: {
     node: true,
     es2022: true,
@@ -84,7 +84,7 @@ config.overrides.push({
 });
 
 config.overrides.push({
-  files: './test/*.js',
+  files: '**/test/*.js',
   env: {
     node: true,
     es2022: true,
