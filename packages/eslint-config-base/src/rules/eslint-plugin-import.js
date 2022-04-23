@@ -43,9 +43,7 @@ const rules = {
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L71
    */
-  'import/no-extraneous-dependencies': ['error', {
-    devDependencies: ['./*.{cjs,js}'],
-  }],
+  'import/no-extraneous-dependencies': 'off',
   /**
    * Warn if a module could be mistakenly parsed as a `script`
    * by a consumer leveraging [Unambiguous JavaScript Grammar](https://github.com/nodejs/node-eps/blob/HEAD/002-es-modules.md#32-determining-if-source-is-an-es-module)
