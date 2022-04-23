@@ -15,7 +15,8 @@
     "packages"
   ],
   "scripts": {
-    "build-base": "node .esbuildrc.js base"
+    "build-base": "node .esbuildrc.js base",
+    "test-base": "node --experimental-specifier-resolution=node test/validate.js base"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
