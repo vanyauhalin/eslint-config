@@ -1,6 +1,7 @@
 import { build } from 'esbuild';
 
-const [, , root] = process.argv;
+const [, , name] = process.argv;
+const root = `./packages/eslint-config-${name}`;
 
 build({
   allowOverwrite: true,

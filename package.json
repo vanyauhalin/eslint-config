@@ -15,8 +15,7 @@
     "packages"
   ],
   "scripts": {
-    "build": "node .esbuildrc.js ./packages/eslint-config-${npm_config_package}",
-    "build-base": "pnpm build --package=base"
+    "build-base": "node .esbuildrc.js base"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
