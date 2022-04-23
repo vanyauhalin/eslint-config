@@ -16,9 +16,7 @@
   ],
   "scripts": {
     "build": "node .esbuildrc.mjs ./packages/eslint-config-${npm_config_package}",
-    "build-base": "pnpm build --package=base",
-    "compile": "tsc -p ./packages/eslint-config-${npm_config_package}/tsconfig.json",
-    "compile-base": "pnpm compile --package=base"
+    "build-base": "pnpm build --package=base"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
