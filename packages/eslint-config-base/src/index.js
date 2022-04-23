@@ -22,6 +22,14 @@ function addRules(names) {
  * @type {BaseConfig}
  */
 const config = {
+  env: {
+    node: true,
+    es2022: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2022,
+    sourceType: 'module',
+  },
   ignorePatterns: [
     '!.*',
     'dist',
@@ -33,16 +41,9 @@ const config = {
 
 config.overrides.push({
   files: './*.{cjs,js,mjs}',
-  env: {
-    es2022: true,
-  },
   extends: [
     'airbnb-base',
   ],
-  parserOptions: {
-    ecmaVersion: 2022,
-    sourceType: 'module',
-  },
   rules: addRules([
     'import/exports-last',
     'import/group-exports',
@@ -58,17 +59,9 @@ config.overrides.push({
 
 config.overrides.push({
   files: '**/src/**/*.js',
-  env: {
-    node: true,
-    es2022: true,
-  },
   extends: [
     'airbnb-base',
   ],
-  parserOptions: {
-    ecmaVersion: 2022,
-    sourceType: 'module',
-  },
   rules: addRules([
     'import/exports-last',
     'import/group-exports',
@@ -85,17 +78,9 @@ config.overrides.push({
 
 config.overrides.push({
   files: '**/test/*.js',
-  env: {
-    node: true,
-    es2022: true,
-  },
   extends: [
     'airbnb-base',
   ],
-  parserOptions: {
-    ecmaVersion: 2022,
-    sourceType: 'module',
-  },
   rules: addRules([
     'import/exports-last',
     'import/group-exports',
@@ -112,6 +97,8 @@ config.overrides.push({
 });
 
 export const {
+  env,
+  parserOptions,
   ignorePatterns,
   overrides,
 } = config;
