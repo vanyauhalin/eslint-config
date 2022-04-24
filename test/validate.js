@@ -1,20 +1,13 @@
-import { notEqual } from 'assert';
-import { ESLint } from 'eslint';
-// Disabled until @types/node is updated to v18.
-// eslint-disable-next-line import/no-unresolved, import/order
-import test from 'node:test';
+import { execSync } from 'child_process';
 import { getOptions } from '../.esbuildrc';
 
-const { name, outfile } = getOptions();
-const engine = new ESLint({
-  baseConfig: {
-    extends: [
-      outfile,
-    ],
-  },
-});
+const { outfile } = getOptions();
 
-test(`validates ${name}`, async () => {
-  const result = await engine.lintFiles(outfile);
-  notEqual(result[0].messages.length, 0);
-});
+try {
+  execSync(`eslint -c ${outfile} --no-ignore ${outfile}`);
+  throw new Error('ESLint should have failed');
+} catch (error) {
+  if (!error.stdout) {
+    throw new Error('ESLint failed through no fault config');
+  }
+}
