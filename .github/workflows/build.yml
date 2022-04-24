@@ -5,6 +5,8 @@ on:
     branches: main
     paths:
       - "!**.md"
+      - ".github/workflows/build.yml"
+      - "packages/**"
 
 jobs:
   build:
