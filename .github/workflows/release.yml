@@ -12,8 +12,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 12
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@vanyauhalin'
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@vanyauhalin"
       - run: npm i -g pnpm
       - run: pnpm i --frozen-lockfile
       - run: pnpm publish
