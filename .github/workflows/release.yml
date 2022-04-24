@@ -16,6 +16,6 @@ jobs:
           scope: "@vanyauhalin"
       - run: npm i -g pnpm
       - run: pnpm i --frozen-lockfile
-      - run: pnpm publish --no-git-checks
+      - run: cd packages/eslint-config-base && pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
