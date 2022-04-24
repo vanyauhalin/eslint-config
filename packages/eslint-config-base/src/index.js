@@ -61,9 +61,7 @@ config.overrides.push({
 
 config.overrides.push({
   files: '*.{js,mjs}',
-  extends: [
-    'airbnb-base',
-  ],
+  extends: config.overrides[0].extends,
   rules: {
     ...config.overrides[0].rules,
     ...addRules([
