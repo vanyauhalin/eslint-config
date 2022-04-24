@@ -5,9 +5,10 @@
 Dependencies tree:
 
 ```sh
-@vanyauhalin/eslint-config-base
-├─ eslint-config-airbnb-base
-└─ eslint-plugin-import
+@vanyauhalin/eslint-config
+└─ @vanyauhalin/eslint-config-base
+   ├─ eslint-config-airbnb-base
+   └─ eslint-plugin-import
 ```
 
 ## Usage
