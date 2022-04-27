@@ -4,12 +4,14 @@ const rules = {
    * @see https://eslint.org/docs/rules/max-len
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/style.js#L199
    */
-  'max-len': ['error', 80, 2, {
-    ignoreUrls: true,
+  'max-len': ['error', {
+    code: 80,
     ignoreComments: true,
     ignoreRegExpLiterals: true,
     ignoreStrings: false,
     ignoreTemplateLiterals: true,
+    ignoreUrls: true,
+    tabWidth: 2,
   }],
   /**
    * Enforces sorted import declarations within modules.
