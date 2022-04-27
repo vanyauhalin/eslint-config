@@ -53,7 +53,6 @@ config.overrides.push({
     'import/no-extraneous-dependencies',
     'import/order',
     'import/prefer-default-export',
-    'import/unambiguous',
     'max-len',
     'sort-imports',
   ]),
@@ -66,6 +65,7 @@ config.overrides.push({
     ...config.overrides[0].rules,
     ...addRules([
       'import/no-commonjs',
+      'import/unambiguous',
     ]),
   },
 });
