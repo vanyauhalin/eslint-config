@@ -1,29 +1,33 @@
+import fs from 'fs';
+import { resolve } from 'path';
 import { build } from 'esbuild';
 
-function getOptions() {
-  const [, , name] = process.argv;
-  const root = `./packages/eslint-config-${name}`;
-  const outfile = `${root}/lib/index.cjs`;
-  return {
-    name,
-    outfile,
-    root,
-  };
+function read() {
+  const PACKAGES_DIRECTORY = 'packages';
+  const packages = fs.readdirSync(PACKAGES_DIRECTORY);
+  return packages.map((pack) => {
+    const root = `${PACKAGES_DIRECTORY}/${pack}`;
+    const main = resolve(`${root}/lib/index.cjs`);
+    const src = resolve(`${root}/src`);
+    return {
+      main,
+      src,
+    };
+  });
 }
 
-const { outfile, root } = getOptions();
-
-build({
-  outfile,
-  allowOverwrite: true,
-  bundle: true,
-  entryPoints: [`${root}/src`],
-  platform: 'node',
-}).catch((error) => {
-  process.stderr.write(error.stderr);
-  process.exit(1);
+read().forEach((pack) => {
+  build({
+    allowOverwrite: true,
+    bundle: true,
+    entryPoints: [pack.src],
+    outfile: pack.main,
+    platform: 'node',
+  }).catch((error) => {
+    throw new Error(error.stderr);
+  });
 });
 
 export {
-  getOptions,
+  read,
 };
