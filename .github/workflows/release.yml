@@ -7,6 +7,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package:
+          - eslint-config-base
+          - eslint-config-typescript
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -17,9 +22,6 @@ jobs:
       - run: npm i -g pnpm
       - run: pnpm i --frozen-lockfile
       - run: pnpm build
-      - run: |
-          for pack in $(find packages -depth 1); do \
-            pnpm publish $pack --no-git-checks; \
-          done
+      - run: pnpm publish packages/${{ matrix.package }} --no-git-checks; \
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
