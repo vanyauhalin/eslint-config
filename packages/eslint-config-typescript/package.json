@@ -11,6 +11,12 @@
   "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
   "type": "module",
   "main": "lib/index.cjs",
+  "devDependencies": {
+    "eslint": "^8.13.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0 || ^8.0.0"
+  },
   "engines": {
     "node": ">=12",
     "pnpm": ">=4"
