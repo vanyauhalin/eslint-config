@@ -18,12 +18,10 @@ function read() {
 
 if (process.env.npm_lifecycle_event === 'build') {
   read().forEach((pack) => {
-    const src = fs.readdirSync(pack.src);
-    const entry = src.find((file) => file.match(/index\.c?js/));
     build({
       allowOverwrite: true,
       bundle: true,
-      entryPoints: [`${pack.src}/${entry}`],
+      entryPoints: [pack.src],
       outfile: pack.main,
       platform: 'node',
     }).catch((error) => {
