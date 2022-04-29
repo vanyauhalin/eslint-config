@@ -1,24 +1,23 @@
 const rules = {
   /**
    * This rule enforces that all exports are declared at the bottom of the file.
-   * This rule will report any export declarations
-   * that comes before any non-export statements.
+   * This rule will report any export declarations that comes before
+   * any non-export statements.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/exports-last.md
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L215
    */
   'import/exports-last': 'error',
   /**
-   * Reports when named exports are not grouped together
-   * in a single `export` declaration or when multiple assignments
-   * to CommonJS `module.exports` or `exports` object are present
-   * in a single file.
+   * Reports when named exports are not grouped together in a single `export`
+   * declaration or when multiple assignments to CommonJS `module.exports`
+   * or `exports` object are present in a single file.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/group-exports.md
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L221
    */
   'import/group-exports': 'error',
   /**
-   * Reports `require([string])` function calls,
-   * `module.exports` or `exports.*`.
+   * Reports `require([string])` function calls, `module.exports`
+   * or `exports.*`.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-commonjs.md
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L107
    */
@@ -30,8 +29,8 @@ const rules = {
    */
   'import/no-default-export': 'error',
   /**
-   * Reports use of a deprecated name, as indicated by a JSDoc block
-   * with a `@deprecated` tag or TomDoc `Deprecated:` comment.
+   * Reports use of a deprecated name, as indicated by a JSDoc block with
+   * a `@deprecated` tag or TomDoc `Deprecated:` comment.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-deprecated.md
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L66
    */
@@ -51,9 +50,9 @@ const rules = {
     ],
   }],
   /**
-   * Warn if a module could be mistakenly parsed as a `script`
-   * by a consumer leveraging [Unambiguous JavaScript Grammar](https://github.com/nodejs/node-eps/blob/HEAD/002-es-modules.md#32-determining-if-source-is-an-es-module)
-   * to determine correct parsing goal.
+   * Warn if a module could be mistakenly parsed as a `script` by a consumer
+   * leveraging Unambiguous JavaScript Grammar to determine correct parsing
+   * goal.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/unambiguous.md
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L186
    */
@@ -69,8 +68,8 @@ const rules = {
     },
   }],
   /**
-   * When there is only a single export from a module,
-   * prefer using default export over named export.
+   * When there is only a single export from a module, prefer using default
+   * export over named export.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L157
    */
