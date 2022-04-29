@@ -7,6 +7,7 @@ on:
       - "!**.md"
       - ".github/workflows/build.yml"
       - "packages/**"
+      - ".esbuildrc.js"
       - "package.json"
       - "pnpm-lock.yaml"
 
