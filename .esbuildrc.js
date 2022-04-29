@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { resolve } from 'path';
-import { build } from 'esbuild';
+import { buildSync } from 'esbuild';
 
 function read() {
   const PACKAGES_DIRECTORY = 'packages';
@@ -18,15 +18,16 @@ function read() {
 
 if (process.env.npm_lifecycle_event === 'build') {
   read().forEach((pack) => {
-    build({
+    const result = buildSync({
       allowOverwrite: true,
       bundle: true,
       entryPoints: [pack.src],
       outfile: pack.main,
       platform: 'node',
-    }).catch((error) => {
-      throw new Error(error.stderr);
     });
+    if (result.errors.length > 0) {
+      throw new Error(result.errors);
+    }
   });
 }
 
