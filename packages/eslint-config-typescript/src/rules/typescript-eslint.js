@@ -166,4 +166,6 @@ const rules = {
   '@typescript-eslint/no-confusing-void-expression': ['error'],
 };
 
-exports.rules = rules;
+export {
+  rules,
+};

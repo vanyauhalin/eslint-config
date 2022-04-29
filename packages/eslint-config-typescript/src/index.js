@@ -1,15 +1,10 @@
 /**
- * This package is written in commonjs, because the eslint config has property
- * names which are reserved and cannot be exported as constants.
- */
-
-/**
  * @typedef {import('eslint').Linter.BaseConfig} BaseConfig
  * @typedef {import('eslint').Linter.RulesRecord} RulesRecord
  */
 
-const base = require('@vanyauhalin/eslint-config-base');
-const { rules } = require('./rules/index.cjs');
+import base from '@vanyauhalin/eslint-config-base';
+import { rules } from './rules';
 
 /**
  * Helper function for adding rules.
@@ -53,4 +48,9 @@ config.overrides.push({
   },
 });
 
-module.exports = config;
+export const {
+  env,
+  parserOptions,
+  ignorePatterns,
+  overrides,
+} = config;
