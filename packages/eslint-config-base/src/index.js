@@ -23,8 +23,9 @@ function addRules(names) {
  */
 const config = {
   env: {
-    node: true,
+    browser: true,
     es2022: true,
+    node: true,
   },
   parserOptions: {
     ecmaVersion: 2022,
