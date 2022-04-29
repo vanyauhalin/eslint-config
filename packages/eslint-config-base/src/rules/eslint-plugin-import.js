@@ -47,6 +47,7 @@ const rules = {
     devDependencies: [
       '**/test/**/*.js',
       '**/.esbuildrc.js',
+      '**/.postcssrc.js',
     ],
   }],
   /**
