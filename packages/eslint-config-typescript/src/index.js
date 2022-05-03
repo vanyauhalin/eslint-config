@@ -44,6 +44,7 @@ config.overrides.push({
       '@typescript-eslint/member-ordering',
       '@typescript-eslint/method-signature-style',
       '@typescript-eslint/no-confusing-void-expression',
+      'import/no-extraneous-dependencies',
     ]),
   },
 });
