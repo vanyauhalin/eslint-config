@@ -28,6 +28,6 @@ jobs:
           >> .npmrc
       - run: npm i -g pnpm
       - run: pnpm i
-      - run: pnpm build
       - run: pnpm lint
       - run: pnpm test
+      - run: pnpm build
