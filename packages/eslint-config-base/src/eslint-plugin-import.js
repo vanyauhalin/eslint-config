@@ -1,4 +1,4 @@
-const rules = {
+module.exports = {
   /**
    * This rule enforces that all exports are declared at the bottom of the file.
    * This rule will report any export declarations that comes before
@@ -15,13 +15,6 @@ const rules = {
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L221
    */
   'import/group-exports': 'error',
-  /**
-   * Reports `require([string])` function calls, `module.exports`
-   * or `exports.*`.
-   * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-commonjs.md
-   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L107
-   */
-  'import/no-commonjs': 'error',
   /**
    * Prohibit default exports.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-default-export.md
@@ -52,14 +45,6 @@ const rules = {
     ],
   }],
   /**
-   * Warn if a module could be mistakenly parsed as a `script` by a consumer
-   * leveraging Unambiguous JavaScript Grammar to determine correct parsing
-   * goal.
-   * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/unambiguous.md
-   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L186
-   */
-  'import/unambiguous': 'error',
-  /**
    * Enforce a convention in the order of `require()` / `import` statements.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L149
@@ -76,8 +61,4 @@ const rules = {
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L157
    */
   'import/prefer-default-export': 'off',
-};
-
-export {
-  rules,
 };
