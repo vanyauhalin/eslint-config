@@ -1,7 +1,7 @@
 # @vanyauhalin/eslint-config-base
 
 ```sh
-# Dependencies tree
+# Non-hierarchical tree of configs, plugins.
 @vanyauhalin/eslint-config-base
 ├─ eslint-config-airbnb-base
 └─ eslint-plugin-import
