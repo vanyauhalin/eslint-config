@@ -1,32 +1,19 @@
-# ESLint config
+# @vanyauhalin/eslint-config
 
 [![Build Status](https://github.com/vanyauhalin/eslint-config/workflows/build/badge.svg)](https://github.com/vanyauhalin/eslint-config/actions)
 
-Dependencies tree:
-
 ```sh
+# Dependencies tree
 @vanyauhalin/eslint-config
-└─ @vanyauhalin/eslint-config-base
-   ├─ eslint-config-airbnb-base
+├─ @vanyauhalin/eslint-config-base
+│  ├─ eslint-config-airbnb-base
+│  └─ eslint-plugin-import
+└─ @vanyauhalin/eslint-config-typescript
+   ├─ @vanyauhalin/eslint-config-base
+   ├─ eslint-config-airbnb-typescript
    └─ eslint-plugin-import
 ```
 
-## Usage
+## License
 
-### Install
-
-```sh
-npm i --save-dev @vanyauhalin/eslint-config-base
-```
-
-### Config
-
-```json
-{
-  "extends": "@vanyauhalin/eslint-config-base"
-}
-```
-
-## Policy
-
-[MIT License](./LICENSE).
+[MIT](LICENSE).
