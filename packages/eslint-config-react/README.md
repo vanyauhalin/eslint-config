@@ -1,0 +1,28 @@
+# @vanyauhalin/eslint-config-react
+
+```sh
+# Non-hierarchic dependencies tree.
+@vanyauhalin/eslint-config-react
+├─ @typescript-eslint/eslint-plugin
+├─ @typescript-eslint/parser
+├─ @vanyauhalin/eslint-config-typescript
+├─ eslint-config-airbnb
+├─ eslint-config-airbnb-base
+├─ eslint-config-airbnb-typescript
+├─ eslint-plugin-import
+├─ eslint-plugin-jsx-a11y
+├─ eslint-plugin-react
+└─ eslint-plugin-react-hooks
+```
+
+## Install
+
+``` sh
+echo "@vanyauhalin:registry = https://npm.pkg.github.com" > .npmrc
+npm i --save-dev @vanyauhalin/eslint-config-react
+echo '{\n  "extends": "@vanyauhalin/eslint-config-react",\n  "parserOptions": {\n    "project": "./tsconfig.json"\n  }\n}' > .eslintrc.json
+```
+
+## License
+
+[MIT](../../LICENSE).
