@@ -1,11 +1,12 @@
 # @vanyauhalin/eslint-config-typescript
 
 ```sh
-# Dependencies tree
+# Non-hierarchical tree of configs, plugins.
 @vanyauhalin/eslint-config-base
+├─ @typescript-eslint/eslint-plugin
+├─ @typescript-eslint/parser
 ├─ @vanyauhalin/eslint-config-base
-├─ eslint-config-airbnb-typescript
-└─ eslint-plugin-import
+└─ eslint-config-airbnb-typescript
 ```
 
 ## Install
