@@ -3,8 +3,8 @@
  * @typedef {import('eslint').Linter.RulesRecord} RulesRecord
  */
 
-import { rules as eslint } from './eslint';
-import { rules as eslintPluginImport } from './eslint-plugin-import';
+const eslint = require('./eslint');
+const eslintPluginImport = require('./eslint-plugin-import');
 
 const rules = {
   ...eslint,
@@ -27,31 +27,19 @@ function addRules(names) {
  * Main ESLint configuration whose properties will be exported.
  * @type {BaseConfig}
  */
-const config = {
+module.exports = {
   env: {
     browser: true,
     es2022: true,
     node: true,
   },
+  extends: [
+    'airbnb-base',
+  ],
   parserOptions: {
     ecmaVersion: 2022,
     sourceType: 'module',
   },
-  ignorePatterns: [
-    '!.*',
-    '.local',
-    'dist',
-    'lib',
-    'node_modules',
-  ],
-  overrides: [],
-};
-
-config.overrides.push({
-  files: '*.{cjs,js,mjs}',
-  extends: [
-    'airbnb-base',
-  ],
   rules: addRules([
     'import/exports-last',
     'import/group-exports',
@@ -63,23 +51,11 @@ config.overrides.push({
     'max-len',
     'sort-imports',
   ]),
-});
-
-config.overrides.push({
-  files: '*.{js,mjs}',
-  extends: config.overrides[0].extends,
-  rules: {
-    ...config.overrides[0].rules,
-    ...addRules([
-      'import/no-commonjs',
-      'import/unambiguous',
-    ]),
-  },
-});
-
-export const {
-  env,
-  parserOptions,
-  ignorePatterns,
-  overrides,
-} = config;
+  ignorePatterns: [
+    '!.*',
+    '.local',
+    'dist',
+    'lib',
+    'node_modules',
+  ],
+};

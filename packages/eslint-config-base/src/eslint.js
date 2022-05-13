@@ -1,4 +1,4 @@
-const rules = {
+module.exports = {
   /**
    * Enforces a maximum line length.
    * @see https://eslint.org/docs/rules/max-len
@@ -21,8 +21,4 @@ const rules = {
   'sort-imports': ['error', {
     ignoreDeclarationSort: true,
   }],
-};
-
-export {
-  rules,
 };
