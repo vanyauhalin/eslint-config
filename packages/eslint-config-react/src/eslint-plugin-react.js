@@ -1,4 +1,4 @@
-const rules = {
+module.exports = {
   /**
    * This option enforces a specific function type for function components.
    * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
@@ -32,8 +32,4 @@ const rules = {
     callbacksLast: true,
     shorthandLast: true,
   }],
-};
-
-export {
-  rules,
 };
