@@ -28,6 +28,8 @@ jobs:
           >> .npmrc
       - run: npm i -g pnpm
       - run: pnpm i
-      - run: pnpm lint
-      - run: pnpm test
+      # First we need to build the packages, because they are also used
+      # to testing and lining.
       - run: pnpm build
+      - run: pnpm test
+      - run: pnpm lint
