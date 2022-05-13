@@ -8,7 +8,7 @@ test('eslint should throw an configs error', async () => {
     const eslint = new ESLint({
       allowInlineConfig: false,
       baseConfig: {
-        extends: pack.main,
+        extends: `${pack.library}/index.js`,
       },
     });
     const result = await eslint.lintFiles('./test/reference.js');
