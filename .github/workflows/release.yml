@@ -11,8 +11,8 @@ jobs:
       matrix:
         package:
           - eslint-config-base
-          - eslint-config-typescript
           - eslint-config-react
+          - eslint-config-typescript
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
