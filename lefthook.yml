@@ -1,10 +1,10 @@
-commit-msg:
-  commands:
-    lint:
-      run: commitlint --edit
-
 pre-commit:
   commands:
     lint:
       glob: "*.{cjs,js}"
       run: eslint {staged_files}
+
+commit-msg:
+  commands:
+    lint:
+      run: commitlint --edit
