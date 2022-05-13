@@ -7,9 +7,12 @@ on:
       - "!**.md"
       - ".github/workflows/build.yml"
       - "packages/**"
+      - "test/**"
       - ".esbuildrc.js"
+      - ".eslintrc.json"
       - "package.json"
       - "pnpm-lock.yaml"
+      - "pnpm-workspace.yaml"
 
 jobs:
   build:
@@ -19,8 +22,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - run: |
+          echo \
+            "//npm.pkg.github.com/:_authToken = ${{ secrets.GITHUB_TOKEN }}\n@vanyauhalin:registry = https://npm.pkg.github.com" \
+          >> .npmrc
       - run: npm i -g pnpm
       - run: pnpm i
-      - run: pnpm build
       - run: pnpm lint
       - run: pnpm test
+      - run: pnpm build
