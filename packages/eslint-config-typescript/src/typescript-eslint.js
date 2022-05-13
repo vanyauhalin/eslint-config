@@ -1,4 +1,4 @@
-const rules = {
+module.exports = {
   /**
    * Requires using either `T[]` or `Array<T>` for arrays.
    * @see https://typescript-eslint.io/rules/array-type
@@ -164,8 +164,4 @@ const rules = {
    * @see https://typescript-eslint.io/rules/no-confusing-void-expression
    */
   '@typescript-eslint/no-confusing-void-expression': ['error'],
-};
-
-export {
-  rules,
 };
