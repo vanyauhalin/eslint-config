@@ -1,15 +1,10 @@
 # @vanyauhalin/eslint-config-react
 
 ```sh
-# Non-hierarchic dependencies tree.
+# Non-hierarchical tree of configs, plugins.
 @vanyauhalin/eslint-config-react
-├─ @typescript-eslint/eslint-plugin
-├─ @typescript-eslint/parser
 ├─ @vanyauhalin/eslint-config-typescript
 ├─ eslint-config-airbnb
-├─ eslint-config-airbnb-base
-├─ eslint-config-airbnb-typescript
-├─ eslint-plugin-import
 ├─ eslint-plugin-jsx-a11y
 ├─ eslint-plugin-react
 └─ eslint-plugin-react-hooks
