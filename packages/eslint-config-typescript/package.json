@@ -9,6 +9,9 @@
   "repository": "github:vanyauhalin/eslint-config",
   "license": "MIT",
   "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
+  "files": [
+    "lib/*"
+  ],
   "main": "lib/index.js",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.21.0",
