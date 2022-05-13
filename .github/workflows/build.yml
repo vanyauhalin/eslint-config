@@ -7,9 +7,12 @@ on:
       - "!**.md"
       - ".github/workflows/build.yml"
       - "packages/**"
+      - "test/**"
       - ".esbuildrc.js"
+      - ".eslintrc.json"
       - "package.json"
       - "pnpm-lock.yaml"
+      - "pnpm-workspace.yaml"
 
 jobs:
   build:
