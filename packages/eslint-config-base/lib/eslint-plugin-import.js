@@ -42,6 +42,7 @@ module.exports = {
       '**/.esbuildrc.js',
       '**/.postcssrc.js',
       '**/.scriptsrc.js',
+      '**/vite.config.js',
     ],
   }],
   /**
