@@ -10,9 +10,6 @@
   "license": "MIT",
   "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
   "main": "lib/index.js",
-  "files": [
-    "lib/*"
-  ],
   "dependencies": {
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"
