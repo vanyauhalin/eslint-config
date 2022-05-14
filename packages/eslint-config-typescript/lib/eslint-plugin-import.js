@@ -11,6 +11,10 @@ module.exports = {
   'import/no-extraneous-dependencies': ['error', {
     devDependencies: base.rules['import/no-extraneous-dependencies'][1]
       .devDependencies
-      .reduce((acc, cur) => [...acc, cur.replace(extname(cur), '.ts')], []),
+      .reduce((acc, cur) => [
+        ...acc,
+        cur,
+        cur.replace(extname(cur), '.ts'),
+      ], []),
   }],
 };

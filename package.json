@@ -15,7 +15,6 @@
     "packages"
   ],
   "scripts": {
-    "build": "node .esbuildrc.js",
     "lint": "eslint .",
     "test": "node --experimental-specifier-resolution=node test/validate.js"
   },
@@ -24,7 +23,6 @@
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@vanyauhalin/eslint-config-base": "workspace:^",
-    "esbuild": "^0.14.38",
     "eslint": "^8.13.0",
     "uvu": "^0.5.3"
   },

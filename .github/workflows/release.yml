@@ -22,7 +22,6 @@ jobs:
           scope: "@vanyauhalin"
       - run: npm i -g pnpm
       - run: pnpm i --frozen-lockfile
-      - run: pnpm build
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm publish packages/${{ matrix.package }} --no-git-checks
