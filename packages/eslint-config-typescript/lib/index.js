@@ -1,8 +1,3 @@
-/**
- * @typedef {import('eslint').Linter.BaseConfig} BaseConfig
- * @typedef {import('eslint').Linter.RulesRecord} RulesRecord
- */
-
 const eslintPluginImport = require('./eslint-plugin-import');
 const typescriptEslint = require('./typescript-eslint');
 
@@ -14,7 +9,7 @@ const rules = {
 /**
  * Helper function for adding rules.
  * @param {(keyof typeof rules)[]} names Array of rule names from the `rules`.
- * @returns {RulesRecord} Rules record.
+ * @returns {import('eslint').Linter.RulesRecord} Rules record.
  */
 function addRules(names) {
   return names.reduce((acc, cur) => ({
@@ -24,8 +19,8 @@ function addRules(names) {
 }
 
 /**
- * Main ESLint configuration whose properties will be exported.
- * @type {BaseConfig}
+ * ESLint configuration.
+ * @type {import('eslint').Linter.BaseConfig}
  */
 module.exports = {
   extends: [
