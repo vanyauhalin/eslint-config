@@ -5,10 +5,9 @@ on:
     branches: main
     paths:
       - "!**.md"
-      - ".github/workflows/build.yml"
+      - ".github/workflows/test.yml"
       - "packages/**"
       - "test/**"
-      - ".esbuildrc.js"
       - ".eslintrc.json"
       - "package.json"
       - "pnpm-lock.yaml"
