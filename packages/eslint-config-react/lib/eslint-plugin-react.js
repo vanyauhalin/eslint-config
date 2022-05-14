@@ -32,4 +32,10 @@ module.exports = {
     callbacksLast: true,
     shorthandLast: true,
   }],
+  /**
+   * Allow missing React when using JSX.
+   * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
+   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/rules/react.js#L230
+   */
+  'react/react-in-jsx-scope': 'off',
 };
