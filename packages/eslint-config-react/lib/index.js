@@ -24,10 +24,10 @@ function addRules(names) {
  */
 module.exports = {
   extends: [
-    '@vanyauhalin/eslint-config-typescript',
     'airbnb',
     'airbnb/hooks',
     'airbnb-typescript',
+    '@vanyauhalin/eslint-config-typescript',
   ],
   rules: addRules([
     'jsx-a11y/label-has-associated-control',

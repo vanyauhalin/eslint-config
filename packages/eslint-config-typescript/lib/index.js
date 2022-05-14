@@ -24,8 +24,8 @@ function addRules(names) {
  */
 module.exports = {
   extends: [
-    '@vanyauhalin/eslint-config-base',
     'airbnb-typescript/base',
+    '@vanyauhalin/eslint-config-base',
   ],
   rules: addRules([
     '@typescript-eslint/array-type',
