@@ -9,6 +9,7 @@ module.exports = {
     unnamedComponents: 'arrow-function',
   }],
   /**
+   * Allow only typescript as `jsx` files.
    * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
    * @see https://github.com/iamturns/eslint-config-airbnb-typescript/blob/master/index.js#L17
    */
