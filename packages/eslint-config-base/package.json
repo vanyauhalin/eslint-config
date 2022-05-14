@@ -1,6 +1,6 @@
 {
   "name": "@vanyauhalin/eslint-config-base",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "ESLint config for vanilla js by @vanyauhalin",
   "keywords": [
     "eslint",
