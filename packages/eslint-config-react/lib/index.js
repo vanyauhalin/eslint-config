@@ -35,5 +35,6 @@ module.exports = {
     'react/jsx-filename-extension',
     'react/jsx-max-props-per-line',
     'react/jsx-sort-props',
+    'react/react-in-jsx-scope',
   ]),
 };
