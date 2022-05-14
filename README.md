@@ -1,6 +1,6 @@
 # @vanyauhalin/eslint-config
 
-[![Build Status](https://github.com/vanyauhalin/eslint-config/workflows/build/badge.svg)](https://github.com/vanyauhalin/eslint-config/actions)
+[![Test status](https://github.com/vanyauhalin/eslint-config/workflows/test/badge.svg)](https://github.com/vanyauhalin/eslint-config/actions)
 
 ```sh
 # Non-hierarchical tree of configs, plugins.

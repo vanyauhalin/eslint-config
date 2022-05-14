@@ -1,4 +1,4 @@
-name: build
+name: test
 
 on:
   push:
@@ -29,8 +29,5 @@ jobs:
       - run: pnpm i
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # First we need to build the packages, because they are also used
-      # to testing and lining.
-      - run: pnpm build
       - run: pnpm test
       - run: pnpm lint
