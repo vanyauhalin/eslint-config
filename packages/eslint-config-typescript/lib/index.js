@@ -1,33 +1,18 @@
+const utils = require('@vanyauhalin/eslint-config-base/lib/utils');
 const eslintPluginImport = require('./eslint-plugin-import');
 const typescriptEslint = require('./typescript-eslint');
 
-const rules = {
+const { add } = utils.group({
   ...eslintPluginImport,
   ...typescriptEslint,
-};
+});
 
-/**
- * Helper function for adding rules.
- * @param {(keyof typeof rules)[]} names Array of rule names from the `rules`.
- * @returns {import('eslint').Linter.RulesRecord} Rules record.
- */
-function addRules(names) {
-  return names.reduce((acc, cur) => ({
-    ...acc,
-    [cur]: rules[cur],
-  }), {});
-}
-
-/**
- * ESLint configuration.
- * @type {import('eslint').Linter.BaseConfig}
- */
-module.exports = {
+module.exports = utils.configure({
   extends: [
     'airbnb-typescript/base',
     '@vanyauhalin/eslint-config-base',
   ],
-  rules: addRules([
+  rules: add([
     '@typescript-eslint/array-type',
     '@typescript-eslint/consistent-type-imports',
     '@typescript-eslint/explicit-function-return-type',
@@ -39,4 +24,4 @@ module.exports = {
     '@typescript-eslint/no-confusing-void-expression',
     'import/no-extraneous-dependencies',
   ]),
-};
+});

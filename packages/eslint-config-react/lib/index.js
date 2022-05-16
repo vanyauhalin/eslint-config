@@ -1,35 +1,20 @@
+const utils = require('@vanyauhalin/eslint-config-base/lib/utils');
 const eslintPluginJsxA11y = require('./eslint-plugin-jsx-a11y');
 const eslintPluginReact = require('./eslint-plugin-react');
 
-const rules = {
+const { add } = utils.group({
   ...eslintPluginJsxA11y,
   ...eslintPluginReact,
-};
+});
 
-/**
- * Helper function for adding rules.
- * @param {(keyof typeof rules)[]} names Array of rule names from the `rules`.
- * @returns {import('eslint').Linter.RulesRecord} Rules record.
- */
-function addRules(names) {
-  return names.reduce((acc, cur) => ({
-    ...acc,
-    [cur]: rules[cur],
-  }), {});
-}
-
-/**
- * ESLint configuration.
- * @type {import('eslint').Linter.BaseConfig}
- */
-module.exports = {
+module.exports = utils.configure({
   extends: [
     'airbnb',
     'airbnb/hooks',
     'airbnb-typescript',
     '@vanyauhalin/eslint-config-typescript',
   ],
-  rules: addRules([
+  rules: add([
     'jsx-a11y/label-has-associated-control',
     'react/function-component-definition',
     'react/jsx-filename-extension',
@@ -37,4 +22,4 @@ module.exports = {
     'react/jsx-sort-props',
     'react/react-in-jsx-scope',
   ]),
-};
+});

@@ -33,6 +33,7 @@ importers:
     specifiers:
       '@typescript-eslint/eslint-plugin': ^5.21.0
       '@typescript-eslint/parser': ^5.21.0
+      '@vanyauhalin/eslint-config-base': workspace:^0.11.0
       '@vanyauhalin/eslint-config-typescript': workspace:^
       eslint: ^8.13.0
       eslint-config-airbnb: ^19.0.4
@@ -45,6 +46,7 @@ importers:
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.23.0_c63nfttrfhylg3zmgcxfslaw44
       '@typescript-eslint/parser': 5.23.0_hcfsmds2fshutdssjqluwm76uu
+      '@vanyauhalin/eslint-config-base': link:../eslint-config-base
       '@vanyauhalin/eslint-config-typescript': link:../eslint-config-typescript
       eslint-config-airbnb: 19.0.4_xrdeh6rk75qznjks6fj23jbeji
       eslint-config-airbnb-typescript: 17.0.0_mck3labyxgcv4ibq2w6nfaba5e
@@ -1009,7 +1011,7 @@ packages:
     dependencies:
       confusing-browser-globals: 1.0.11
       eslint: 8.15.0
-      eslint-plugin-import: 2.26.0_eslint@8.15.0
+      eslint-plugin-import: 2.26.0_doddzorl55y6dbr5ij3nshfl64
       object.assign: 4.1.2
       object.entries: 1.1.5
       semver: 6.3.0
