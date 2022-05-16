@@ -1,28 +1,13 @@
 const eslint = require('./eslint');
 const eslintPluginImport = require('./eslint-plugin-import');
+const { configure, group } = require('./utils');
 
-const rules = {
+const { add } = group({
   ...eslint,
   ...eslintPluginImport,
-};
+});
 
-/**
- * Helper function for adding rules.
- * @param {(keyof typeof rules)[]} names Array of rule names from the `rules`.
- * @returns {import('eslint').Linter.RulesRecord} Rules record.
- */
-function addRules(names) {
-  return names.reduce((acc, cur) => ({
-    ...acc,
-    [cur]: rules[cur],
-  }), {});
-}
-
-/**
- * ESLint configuration.
- * @type {import('eslint').Linter.BaseConfig}
- */
-module.exports = {
+module.exports = configure({
   env: {
     browser: true,
     es2022: true,
@@ -35,7 +20,7 @@ module.exports = {
     ecmaVersion: 2022,
     sourceType: 'module',
   },
-  rules: addRules([
+  rules: add([
     'import/exports-last',
     'import/group-exports',
     'import/no-default-export',
@@ -53,4 +38,4 @@ module.exports = {
     'lib',
     'node_modules',
   ],
-};
+});
