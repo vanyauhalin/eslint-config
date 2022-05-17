@@ -21,6 +21,7 @@ module.exports = configure({
     sourceType: 'module',
   },
   rules: add([
+    'func-names',
     'import/exports-last',
     'import/group-exports',
     'import/no-default-export',
