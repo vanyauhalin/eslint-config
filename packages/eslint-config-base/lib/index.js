@@ -30,6 +30,7 @@ module.exports = configure({
     'import/order',
     'import/prefer-default-export',
     'max-len',
+    'no-alert',
     'no-constant-condition',
     'prefer-arrow-callback',
     'sort-imports',

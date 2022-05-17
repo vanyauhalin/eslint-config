@@ -20,6 +20,12 @@ module.exports = {
     tabWidth: 2,
   }],
   /**
+   * Disallows the use of `alert`, `confirm`, and `prompt`.
+   * @see https://eslint.org/docs/rules/no-alert
+   * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/best-practices.js#L70
+   */
+  'no-alert': 'error',
+  /**
    * Disallows constant expressions in conditions.
    * @see https://eslint.org/docs/rules/no-constant-condition
    * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/errors.js#L35
