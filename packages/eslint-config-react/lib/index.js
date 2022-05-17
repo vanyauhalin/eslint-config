@@ -1,5 +1,3 @@
-const eslintPluginReact = require('./eslint-plugin-react');
-
 /**
  * @type {import('eslint').Linter.BaseConfig}
  */
@@ -11,9 +9,7 @@ module.exports = {
     'airbnb/hooks',
     ...[
       './eslint-plugin-jsx-a11y',
+      './eslint-plugin-react',
     ].map((config) => require.resolve(config)),
   ],
-  rules: {
-    ...eslintPluginReact,
-  },
 };
