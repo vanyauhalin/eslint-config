@@ -1,11 +1,13 @@
 const eslint = require('./eslint');
 const eslintPluginImport = require('./eslint-plugin-import');
+const eslintPluginPromise = require('./eslint-plugin-promise');
 const eslintPluginUnicorn = require('./eslint-plugin-unicorn');
 const { configure, group } = require('./utils');
 
 const { add } = group({
   ...eslint,
   ...eslintPluginImport,
+  ...eslintPluginPromise,
   ...eslintPluginUnicorn,
 });
 
@@ -24,6 +26,7 @@ module.exports = configure({
     sourceType: 'module',
   },
   plugins: [
+    'promise',
     'unicorn',
   ],
   rules: add([
@@ -40,6 +43,20 @@ module.exports = configure({
     'no-constant-condition',
     'no-restricted-syntax',
     'prefer-arrow-callback',
+    'promise/always-return',
+    'promise/avoid-new',
+    'promise/catch-or-return',
+    'promise/no-callback-in-promise',
+    'promise/no-native',
+    'promise/no-nesting',
+    'promise/no-new-statics',
+    'promise/no-promise-in-callback',
+    'promise/no-return-in-finally',
+    'promise/no-return-wrap',
+    'promise/param-names',
+    'promise/prefer-await-to-callbacks',
+    'promise/prefer-await-to-then',
+    'promise/valid-params',
     'sort-imports',
     'unicorn/no-keyword-prefix',
     'unicorn/no-nested-ternary',
