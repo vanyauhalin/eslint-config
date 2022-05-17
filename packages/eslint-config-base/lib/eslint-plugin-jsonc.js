@@ -63,6 +63,7 @@ module.exports = {
      * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/array-bracket-newline.html
      */
     'jsonc/array-bracket-newline': ['error', {
+      minItems: 1,
       multiline: true,
     }],
     /**
