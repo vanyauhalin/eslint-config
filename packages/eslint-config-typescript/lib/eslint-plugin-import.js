@@ -1,4 +1,4 @@
-const { extname } = require('path');
+const path = require('path');
 const base = require('@vanyauhalin/eslint-config-base');
 
 module.exports = {
@@ -11,10 +11,6 @@ module.exports = {
   'import/no-extraneous-dependencies': ['error', {
     devDependencies: base.rules['import/no-extraneous-dependencies'][1]
       .devDependencies
-      .reduce((acc, cur) => [
-        ...acc,
-        cur,
-        cur.replace(extname(cur), '.ts'),
-      ], []),
+      .map((file) => file.replace(path.extname(file), '.{js,ts}')),
   }],
 };

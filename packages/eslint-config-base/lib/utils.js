@@ -25,10 +25,7 @@ function group(rules) {
      * @returns {RulesRecord} Rules record.
      */
     add(names) {
-      return names.reduce((acc, cur) => ({
-        ...acc,
-        [cur]: rules[cur],
-      }), {});
+      return Object.fromEntries(names.map((name) => [name, rules[name]]));
     },
   };
 }

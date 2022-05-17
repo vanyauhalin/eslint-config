@@ -1,10 +1,12 @@
 const eslint = require('./eslint');
 const eslintPluginImport = require('./eslint-plugin-import');
+const eslintPluginUnicorn = require('./eslint-plugin-unicorn');
 const { configure, group } = require('./utils');
 
 const { add } = group({
   ...eslint,
   ...eslintPluginImport,
+  ...eslintPluginUnicorn,
 });
 
 module.exports = configure({
@@ -15,11 +17,15 @@ module.exports = configure({
   },
   extends: [
     'airbnb-base',
+    'plugin:unicorn/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2022,
     sourceType: 'module',
   },
+  plugins: [
+    'unicorn',
+  ],
   rules: add([
     'func-names',
     'import/exports-last',
@@ -32,8 +38,13 @@ module.exports = configure({
     'max-len',
     'no-alert',
     'no-constant-condition',
+    'no-restricted-syntax',
     'prefer-arrow-callback',
     'sort-imports',
+    'unicorn/no-keyword-prefix',
+    'unicorn/no-nested-ternary',
+    'unicorn/no-unreadable-array-destructuring',
+    'unicorn/prefer-module',
   ]),
   ignorePatterns: [
     '!.*',

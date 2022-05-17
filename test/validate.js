@@ -1,4 +1,4 @@
-import { extname, resolve } from 'path';
+import { extname, resolve } from 'node:path';
 import { ESLint } from 'eslint';
 import { test } from 'uvu';
 import { is } from 'uvu/assert';
@@ -6,18 +6,17 @@ import { is } from 'uvu/assert';
 const PACKAGES = resolve('packages');
 const REFERENCE = resolve('test/reference');
 
-[
+for (const options of [
   ['base', ['base.js']],
   ['react', ['react.tsx']],
   ['typescript', ['typescript.ts']],
-].forEach((options) => {
+]) {
   const [name, reference] = options;
   const fullName = `eslint-config-${name}`;
   test(`${fullName} should throw an configs error`, async () => {
     await Promise.all(reference.map(async (file) => {
       const extension = extname(file);
       const eslint = new ESLint({
-        allowInlineConfig: false,
         baseConfig: {
           extends: `${PACKAGES}/${fullName}/lib/index.js`,
           ...extension === '.ts' || extension === '.tsx'
@@ -28,6 +27,7 @@ const REFERENCE = resolve('test/reference');
             }
             : {},
         },
+        ignore: false,
       });
       const report = await eslint.lintFiles(`${REFERENCE}/${file}`);
       const hasError = report.every((result) => (
@@ -37,6 +37,6 @@ const REFERENCE = resolve('test/reference');
       is(hasError, true);
     }));
   });
-});
+}
 
 test.run();
