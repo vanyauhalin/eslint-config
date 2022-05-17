@@ -120,4 +120,7 @@ module.exports = {
      */
     'jsonc/object-property-newline': 'error',
   },
+  ignorePatterns: [
+    'package-lock.json',
+  ],
 };
