@@ -40,6 +40,12 @@ module.exports = {
     shorthandLast: true,
   }],
   /**
+   * Prevent usage of dangerous JSX properties.
+   * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/1fdf9bdc9788ce6986f8e82f883ff4d7e161f16f/docs/rules/no-danger.md
+   * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb/rules/react.js#L169
+   */
+  'react/no-danger': 'error',
+  /**
    * Allow missing React when using JSX.
    * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/rules/react.js#L230

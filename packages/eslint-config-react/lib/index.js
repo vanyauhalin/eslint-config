@@ -25,6 +25,7 @@ module.exports = utils.configure({
       'react/jsx-filename-extension',
       'react/jsx-max-props-per-line',
       'react/jsx-sort-props',
+      'react/no-danger',
       'react/react-in-jsx-scope',
     ]),
   },
