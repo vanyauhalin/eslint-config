@@ -1,14 +1,11 @@
-const utils = require('@vanyauhalin/eslint-config-base/lib/utils');
 const typescript = require('@vanyauhalin/eslint-config-typescript');
 const eslintPluginJsxA11y = require('./eslint-plugin-jsx-a11y');
 const eslintPluginReact = require('./eslint-plugin-react');
 
-const { add } = utils.group({
-  ...eslintPluginJsxA11y,
-  ...eslintPluginReact,
-});
-
-module.exports = utils.configure({
+/**
+ * @type {import('eslint').Linter.BaseConfig}
+ */
+module.exports = {
   ...typescript,
   extends: [
     ...typescript.extends,
@@ -18,15 +15,7 @@ module.exports = utils.configure({
   ],
   rules: {
     ...typescript.rules,
-    ...add([
-      'jsx-a11y/label-has-associated-control',
-      'react/destructuring-assignment',
-      'react/function-component-definition',
-      'react/jsx-filename-extension',
-      'react/jsx-max-props-per-line',
-      'react/jsx-sort-props',
-      'react/no-danger',
-      'react/react-in-jsx-scope',
-    ]),
+    ...eslintPluginJsxA11y,
+    ...eslintPluginReact,
   },
-});
+};
