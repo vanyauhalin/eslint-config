@@ -4,7 +4,7 @@ module.exports = {
    * This rule will report any export declarations that comes before
    * any non-export statements.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/exports-last.md
-   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L215
+   * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/imports.js#L215
    */
   'import/exports-last': 'error',
   /**
@@ -12,20 +12,20 @@ module.exports = {
    * declaration or when multiple assignments to CommonJS `module.exports`
    * or `exports` object are present in a single file.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/group-exports.md
-   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L221
+   * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/imports.js#L221
    */
   'import/group-exports': 'error',
   /**
    * Prohibit default exports.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-default-export.md
-   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L225
+   * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/imports.js#L225
    */
   'import/no-default-export': 'error',
   /**
    * Reports use of a deprecated name, as indicated by a JSDoc block with
    * a `@deprecated` tag or TomDoc `Deprecated:` comment.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-deprecated.md
-   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L66
+   * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/imports.js#L66
    */
   'import/no-deprecated': 'error',
   /**
@@ -33,7 +33,7 @@ module.exports = {
    * in the `package.json`'s `dependencies`, `devDependencies`,
    * `optionalDependencies`, `peerDependencies`, or `bundledDependencies`.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
-   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L71
+   * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/imports.js#L71
    */
   'import/no-extraneous-dependencies': ['error', {
     devDependencies: [
@@ -48,7 +48,7 @@ module.exports = {
   /**
    * Enforce a convention in the order of `require()` / `import` statements.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md
-   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L149
+   * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/imports.js#L149
    */
   'import/order': ['error', {
     alphabetize: {
@@ -59,7 +59,7 @@ module.exports = {
    * When there is only a single export from a module, prefer using default
    * export over named export.
    * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
-   * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js#L157
+   * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/imports.js#L157
    */
   'import/prefer-default-export': 'off',
 };
