@@ -1,7 +1,7 @@
 pre-commit:
   commands:
     lint:
-      glob: "*.{cjs,js}"
+      glob: "*.js"
       run: eslint {staged_files}
 
 commit-msg:
