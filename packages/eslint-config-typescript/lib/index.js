@@ -1,19 +1,13 @@
-const base = require('@vanyauhalin/eslint-config-base');
-const eslintPluginImport = require('./eslint-plugin-import');
-const typescriptEslint = require('./typescript-eslint');
-
 /**
  * @type {import('eslint').Linter.BaseConfig}
  */
 module.exports = {
-  ...base,
   extends: [
-    ...base.extends,
+    '@vanyauhalin/eslint-config-base',
     'airbnb-typescript/base',
+    ...[
+      './eslint-plugin-import',
+      './typescript-eslint',
+    ].map((config) => require.resolve(config)),
   ],
-  rules: {
-    ...base.rules,
-    ...eslintPluginImport,
-    ...typescriptEslint,
-  },
 };
