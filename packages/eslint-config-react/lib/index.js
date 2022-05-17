@@ -1,4 +1,3 @@
-const eslintPluginJsxA11y = require('./eslint-plugin-jsx-a11y');
 const eslintPluginReact = require('./eslint-plugin-react');
 
 /**
@@ -10,9 +9,11 @@ module.exports = {
     'airbnb',
     'airbnb-typescript',
     'airbnb/hooks',
+    ...[
+      './eslint-plugin-jsx-a11y',
+    ].map((config) => require.resolve(config)),
   ],
   rules: {
-    ...eslintPluginJsxA11y,
     ...eslintPluginReact,
   },
 };
