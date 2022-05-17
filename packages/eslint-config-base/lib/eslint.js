@@ -1,5 +1,11 @@
 module.exports = {
   /**
+   * Requires named function expressions.
+   * @see https://eslint.org/docs/rules/func-names
+   * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/style.js#L96
+   */
+  'func-names': 'error',
+  /**
    * Enforces a maximum line length.
    * @see https://eslint.org/docs/rules/max-len
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/style.js#L199
