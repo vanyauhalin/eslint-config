@@ -20,6 +20,11 @@ module.exports = {
     tabWidth: 2,
   }],
   /**
+   * Disallows constant expressions in conditions.
+   * @see https://eslint.org/docs/rules/no-constant-condition
+   */
+  'no-constant-condition': 'error',
+  /**
    * Enforces sorted import declarations within modules.
    * @see https://eslint.org/docs/rules/sort-imports
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/es6.js#L166
