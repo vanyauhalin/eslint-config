@@ -1,6 +1,7 @@
 {
   "extends": "@vanyauhalin/eslint-config-base",
   "ignorePatterns": [
-    "!lib"
+    "!lib",
+    "test/reference"
   ]
 }
