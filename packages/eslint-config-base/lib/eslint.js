@@ -25,6 +25,11 @@ module.exports = {
    */
   'no-constant-condition': 'error',
   /**
+   * Requires using arrow functions for callbacks.
+   * @see https://eslint.org/docs/rules/prefer-arrow-callback
+   */
+  'prefer-arrow-callback': 'error',
+  /**
    * Enforces sorted import declarations within modules.
    * @see https://eslint.org/docs/rules/sort-imports
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/es6.js#L166

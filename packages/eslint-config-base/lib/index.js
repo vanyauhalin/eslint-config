@@ -31,6 +31,7 @@ module.exports = configure({
     'import/prefer-default-export',
     'max-len',
     'no-constant-condition',
+    'prefer-arrow-callback',
     'sort-imports',
   ]),
   ignorePatterns: [
