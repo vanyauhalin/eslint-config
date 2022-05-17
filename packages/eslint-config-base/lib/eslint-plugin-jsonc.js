@@ -15,6 +15,8 @@ module.exports = {
       parser: 'jsonc-eslint-parser',
       rules: {
         /**
+         * Require object keys to be sorted.
+         * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/sort-keys.md
          * @see https://github.com/keithamus/sort-package-json/blob/50f91021399d2a6676889b1e1430e1f6c769496c/index.js#L188
          */
         'jsonc/sort-keys': [
@@ -61,6 +63,7 @@ module.exports = {
     /**
      * Enforce line breaks after opening and before closing array brackets.
      * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/array-bracket-newline.html
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/array-bracket-newline.md
      */
     'jsonc/array-bracket-newline': ['error', {
       minItems: 1,
@@ -68,28 +71,28 @@ module.exports = {
     }],
     /**
      * Disallow spaces inside of brackets.
-     * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/array-bracket-spacing.html
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/array-bracket-spacing.md
      */
     'jsonc/array-bracket-spacing': ['error', 'never'],
     /**
      * Enforce line breaks between array elements.
-     * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/array-element-newline.html
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/array-element-newline.md
      */
     'jsonc/array-element-newline': ['error', 'always'],
     /**
      * Enforce consistent comma style.
-     * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/comma-style.html
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/comma-style.md
      */
     'jsonc/comma-style': ['error', 'last'],
     /**
      * Enforce consistent indentation.
-     * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/indent.html
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/indent.md
      */
     'jsonc/indent': ['error', 2],
     /**
      * Enforce consistent spacing between keys and values in object literal
      * properties.
-     * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/key-spacing.html
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/key-spacing.md
      */
     'jsonc/key-spacing': ['error', {
       beforeColon: false,
@@ -98,12 +101,12 @@ module.exports = {
     }],
     /**
      * Disallow octal escape sequences in string literals.
-     * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-octal-escape.html
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/no-octal-escape.md
      */
     'jsonc/no-octal-escape': 'error',
     /**
      * Enforce consistent line breaks inside braces.
-     * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/object-curly-newline.html
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/object-curly-newline.md
      */
     'jsonc/object-curly-newline': ['error', {
       consistent: true,
@@ -111,12 +114,12 @@ module.exports = {
     }],
     /**
      * Enforce consistent spacing inside braces.
-     * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/object-curly-spacing.html
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/object-curly-spacing.md
      */
     'jsonc/object-curly-spacing': ['error', 'never'],
     /**
      * Enforce placing object properties on separate lines.
-     * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/object-property-newline.html
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/object-property-newline.md
      */
     'jsonc/object-property-newline': 'error',
   },

@@ -14,13 +14,13 @@ module.exports = {
   rules: {
     /**
      * Requires named function expressions.
-     * @see https://eslint.org/docs/rules/func-names
+     * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/func-names.md
      * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/style.js#L96
      */
     'func-names': 'error',
     /**
      * Enforces a maximum line length.
-     * @see https://eslint.org/docs/rules/max-len
+     * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/max-len.md
      * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/style.js#L199
      */
     'max-len': ['error', {
@@ -34,20 +34,20 @@ module.exports = {
     }],
     /**
      * Disallows the use of `alert`, `confirm`, and `prompt`.
-     * @see https://eslint.org/docs/rules/no-alert
+     * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/no-alert.md
      * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/best-practices.js#L70
      */
     'no-alert': 'error',
     /**
      * Disallows constant expressions in conditions.
-     * @see https://eslint.org/docs/rules/no-constant-condition
+     * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/no-constant-condition.md
      * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/errors.js#L35
      */
     'no-constant-condition': 'error',
     /**
      * Disallows specified syntax.
      * Removed `for..of`.
-     * @see https://eslint.org/docs/rules/no-restricted-syntax
+     * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/no-restricted-syntax.md
      * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/style.js#L333
      */
     'no-restricted-syntax': [
@@ -72,13 +72,13 @@ module.exports = {
     ],
     /**
      * Requires using arrow functions for callbacks.
-     * @see https://eslint.org/docs/rules/prefer-arrow-callback
+     * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/prefer-arrow-callback.md
      * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/es6.js#L110
      */
     'prefer-arrow-callback': 'error',
     /**
      * Enforces sorted import declarations within modules.
-     * @see https://eslint.org/docs/rules/sort-imports
+     * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/sort-imports.md
      * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/es6.js#L166
      */
     'sort-imports': ['error', {

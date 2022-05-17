@@ -6,20 +6,21 @@ module.exports = {
     /**
      * Requires using either `T[]` or `Array<T>` for arrays.
      * @see https://typescript-eslint.io/rules/array-type
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/array-type.md
      */
     '@typescript-eslint/array-type': ['error', {
       default: 'array',
     }],
     /**
      * Enforces consistent usage of type imports.
-     * @see https://typescript-eslint.io/rules/consistent-type-imports
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/consistent-type-imports.md
      */
     '@typescript-eslint/consistent-type-imports': ['error', {
       prefer: 'type-imports',
     }],
     /**
      * Require explicit return types on functions and class methods.
-     * @see https://typescript-eslint.io/rules/explicit-function-return-type
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
      */
     '@typescript-eslint/explicit-function-return-type': ['error', {
       allowExpressions: true,
@@ -31,7 +32,7 @@ module.exports = {
     /**
      * Require explicit return and argument types on exported functions
      * and classes public class methods.
-     * @see https://typescript-eslint.io/rules/explicit-module-boundary-types
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
      */
     '@typescript-eslint/explicit-module-boundary-types': ['error', {
       allowArgumentsExplicitlyTypedAsAny: false,
@@ -41,8 +42,8 @@ module.exports = {
     }],
     /**
      * Require or disallow an empty line between class members.
-     * @see https://typescript-eslint.io/rules/lines-between-class-members/
-     * @see https://github.com/iamturns/eslint-config-airbnb-typescript/blob/master/lib/shared.js#L105
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/lines-between-class-members.md
+     * @see https://github.com/iamturns/eslint-config-airbnb-typescript/blob/91fd090f6fdd8d598a6ac6e9bb2c2ba33014e425/lib/shared.js#L107
      */
     '@typescript-eslint/lines-between-class-members': ['error', 'always', {
       exceptAfterSingleLine: true,
@@ -50,7 +51,7 @@ module.exports = {
     /**
      * Require a specific member delimiter style for interfaces and type
      * literals.
-     * @see https://typescript-eslint.io/rules/member-delimiter-style
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/member-delimiter-style.md
      */
     '@typescript-eslint/member-delimiter-style': ['error', {
       multiline: {
@@ -65,7 +66,7 @@ module.exports = {
     }],
     /**
      * Require a consistent member declaration order.
-     * @see https://typescript-eslint.io/rules/member-ordering
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/member-ordering.md
      */
     '@typescript-eslint/member-ordering': ['error', {
       default: {
@@ -161,12 +162,12 @@ module.exports = {
     }],
     /**
      * Enforces using a particular method signature syntax.
-     * @see https://typescript-eslint.io/rules/method-signature-style
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/method-signature-style.md
      */
     '@typescript-eslint/method-signature-style': ['error', 'method'],
     /**
      * Requires expressions of type void to appear in statement position.
-     * @see https://typescript-eslint.io/rules/no-confusing-void-expression
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/no-confusing-void-expression.md
      */
     '@typescript-eslint/no-confusing-void-expression': ['error'],
   },
