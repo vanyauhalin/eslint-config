@@ -1,13 +1,23 @@
+const airbnb = require('eslint-config-airbnb-typescript/lib/shared');
+
 /**
  * @type {import('eslint').Linter.BaseConfig}
  */
 module.exports = {
   extends: [
-    '@vanyauhalin/eslint-config-base',
+    'airbnb-base',
     'airbnb-typescript/base',
+    '@vanyauhalin/eslint-config-base/lib/eslint',
+    '@vanyauhalin/eslint-config-base/lib/eslint-plugin-import',
+    '@vanyauhalin/eslint-config-base/lib/eslint-plugin-jsonc',
+    '@vanyauhalin/eslint-config-base/lib/eslint-plugin-promise',
+    '@vanyauhalin/eslint-config-base/lib/eslint-plugin-unicorn',
     ...[
       './eslint-plugin-import',
       './typescript-eslint',
     ].map((config) => require.resolve(config)),
+  ],
+  overrides: [
+    ...airbnb.overrides,
   ],
 };
