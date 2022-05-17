@@ -20,6 +20,7 @@ module.exports = utils.configure({
     ...typescript.rules,
     ...add([
       'jsx-a11y/label-has-associated-control',
+      'react/destructuring-assignment',
       'react/function-component-definition',
       'react/jsx-filename-extension',
       'react/jsx-max-props-per-line',

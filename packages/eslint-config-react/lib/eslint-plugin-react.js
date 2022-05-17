@@ -1,5 +1,11 @@
 module.exports = {
   /**
+   * Enforce consistent usage of destructuring assignment of props, state,
+   * and context.
+   * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/1fdf9bdc9788ce6986f8e82f883ff4d7e161f16f/docs/rules/destructuring-assignment.md
+   */
+  'react/destructuring-assignment': 'off',
+  /**
    * This option enforces a specific function type for function components.
    * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
    * @see https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/rules/react.js#L527
