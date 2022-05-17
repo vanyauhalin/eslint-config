@@ -15,6 +15,9 @@ module.exports = {
   extends: [
     'airbnb-base',
     'plugin:unicorn/recommended',
+    ...[
+      './eslint-plugin-jsonc',
+    ].map((config) => require.resolve(config)),
   ],
   parserOptions: {
     ecmaVersion: 2022,

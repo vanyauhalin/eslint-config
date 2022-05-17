@@ -9,8 +9,10 @@
 │  ├─ eslint-config-airbnb-base
 │  ├─ eslint-config-unicorn-recommended
 │  ├─ eslint-plugin-import
+│  ├─ eslint-plugin-jsonc
 │  ├─ eslint-plugin-promise
-│  └─ eslint-plugin-unicorn
+│  ├─ eslint-plugin-unicorn
+│  └─ jsonc-eslint-parser
 ├─ @vanyauhalin/eslint-config-react
 │  ├─ @vanyauhalin/eslint-config-typescript
 │  ├─ eslint-config-airbnb

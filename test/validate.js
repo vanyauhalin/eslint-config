@@ -7,14 +7,14 @@ const PACKAGES = resolve('packages');
 const REFERENCE = resolve('test/reference');
 
 for (const options of [
-  ['base', ['base.js']],
+  ['base', ['base.js', 'package.json']],
   ['react', ['react.tsx']],
   ['typescript', ['typescript.ts']],
 ]) {
   const [name, reference] = options;
   const fullName = `eslint-config-${name}`;
-  test(`${fullName} should throw an configs error`, async () => {
-    await Promise.all(reference.map(async (file) => {
+  for (const file of reference) {
+    test(`${file} should throw an ${fullName} error`, async () => {
       const extension = extname(file);
       const eslint = new ESLint({
         baseConfig: {
@@ -35,8 +35,8 @@ for (const options of [
         && result.fatalErrorCount === 0
       ));
       is(hasError, true);
-    }));
-  });
+    });
+  }
 }
 
 test.run();
