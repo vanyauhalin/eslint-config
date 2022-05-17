@@ -1,5 +1,3 @@
-const typescriptEslint = require('./typescript-eslint');
-
 /**
  * @type {import('eslint').Linter.BaseConfig}
  */
@@ -9,9 +7,7 @@ module.exports = {
     'airbnb-typescript/base',
     ...[
       './eslint-plugin-import',
+      './typescript-eslint',
     ].map((config) => require.resolve(config)),
   ],
-  rules: {
-    ...typescriptEslint,
-  },
 };
