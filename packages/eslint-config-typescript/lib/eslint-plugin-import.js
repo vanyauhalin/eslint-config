@@ -1,5 +1,5 @@
 const path = require('path');
-const base = require('@vanyauhalin/eslint-config-base');
+const imp = require('@vanyauhalin/eslint-config-base/lib/eslint-plugin-import');
 
 module.exports = {
   /**
@@ -9,7 +9,7 @@ module.exports = {
    * @see https://github.com/vanyauhalin/eslint-config/blob/packages/eslint-config-base/src/rules/eslint-plugin-import.js#L45
    */
   'import/no-extraneous-dependencies': ['error', {
-    devDependencies: base.rules['import/no-extraneous-dependencies'][1]
+    devDependencies: imp.rules['import/no-extraneous-dependencies'][1]
       .devDependencies
       .map((file) => file.replace(path.extname(file), '.{js,ts}')),
   }],
