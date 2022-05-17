@@ -23,10 +23,12 @@ importers:
       eslint: ^8.13.0
       eslint-config-airbnb-base: ^15.0.0
       eslint-plugin-import: ^2.26.0
+      eslint-plugin-promise: ^6.0.0
       eslint-plugin-unicorn: ^42.0.0
     dependencies:
       eslint-config-airbnb-base: 15.0.0_gwd37gqv3vjv3xlpl7ju3ag2qu
       eslint-plugin-import: 2.26.0_eslint@8.15.0
+      eslint-plugin-promise: 6.0.0_eslint@8.15.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.15.0
     devDependencies:
       eslint: 8.15.0
@@ -1200,6 +1202,15 @@ packages:
       jsx-ast-utils: 3.3.0
       language-tags: 1.0.5
       minimatch: 3.1.2
+    dev: false
+
+  /eslint-plugin-promise/6.0.0_eslint@8.15.0:
+    resolution: {integrity: sha512-7GPezalm5Bfi/E22PnQxDWH2iW9GTvAlUNTztemeHb6c1BniSyoeTrM87JkC0wYdi6aQrZX9p2qEiAno8aTcbw==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^7.0.0 || ^8.0.0
+    dependencies:
+      eslint: 8.15.0
     dev: false
 
   /eslint-plugin-react-hooks/4.5.0_eslint@8.15.0:
