@@ -4,7 +4,9 @@
 # Non-hierarchical tree of configs, plugins.
 @vanyauhalin/eslint-config-base
 ├─ eslint-config-airbnb-base
-└─ eslint-plugin-import
+├─ eslint-config-unicorn-recommended
+├─ eslint-plugin-import
+└─ eslint-plugin-unicorn
 ```
 
 ## Install
