@@ -1,4 +1,3 @@
-const eslintPluginPromise = require('./eslint-plugin-promise');
 const eslintPluginUnicorn = require('./eslint-plugin-unicorn');
 
 /**
@@ -12,14 +11,13 @@ module.exports = {
       './eslint',
       './eslint-plugin-import',
       './eslint-plugin-jsonc',
+      './eslint-plugin-promise',
     ].map((config) => require.resolve(config)),
   ],
   plugins: [
-    'promise',
     'unicorn',
   ],
   rules: {
-    ...eslintPluginPromise,
     ...eslintPluginUnicorn,
   },
 };
