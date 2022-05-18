@@ -1,5 +1,6 @@
 /**
- * @type {import('eslint').Linter.BaseConfig}
+ * @type {import('eslint').Linter.Config}
+ * @see https://github.com/eslint/eslint
  */
 module.exports = {
   env: {

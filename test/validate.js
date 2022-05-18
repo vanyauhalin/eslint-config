@@ -7,7 +7,7 @@ const PACKAGES = resolve('packages');
 const REFERENCE = resolve('test/reference');
 
 for (const options of [
-  ['base', ['base.js', 'package.json']],
+  ['base', ['base.js', 'base.yml', 'package.json']],
   ['react', ['react.tsx']],
   ['typescript', ['typescript.ts']],
 ]) {

@@ -1,5 +1,7 @@
 /**
- * @type {import('eslint').Linter.BaseConfig}
+ * @type {import('eslint').Linter.Config}
+ * @see https://github.com/ota-meshi/eslint-plugin-jsonc
+ * @see https://github.com/ota-meshi/jsonc-eslint-parser
  */
 module.exports = {
   extends: [

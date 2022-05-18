@@ -1,5 +1,6 @@
 /**
- * @type {import('eslint').Linter.BaseConfig}
+ * @type {import('eslint').Linter.Config}
+ * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
  */
 module.exports = {
   rules: {
