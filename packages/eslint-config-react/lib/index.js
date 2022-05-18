@@ -13,6 +13,7 @@ module.exports = {
     '@vanyauhalin/eslint-config-base/lib/eslint-plugin-jsonc',
     '@vanyauhalin/eslint-config-base/lib/eslint-plugin-promise',
     '@vanyauhalin/eslint-config-base/lib/eslint-plugin-unicorn',
+    '@vanyauhalin/eslint-config-base/lib/eslint-plugin-yml',
     '@vanyauhalin/eslint-config-typescript/lib/eslint-plugin-import',
     '@vanyauhalin/eslint-config-typescript/lib/typescript-eslint',
     ...[

@@ -12,6 +12,7 @@
 │  ├─ eslint-plugin-jsonc
 │  ├─ eslint-plugin-promise
 │  ├─ eslint-plugin-unicorn
+│  ├─ eslint-plugin-yml
 │  └─ jsonc-eslint-parser
 ├─ @vanyauhalin/eslint-config-react
 │  ├─ @vanyauhalin/eslint-config-typescript
