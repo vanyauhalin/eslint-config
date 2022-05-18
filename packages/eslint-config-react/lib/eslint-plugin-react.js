@@ -1,5 +1,6 @@
 /**
  * @type {import('eslint').Linter.Config}
+ * @see https://github.com/jsx-eslint/eslint-plugin-react
  */
 module.exports = {
   rules: {

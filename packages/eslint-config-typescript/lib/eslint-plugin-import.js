@@ -3,6 +3,7 @@ const imp = require('@vanyauhalin/eslint-config-base/lib/eslint-plugin-import');
 
 /**
  * @type {import('eslint').Linter.Config}
+ * @see https://github.com/import-js/eslint-plugin-import
  */
 module.exports = {
   rules: {
