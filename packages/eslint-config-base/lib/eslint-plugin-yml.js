@@ -13,4 +13,7 @@ module.exports = {
       parser: 'yaml-eslint-parser',
     },
   ],
+  ignorePatterns: [
+    'pnpm-lock.yaml',
+  ],
 };
