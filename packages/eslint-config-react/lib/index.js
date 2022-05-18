@@ -16,6 +16,7 @@ module.exports = {
       files: '*.tsx',
       extends: [
         'airbnb/hooks',
+        '@vanyauhalin/eslint-config-typescript/lib/eslint-plugin-import',
         ...[
           './eslint-plugin-jsx-a11y',
           './eslint-plugin-react',
