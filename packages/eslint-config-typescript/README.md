@@ -4,9 +4,8 @@
 # Non-hierarchical tree of configs, plugins.
 @vanyauhalin/eslint-config-base
 ├─ @typescript-eslint/eslint-plugin
-├─ @typescript-eslint/parser
 ├─ @vanyauhalin/eslint-config-base
-└─ eslint-config-airbnb-typescript
+└─ eslint-config-airbnb-typescript-base
 ```
 
 ## Install

@@ -12,8 +12,7 @@
 │  ├─ eslint-plugin-jsonc
 │  ├─ eslint-plugin-promise
 │  ├─ eslint-plugin-unicorn
-│  ├─ eslint-plugin-yml
-│  └─ jsonc-eslint-parser
+│  └─ eslint-plugin-yml
 ├─ @vanyauhalin/eslint-config-react
 │  ├─ @vanyauhalin/eslint-config-typescript
 │  ├─ eslint-config-airbnb
@@ -22,9 +21,8 @@
 │  └─ eslint-plugin-react-hooks
 └─ @vanyauhalin/eslint-config-typescript
    ├─ @typescript-eslint/eslint-plugin
-   ├─ @typescript-eslint/parser
    ├─ @vanyauhalin/eslint-config-base
-   └─ eslint-config-airbnb-typescript
+   └─ eslint-config-airbnb-typescript-base
 ```
 
 ## License
