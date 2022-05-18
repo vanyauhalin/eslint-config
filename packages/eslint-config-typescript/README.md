@@ -4,6 +4,8 @@
 # Non-hierarchical tree of configs, plugins.
 @vanyauhalin/eslint-config-base
 ├─ @typescript-eslint/eslint-plugin
+├─ @typescript-eslint/recommended
+├─ @typescript-eslint/recommended-requiring-type-checking
 ├─ @vanyauhalin/eslint-config-base
 └─ eslint-config-airbnb-typescript-base
 ```
