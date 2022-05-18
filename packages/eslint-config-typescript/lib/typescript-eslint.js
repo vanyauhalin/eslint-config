@@ -3,6 +3,10 @@
  * @see https://github.com/typescript-eslint/typescript-eslint
  */
 module.exports = {
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+  ],
   rules: {
     /**
      * Requires using either `T[]` or `Array<T>` for arrays.
