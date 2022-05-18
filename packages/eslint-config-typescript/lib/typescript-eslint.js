@@ -12,6 +12,10 @@ module.exports = {
       'airbnb-typescript/base',
       'plugin:@typescript-eslint/recommended',
       'plugin:@typescript-eslint/recommended-requiring-type-checking',
+      '@vanyauhalin/eslint-config-base/lib/eslint-plugin-import',
+      ...[
+        './eslint-plugin-import',
+      ].map((config) => require.resolve(config)),
     ],
     overrides: [
       ...airbnb.overrides,
