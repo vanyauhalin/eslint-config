@@ -1,3 +1,7 @@
+const jsonc = require(
+  '@vanyauhalin/eslint-config-base/lib/eslint-plugin-jsonc',
+);
+const yml = require('@vanyauhalin/eslint-config-base/lib/eslint-plugin-yml');
 const airbnb = require('eslint-config-airbnb-typescript/lib/shared');
 
 /**
@@ -20,5 +24,7 @@ module.exports = {
   ],
   overrides: [
     ...airbnb.overrides,
+    ...jsonc.overrides,
+    ...yml.overrides,
   ],
 };
