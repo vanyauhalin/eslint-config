@@ -5,7 +5,7 @@ const yml = require('@vanyauhalin/eslint-config-base/lib/eslint-plugin-yml');
 const airbnb = require('eslint-config-airbnb-typescript/lib/shared');
 
 /**
- * @type {import('eslint').Linter.BaseConfig}
+ * @type {import('eslint').Linter.Config}
  */
 module.exports = {
   extends: [
