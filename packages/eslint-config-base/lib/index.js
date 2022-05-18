@@ -6,6 +6,7 @@ module.exports = {
     'airbnb-base',
     ...[
       './eslint',
+      './eslint-plugin-eslint-comments',
       './eslint-plugin-import',
       './eslint-plugin-jsonc',
       './eslint-plugin-promise',

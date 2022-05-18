@@ -12,6 +12,7 @@ module.exports = {
     'airbnb-base',
     'airbnb-typescript/base',
     '@vanyauhalin/eslint-config-base/lib/eslint',
+    '@vanyauhalin/eslint-config-base/lib/eslint-plugin-eslint-comments',
     '@vanyauhalin/eslint-config-base/lib/eslint-plugin-import',
     '@vanyauhalin/eslint-config-base/lib/eslint-plugin-jsonc',
     '@vanyauhalin/eslint-config-base/lib/eslint-plugin-promise',
