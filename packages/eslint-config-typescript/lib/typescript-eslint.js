@@ -10,9 +10,10 @@ module.exports = {
     extends: [
       'airbnb-base',
       'airbnb-typescript/base',
+      '@vanyauhalin/eslint-config-base/lib/eslint',
+      '@vanyauhalin/eslint-config-base/lib/eslint-plugin-import',
       'plugin:@typescript-eslint/recommended',
       'plugin:@typescript-eslint/recommended-requiring-type-checking',
-      '@vanyauhalin/eslint-config-base/lib/eslint-plugin-import',
       ...[
         './eslint-plugin-import',
       ].map((config) => require.resolve(config)),
