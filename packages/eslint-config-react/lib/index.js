@@ -12,17 +12,5 @@ module.exports = {
   overrides: [
     ...typescript.overrides,
     ...typescriptLocal.overrides,
-    {
-      files: '*.tsx',
-      extends: [
-        'airbnb/hooks',
-        '@vanyauhalin/eslint-config-typescript/lib/eslint-plugin-import',
-        ...[
-          './eslint-plugin-jsx-a11y',
-          './eslint-plugin-react',
-          './eslint-plugin-unicorn',
-        ].map((config) => require.resolve(config)),
-      ],
-    },
   ],
 };
