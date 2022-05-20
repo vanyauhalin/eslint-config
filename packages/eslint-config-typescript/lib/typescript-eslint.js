@@ -1,5 +1,3 @@
-const airbnb = require('eslint-config-airbnb-typescript/lib/shared');
-
 /**
  * @type {import('eslint').Linter.Config}
  * @see https://github.com/typescript-eslint/typescript-eslint
@@ -15,12 +13,6 @@ module.exports = {
         '@vanyauhalin/eslint-config-base/lib/eslint-plugin-import',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        ...[
-          './eslint-plugin-import',
-        ].map((config) => require.resolve(config)),
-      ],
-      overrides: [
-        ...airbnb.overrides,
       ],
       rules: {
         /**
