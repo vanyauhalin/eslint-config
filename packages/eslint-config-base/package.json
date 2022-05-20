@@ -17,6 +17,7 @@
     "eslint-plugin-jsonc": "^2.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "eslint-plugin-sort-exports": "^0.6.0",
     "eslint-plugin-unicorn": "^42.0.0",
     "eslint-plugin-yml": "^1.0.0",
     "jsonc-eslint-parser": "^2.1.0",
