@@ -4,7 +4,7 @@ on:
   push:
     branches: main
     paths:
-      - "!**.md"
+      - "!*.md"
       - .github/workflows/test.yml
       - "packages/**"
       - "test/**"
