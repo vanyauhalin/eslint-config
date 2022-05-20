@@ -10,6 +10,7 @@ module.exports = {
       './eslint-plugin-import',
       './eslint-plugin-jsonc',
       './eslint-plugin-promise',
+      './eslint-plugin-sort-destructure-keys',
       './eslint-plugin-unicorn',
       './eslint-plugin-yml',
     ].map((config) => require.resolve(config)),
