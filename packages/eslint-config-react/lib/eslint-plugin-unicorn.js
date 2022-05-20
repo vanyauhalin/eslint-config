@@ -16,6 +16,21 @@ module.exports = {
             pascalCase: true,
           },
         }],
+        /**
+         * Disallow identifiers starting with `new` or `class`.
+         * Unfortunately, we have such properties as `className`.
+         * Override `eslint-config-base/lib/eslint-plugin-unicorn.js`.
+         * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/32ae4365849f8769c2474e89fcf74ebe057191ff/docs/rules/no-keyword-prefix.md
+         */
+        'unicorn/no-keyword-prefix': 'off',
+        /**
+         * Disallow the use of the `null` literal, to encourage using
+         * `undefined` instead.
+         * Sometimes need to return null from a function component.
+         * Override `eslint-config-base/lib/eslint-plugin-unicorn.js`.
+         * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/32ae4365849f8769c2474e89fcf74ebe057191ff/docs/rules/no-null.md
+         */
+        'unicorn/no-null': 'warn',
       },
     },
   ],
