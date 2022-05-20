@@ -3,6 +3,20 @@
  * @see https://github.com/import-js/eslint-plugin-import
  */
 module.exports = {
+  overrides: [
+    {
+      files: 'vite.config.js',
+      rules: {
+        /**
+         * Prohibit default exports.
+         * Override `eslint-config-base/lib/eslint-plugin-import.js`.
+         * @see https://github.com/import-js/eslint-plugin-import/blob/376747914b47fbdcf99212b9e9bd4d5e09825385/docs/rules/no-default-export.md
+         * @see https://github.com/vitejs/vite/blob/75c3bf65694bc89b395e03dabb81721871d24a9c/docs/config/index.md
+         */
+        'import/no-default-export': 'off',
+      },
+    },
+  ],
   rules: {
     /**
      * This rule enforces that all exports are declared at the bottom of
