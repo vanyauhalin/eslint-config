@@ -4,7 +4,7 @@ const typescript = require(
 
 /**
  * @type {import('eslint').Linter.Config}
- * @see https://github.com/typescript-eslint/typescript-eslint
+ * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0
  */
 module.exports = {
   overrides: [
