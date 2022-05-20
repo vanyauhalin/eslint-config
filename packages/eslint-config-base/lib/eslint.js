@@ -46,6 +46,15 @@ module.exports = {
      */
     'no-constant-condition': 'error',
     /**
+     * Disallows reassignment of function parameters.
+     * Ready to take the risks involved.
+     * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/no-param-reassign.md
+     * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/best-practices.js#L226
+     */
+    'no-param-reassign': ['error', {
+      props: false,
+    }],
+    /**
      * Disallows specified syntax.
      * Removed `for..of`.
      * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/no-restricted-syntax.md
