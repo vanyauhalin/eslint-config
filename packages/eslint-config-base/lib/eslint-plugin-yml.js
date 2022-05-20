@@ -1,7 +1,7 @@
 /**
  * @type {import('eslint').Linter.Config}
- * @see https://github.com/ota-meshi/eslint-plugin-yml
- * @see https://github.com/ota-meshi/yaml-eslint-parser
+ * @see https://github.com/ota-meshi/eslint-plugin-yml/tree/v1.0.0
+ * @see https://github.com/ota-meshi/yaml-eslint-parser/tree/v1.0.1
  */
 module.exports = {
   extends: [

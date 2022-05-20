@@ -1,7 +1,7 @@
 /**
  * @type {import('eslint').Linter.Config}
- * @see https://github.com/ota-meshi/eslint-plugin-jsonc
- * @see https://github.com/ota-meshi/jsonc-eslint-parser
+ * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1
+ * @see https://github.com/ota-meshi/jsonc-eslint-parser/tree/v2.1.0
  */
 module.exports = {
   extends: [
@@ -15,8 +15,8 @@ module.exports = {
         /**
          * Enforces a maximum line length.
          * This is fine, because sometimes have to write long strings.
-         * Override `max-len` in the `eslint-config-base/lib/eslint.js`.
-         * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/max-len.md
+         * @override `@vanyauhalin/eslint-config-base`
+         * @see https://github.com/eslint/eslint/tree/v8.13.0/docs/src/rules/max-len.md
          */
         'max-len': 'off',
       },
@@ -27,8 +27,8 @@ module.exports = {
       rules: {
         /**
          * Require object keys to be sorted.
-         * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/sort-keys.md
-         * @see https://github.com/keithamus/sort-package-json/blob/50f91021399d2a6676889b1e1430e1f6c769496c/index.js#L188
+         * @see https://github.com/keithamus/sort-package-json/tree/v1.57.0/index.js#L188
+         * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/sort-keys.md
          */
         'jsonc/sort-keys': [
           'error',
@@ -73,8 +73,7 @@ module.exports = {
   rules: {
     /**
      * Enforce line breaks after opening and before closing array brackets.
-     * @see https://ota-meshi.github.io/eslint-plugin-jsonc/rules/array-bracket-newline.html
-     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/array-bracket-newline.md
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/array-bracket-newline.md
      */
     'jsonc/array-bracket-newline': ['error', {
       minItems: 1,
@@ -82,28 +81,28 @@ module.exports = {
     }],
     /**
      * Disallow spaces inside of brackets.
-     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/array-bracket-spacing.md
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/array-bracket-spacing.md
      */
     'jsonc/array-bracket-spacing': ['error', 'never'],
     /**
      * Enforce line breaks between array elements.
-     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/array-element-newline.md
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/array-element-newline.md
      */
     'jsonc/array-element-newline': ['error', 'always'],
     /**
      * Enforce consistent comma style.
-     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/comma-style.md
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/comma-style.md
      */
     'jsonc/comma-style': ['error', 'last'],
     /**
      * Enforce consistent indentation.
-     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/indent.md
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/indent.md
      */
     'jsonc/indent': ['error', 2],
     /**
      * Enforce consistent spacing between keys and values in object literal
      * properties.
-     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/key-spacing.md
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/key-spacing.md
      */
     'jsonc/key-spacing': ['error', {
       beforeColon: false,
@@ -112,12 +111,12 @@ module.exports = {
     }],
     /**
      * Disallow octal escape sequences in string literals.
-     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/no-octal-escape.md
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/no-octal-escape.md
      */
     'jsonc/no-octal-escape': 'error',
     /**
      * Enforce consistent line breaks inside braces.
-     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/object-curly-newline.md
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/object-curly-newline.md
      */
     'jsonc/object-curly-newline': ['error', {
       consistent: true,
@@ -125,12 +124,12 @@ module.exports = {
     }],
     /**
      * Enforce consistent spacing inside braces.
-     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/object-curly-spacing.md
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/object-curly-spacing.md
      */
     'jsonc/object-curly-spacing': ['error', 'never'],
     /**
      * Enforce placing object properties on separate lines.
-     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/a4b57f523da8bb496f60361f62f43b2d3348623d/docs/rules/object-property-newline.md
+     * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/object-property-newline.md
      */
     'jsonc/object-property-newline': 'error',
   },

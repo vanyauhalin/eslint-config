@@ -1,6 +1,6 @@
 /**
  * @type {import('eslint').Linter.Config}
- * @see https://github.com/jsx-eslint/eslint-plugin-react
+ * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/v7.29.4
  */
 module.exports = {
   overrides: [
@@ -10,14 +10,14 @@ module.exports = {
         /**
          * Enforce consistent usage of destructuring assignment of props, state,
          * and context.
-         * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/1fdf9bdc9788ce6986f8e82f883ff4d7e161f16f/docs/rules/destructuring-assignment.md
+         * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/v7.29.4/docs/rules/destructuring-assignment.md
          */
         'react/destructuring-assignment': ['error', 'never'],
         /**
          * This option enforces a specific function type for function
          * components.
-         * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
-         * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb/rules/react.js#L527
+         * @override `airbnb-typescript`
+         * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/v7.29.4/docs/rules/function-component-definition.md
          */
         'react/function-component-definition': ['error', {
           namedComponents: 'function-declaration',
@@ -25,8 +25,8 @@ module.exports = {
         }],
         /**
          * Allow only typescript as `jsx` files.
-         * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/1fdf9bdc9788ce6986f8e82f883ff4d7e161f16f/docs/rules/jsx-filename-extension.md
-         * @see https://github.com/iamturns/eslint-config-airbnb-typescript/blob/91fd090f6fdd8d598a6ac6e9bb2c2ba33014e425/index.js#L17
+         * @override `airbnb-typescript`
+         * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/v7.29.4/docs/rules/jsx-filename-extension.md
          */
         'react/jsx-filename-extension': ['error', {
           extensions: ['tsx'],
@@ -34,16 +34,16 @@ module.exports = {
         /**
          * Limiting the maximum of props on a single line can improve
          * readability.
-         * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/1fdf9bdc9788ce6986f8e82f883ff4d7e161f16f/docs/rules/jsx-max-props-per-line.md
-         * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb/rules/react.js#L99
+         * @override `airbnb-typescript`
+         * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/v7.29.4/docs/rules/jsx-max-props-per-line.md
          */
         'react/jsx-max-props-per-line': ['error', {
           maximum: 1,
         }],
         /**
          * Sort props names alphabetically.
-         * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/1fdf9bdc9788ce6986f8e82f883ff4d7e161f16f/docs/rules/jsx-sort-props.md
-         * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb/rules/react.js#L144
+         * @override `airbnb-typescript`
+         * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/v7.29.4/docs/rules/jsx-sort-props.md
          */
         'react/jsx-sort-props': ['error', {
           callbacksLast: true,
@@ -51,14 +51,14 @@ module.exports = {
         }],
         /**
          * Prevent usage of dangerous JSX properties.
-         * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/1fdf9bdc9788ce6986f8e82f883ff4d7e161f16f/docs/rules/no-danger.md
-         * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb/rules/react.js#L169
+         * @override `airbnb-typescript`
+         * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/v7.29.4/docs/rules/no-danger.md
          */
         'react/no-danger': 'error',
         /**
          * Allow missing React when using JSX.
-         * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/1fdf9bdc9788ce6986f8e82f883ff4d7e161f16f/docs/rules/react-in-jsx-scope.md
-         * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb/rules/react.js#L230
+         * @override `airbnb-typescript`
+         * @see https://github.com/jsx-eslint/eslint-plugin-react/tree/v7.29.4/docs/rules/react-in-jsx-scope.md
          */
         'react/react-in-jsx-scope': 'off',
       },
