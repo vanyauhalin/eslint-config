@@ -3,7 +3,7 @@ const imp = require('@vanyauhalin/eslint-config-base/lib/eslint-plugin-import');
 
 /**
  * @type {import('eslint').Linter.Config}
- * @see https://github.com/import-js/eslint-plugin-import
+ * @see https://github.com/import-js/eslint-plugin-import/tree/v2.26.0
  */
 module.exports = {
   overrides: [
@@ -14,8 +14,8 @@ module.exports = {
          * Forbid the import of external modules that are not declared
          * in the `package.json`'s `dependencies`, `devDependencies`,
          * `optionalDependencies`, `peerDependencies`, or `bundledDependencies`.
-         * Override `eslint-config-base/lib/eslint-plugin-import.js`.
-         * @see https://github.com/import-js/eslint-plugin-import/blob/376747914b47fbdcf99212b9e9bd4d5e09825385/docs/rules/no-extraneous-dependencies.md
+         * @override `@vanyauhalin/eslint-config-base`
+         * @see https://github.com/import-js/eslint-plugin-import/tree/v2.26.0/docs/rules/no-extraneous-dependencies.md
          */
         'import/no-extraneous-dependencies': [
           ...(() => {

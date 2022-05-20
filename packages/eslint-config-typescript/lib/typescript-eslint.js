@@ -1,6 +1,6 @@
 /**
  * @type {import('eslint').Linter.Config}
- * @see https://github.com/typescript-eslint/typescript-eslint
+ * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0
  */
 module.exports = {
   overrides: [
@@ -17,22 +17,21 @@ module.exports = {
       rules: {
         /**
          * Requires using either `T[]` or `Array<T>` for arrays.
-         * @see https://typescript-eslint.io/rules/array-type
-         * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/array-type.md
+         * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0/packages/eslint-plugin/docs/rules/array-type.md
          */
         '@typescript-eslint/array-type': ['error', {
           default: 'array',
         }],
         /**
          * Enforces consistent usage of type imports.
-         * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/consistent-type-imports.md
+         * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0/packages/eslint-plugin/docs/rules/consistent-type-imports.md
          */
         '@typescript-eslint/consistent-type-imports': ['error', {
           prefer: 'type-imports',
         }],
         /**
          * Require explicit return types on functions and class methods.
-         * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
+         * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
          */
         '@typescript-eslint/explicit-function-return-type': ['error', {
           allowExpressions: true,
@@ -44,7 +43,7 @@ module.exports = {
         /**
          * Require explicit return and argument types on exported functions
          * and classes public class methods.
-         * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
+         * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
          */
         '@typescript-eslint/explicit-module-boundary-types': ['error', {
           allowArgumentsExplicitlyTypedAsAny: false,
@@ -54,8 +53,8 @@ module.exports = {
         }],
         /**
          * Require or disallow an empty line between class members.
-         * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/lines-between-class-members.md
-         * @see https://github.com/iamturns/eslint-config-airbnb-typescript/blob/91fd090f6fdd8d598a6ac6e9bb2c2ba33014e425/lib/shared.js#L107
+         * @override `airbnb-typescript/base`
+         * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0/packages/eslint-plugin/docs/rules/lines-between-class-members.md
          */
         '@typescript-eslint/lines-between-class-members': ['error', 'always', {
           exceptAfterSingleLine: true,
@@ -63,7 +62,7 @@ module.exports = {
         /**
          * Require a specific member delimiter style for interfaces and type
          * literals.
-         * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/member-delimiter-style.md
+         * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0/packages/eslint-plugin/docs/rules/member-delimiter-style.md
          */
         '@typescript-eslint/member-delimiter-style': ['error', {
           multiline: {
@@ -78,7 +77,7 @@ module.exports = {
         }],
         /**
          * Require a consistent member declaration order.
-         * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/member-ordering.md
+         * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0/packages/eslint-plugin/docs/rules/member-ordering.md
          */
         '@typescript-eslint/member-ordering': ['error', {
           default: {
@@ -174,12 +173,12 @@ module.exports = {
         }],
         /**
          * Enforces using a particular method signature syntax.
-         * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/method-signature-style.md
+         * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0/packages/eslint-plugin/docs/rules/method-signature-style.md
          */
         '@typescript-eslint/method-signature-style': ['error', 'method'],
         /**
          * Requires expressions of type void to appear in statement position.
-         * @see https://github.com/typescript-eslint/typescript-eslint/blob/e97aeb2fb0b393a1d690f0af0e6f3f485fc59937/packages/eslint-plugin/docs/rules/no-confusing-void-expression.md
+         * @see https://github.com/typescript-eslint/typescript-eslint/tree/v5.21.0/packages/eslint-plugin/docs/rules/no-confusing-void-expression.md
          */
         '@typescript-eslint/no-confusing-void-expression': ['error'],
       },
@@ -190,8 +189,8 @@ module.exports = {
         /**
          * Enforces a maximum number of classes per file.
          * Having many classes in single file describing types is normal.
-         * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/max-classes-per-file.md
-         * @see https://github.com/airbnb/javascript/blob/7fdc87a8be565fa1f1779dc1d6b6461b953f7d85/packages/eslint-config-airbnb-base/rules/best-practices.js#L66
+         * @override `airbnb-base`
+         * @see https://github.com/eslint/eslint/tree/v8.13.0/docs/src/rules/max-classes-per-file.md
          */
         'max-classes-per-file': 'off',
       },
