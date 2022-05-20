@@ -19,9 +19,10 @@
 ├─ @vanyauhalin/eslint-config-react
 │  ├─ @vanyauhalin/eslint-config-typescript
 │  ├─ eslint-config-airbnb
+│  ├─ eslint-config-airbnb/hooks
+│  ├─ eslint-config-airbnb-typescript
 │  ├─ eslint-plugin-jsx-a11y
-│  ├─ eslint-plugin-react
-│  └─ eslint-plugin-react-hooks
+│  └─ eslint-plugin-react
 └─ @vanyauhalin/eslint-config-typescript
    ├─ @typescript-eslint/eslint-plugin
    ├─ @typescript-eslint/recommended
