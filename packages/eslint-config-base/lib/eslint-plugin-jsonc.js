@@ -11,6 +11,15 @@ module.exports = {
     {
       files: '*.json',
       parser: 'jsonc-eslint-parser',
+      rules: {
+        /**
+         * Enforces a maximum line length.
+         * This is fine, because sometimes have to write long strings.
+         * Override `max-len` in the `eslint-config-base/lib/eslint.js`.
+         * @see https://github.com/eslint/eslint/blob/938dbdd6c310784cc8a7329efaeb0e34321b9e1f/docs/src/rules/max-len.md
+         */
+        'max-len': 'off',
+      },
     },
     {
       files: 'package.json',
