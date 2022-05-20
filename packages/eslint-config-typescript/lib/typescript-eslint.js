@@ -194,6 +194,21 @@ module.exports = {
          */
         'max-classes-per-file': 'off',
       },
+      /**
+       * Enforces a maximum line length.
+       * Types are pretty verbose.
+       * @override `@vanyauhalin/eslint-config-base`
+       * @see https://github.com/eslint/eslint/tree/v8.13.0/docs/src/rules/max-len.md
+       */
+      'max-len': ['error', {
+        code: 120,
+        ignoreComments: true,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: false,
+        ignoreTemplateLiterals: true,
+        ignoreUrls: true,
+        tabWidth: 2,
+      }],
     },
   ],
 };
