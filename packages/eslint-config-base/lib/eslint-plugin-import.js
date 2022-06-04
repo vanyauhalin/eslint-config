@@ -57,10 +57,7 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: [
         '**/test/**/*.js',
-        '**/.chokidarrc.js',
-        '**/.esbuildrc.js',
-        '**/.postcssrc.js',
-        '**/.scriptsrc.js',
+        '**/scripts.js',
         '**/vite.config.js',
       ],
     }],
