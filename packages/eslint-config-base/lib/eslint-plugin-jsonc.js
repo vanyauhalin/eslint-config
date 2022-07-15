@@ -26,6 +26,20 @@ module.exports = {
       parser: 'jsonc-eslint-parser',
       rules: {
         /**
+         * Require array values to be sorted.
+         * @see https://github.com/keithamus/sort-package-json/tree/v1.57.0/index.js#L188
+         * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/v2.2.1/docs/rules/sort-array-values.md
+         */
+        'jsonc/sort-array-values': [
+          'error',
+          {
+            pathPattern: '^keywords|workspaces$',
+            order: {
+              type: 'asc',
+            },
+          },
+        ],
+        /**
          * Require object keys to be sorted.
          * @see https://github.com/keithamus/sort-package-json/tree/v1.57.0/index.js#L188
          * @see https://github.com/ota-meshi/eslint-plugin-jsonc/tree/v2.2.1/docs/rules/sort-keys.md
@@ -46,7 +60,10 @@ module.exports = {
               'license',
               'author',
               'type',
+              'exports',
               'main',
+              'module',
+              'types',
               'bin',
               'files',
               'workspaces',
@@ -61,7 +78,8 @@ module.exports = {
             ],
           },
           {
-            pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
+            pathPattern: '^scripts'
+              + '|(?:dev|peer|optional|bundled)?[Dd]ependencies|engines$',
             order: {
               type: 'asc',
             },
