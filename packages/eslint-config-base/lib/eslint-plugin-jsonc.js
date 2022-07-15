@@ -96,7 +96,7 @@ module.exports = {
          * @see https://www.typescriptlang.org/tsconfig
          * @see https://github.com/ota-meshi/eslint-plugin-jsonc/blob/v2.2.1/docs/rules/sort-array-values.md
          */
-        'json/sort-array-values': [
+        'jsonc/sort-array-values': [
           'error',
           {
             pathPattern: '^files|include|exclude'
