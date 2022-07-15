@@ -1,32 +1,27 @@
-name: test
+name: ci
 
 on:
   push:
     branches: main
     paths:
       - "!*.md"
-      - .github/workflows/test.yml
-      - "packages/**"
-      - "test/**"
-      - .eslintrc.json
-      - package.json
-      - pnpm-lock.yaml
-      - pnpm-workspace.yaml
+  pull_request:
+    branches: main
+    paths:
+      - "!*.md"
 
 jobs:
-  test:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           registry-url: "https://npm.pkg.github.com"
           scope: "@vanyauhalin"
-      - run: ls -la
-      - run: npm i -g pnpm
-      - run: pnpm i
+      - run: npm i -g pnpm && pnpm i
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: pnpm test
       - run: pnpm lint
+      - run: pnpm test
