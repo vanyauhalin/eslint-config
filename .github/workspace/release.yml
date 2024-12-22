@@ -1,0 +1,33 @@
+name: Release
+
+permissions:
+  contents: write
+
+on:
+  push:
+    tags:
+    - v*
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup mise
+      uses: jdx/mise-action@v2
+
+    - name: Install Dependencies
+      run: pnpm install --frozen-lockfile
+
+    - name: Build Package
+      run: pnpm build-package
+
+    - name: Prepare Package
+      run: pnpm prepare-package
+
+    - name: Publish Package
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
+      run: pnpm publish --no-git-checks

@@ -1,0 +1,45 @@
+name: Audit
+
+on:
+  pull_request:
+    branches:
+    - main
+  push:
+    branches:
+    - main
+
+jobs:
+  audit:
+    strategy:
+      matrix:
+        os:
+        - ubuntu-latest
+        - windows-latest
+        node:
+        - 18
+        - 20
+        - 22
+
+    runs-on: ${{matrix.os}}
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Prepare mise
+      run: sed --in-place 's/\(^node = \)".*"/\1"prefix:${{matrix.node}}"/' mise.toml
+
+    - name: Setup mise
+      uses: jdx/mise-action@v2
+
+    - name: Install Dependencies
+      run: pnpm install --frozen-lockfile
+
+    - name: Build Package
+      run: pnpm build-package
+
+    - name: Lint Package
+      run: pnpm lint-package
+
+    - name: Test Package
+      run: pnpm test-package
