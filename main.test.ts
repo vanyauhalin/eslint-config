@@ -4,6 +4,10 @@ import path from "node:path"
 import {test} from "node:test"
 import {RuleTester} from "@typescript-eslint/rule-tester"
 
+interface Config {
+	files: string[]
+}
+
 // The code listed below might appear weird, but:
 //
 // 1. The Node.js native test runner was chosen for its simplicity and the
@@ -34,17 +38,39 @@ RuleTester.itOnly = function itOnly(n, cb) {
 }
 
 async function main(): Promise<void> {
-	let a = process.argv.splice(2)
-	let d = process.cwd()
+	let c = await parse(process)
+	await run(process.cwd(), c)
+}
 
-	let j = a[0]
-	let o = JSON.parse(j)
+async function parse(p: NodeJS.Process): Promise<Config> {
+	let s = await new Promise<string>((res, rej) => {
+		let s = ""
 
-	for (let f of o.files) {
+		p.stdin.on("data", (d) => {
+			s += d.toString()
+		})
+
+		p.stdin.on("end", () => {
+			res(s)
+		})
+
+		p.stdin.on("error", (e) => {
+			rej(e)
+		})
+	})
+
+	return JSON.parse(s)
+}
+
+async function run(d: string, c: Config): Promise<void> {
+	for (let f of c.files) {
 		f = path.join(d, f)
-		if (f !== import.meta.filename) {
-			await import(`file://${f}`)
+
+		if (f === import.meta.filename) {
+			continue
 		}
+
+		await import(`file://${f}`)
 	}
 }
 
