@@ -1,3 +1,5 @@
+/* eslint-disable no-void, unicorn/prefer-top-level-await */
+
 import path from "node:path"
 import {test} from "node:test"
 import {RuleTester} from "@typescript-eslint/rule-tester"
@@ -11,6 +13,9 @@ import {RuleTester} from "@typescript-eslint/rule-tester"
 // 2. However, the part of the API of the native Node.js test runner was
 // introduced only in version 20, which conflicts with the idea that the project
 // needed to be tested on older Node.js versions.
+//
+// 3. In addition, the top-level await is not used for the same reason: to be
+// able to run this code on older versions of Node.js.
 
 RuleTester.afterAll = function afterAll(cb) {
 	test.after(cb)
@@ -21,24 +26,28 @@ RuleTester.describe = function describe(_, cb) {
 }
 
 RuleTester.it = function it(n, cb) {
-	// eslint-disable-next-line no-void
 	void test(n, cb)
 }
 
 RuleTester.itOnly = function itOnly(n, cb) {
-	// eslint-disable-next-line no-void
 	void test(n, {only: true}, cb)
 }
 
-let a = process.argv.splice(2)
-let d = process.cwd()
+async function main(): Promise<void> {
+	let a = process.argv.splice(2)
+	let d = process.cwd()
 
-let j = a[0]
-let o = JSON.parse(j)
+	let j = a[0]
+	let o = JSON.parse(j)
 
-for (let f of o.files) {
-	f = path.join(d, f)
-	if (f !== import.meta.filename) {
-		await import(`file://${f}`)
+	for (let f of o.files) {
+		f = path.join(d, f)
+		if (f !== import.meta.filename) {
+			await import(`file://${f}`)
+		}
 	}
 }
+
+void main()
+
+/* eslint-enable no-void, unicorn/prefer-top-level-await */
