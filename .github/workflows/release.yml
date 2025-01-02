@@ -28,7 +28,9 @@ jobs:
       run: pnpm prepare-package
 
     - name: Configure Registry
-      run: pnpm config set registry https://registry.npmjs.org
+      run: |
+        pnpm config set //registry.npmjs.org/:_authToken "\${NODE_AUTH_TOKEN}"
+        pnpm config set registry https://registry.npmjs.org
 
     - name: Publish Package
       env:
