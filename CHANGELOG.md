@@ -6,7 +6,9 @@ This document records all notable changes to the project, following the [Keep a 
 
 There are no noticeable changes in version [unreleased].
 
-## [0.0.1] - 20xx-xx-xx
+## [0.0.1] - 2025-01-02
+
+This is the first, initial release. The version 0.0.1 was chosen to test the publishing process and attempt to integrate it into other projects. If everything functions well, the version will be updated to 0.1.0, possibly with some changes.
 
 ### Added
 
