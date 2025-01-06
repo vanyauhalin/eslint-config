@@ -19,13 +19,8 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    - name: Setup Git
-      run: |
-        re=$(curl --silent --header "Accept: application/json" "https://api.github.com/users/github-actions%5Bbot%5D")
-        lo=$(echo "$re" | jq --raw-output ".login")
-        id=$(echo "$re" | jq --raw-output ".id")
-        git config --global user.name "$lo"
-        git config --global user.email "$id+$lo@users.noreply.github.com"
+    - name: Setup GitHub Actions Bot
+      uses: vanyauhalin/action-gh-bot@v0
 
     - name: Setup mise
       uses: jdx/mise-action@v2
