@@ -32,21 +32,6 @@ jobs:
       run: pnpm build-docs
 
     - name: Publish Documentation
-      working-directory: docs
-      run: |
-        un=$(git config --get user.name)
-        ru="${{github.server_url}}/${{github.repository}}.git"
-        ru=$(echo "$ru" | sed "s#https://#https://$un:${{github.token}}@#")
-
-        td=$(mktemp -d)
-        git clone --quiet --no-checkout --single-branch --branch gh-pages "$ru" "$td"
-
-        mv "$td/.git" .
-        git add .
-
-        if git diff-index --quiet HEAD --; then
-          echo "No changes to commit"
-        else
-          git commit --quiet --message "$(date --utc)"
-          git push
-        fi
+      uses: vanyauhalin/action-gh-pages@v0
+      with:
+        working-directory: docs
