@@ -6,6 +6,12 @@ This document records all notable changes to the project, following the [Keep a 
 
 There are no noticeable changes in version [unreleased].
 
+## [0.0.3] - 2025-01-21
+
+### Fixed
+
+- Temporarily disable the `es-x/no-nonstandard-*-prototype-properties` rules ([782fb28]).
+
 ## [0.0.2] - 2025-01-21
 
 ### Changed
@@ -60,10 +66,12 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 
-[Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.2...HEAD/
+[Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.3...HEAD/
+[0.0.3]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.3/
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[782fb28]: https://github.com/vanyauhalin/eslint-config/commit/782fb2885dcb51019b8c1ca69b3593c26fa43823/
 [8d8e35d]: https://github.com/vanyauhalin/eslint-config/commit/8d8e35d613ad546362f05a339fbd4e6f3c18b73f/
 [565f4bc]: https://github.com/vanyauhalin/eslint-config/commit/565f4bc41552e5f19f638405ee9dc8e2801edd4c/
 
