@@ -45,7 +45,7 @@
 		"lint-package": "eslint .",
 		"prepare-package": "clear-package-json package.json --output package.json",
 		"serve-docs": "eslint-config-inspector --config main.ts --port 8080 --open false",
-		"test-package": "tsc && tsc --project tsconfig.test.json --showConfig | node --import tsx/esm main.test.ts"
+		"test-package": "tsc"
 	},
 	"devDependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "4.4.1",

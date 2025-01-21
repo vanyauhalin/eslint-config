@@ -36,20 +36,8 @@ import jsoncParser from "jsonc-eslint-parser"
 import tomlParser from "toml-eslint-parser"
 import yamlParser from "yaml-eslint-parser"
 import {ignorePattern} from "./fragments/max-len.ts"
-import importOrder from "./rules/import-order.ts"
 
 const e = "error"
-
-const plugin: TSESLint.FlatConfig.Plugin = {
-	meta: {
-		name: "@vanyauhalin",
-		// The version property is omitted because the plugin is an internal part of
-		// the configuration and is not intended to be published yet.
-	},
-	rules: {
-		"import-order": importOrder,
-	},
-}
 
 /* eslint-disable stylistic/max-len */
 
@@ -278,11 +266,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/unicorn-plugin",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		plugins: {unicorn},
-	},
-	{
-		name: "@vanyauhalin/vanyauhalin-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
-		plugins: {vanyauhalin: plugin},
 	},
 	{
 		name: "@vanyauhalin/wc-plugin",
@@ -1526,13 +1509,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/switch-case-braces": [e, "avoid"],
 			"unicorn/text-encoding-identifier-case": e,
 			"unicorn/throw-new-error": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/vanyauhalin-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
-		rules: {
-			"vanyauhalin/import-order": e,
 		},
 	},
 	{
