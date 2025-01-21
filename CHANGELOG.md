@@ -4,9 +4,15 @@ This document records all notable changes to the project, following the [Keep a 
 
 ## [Unreleased]
 
+<!-- There are no noticeable changes in version [unreleased]. -->
+
+### Changed
+
+- **Breaking** Remove the custom rule that enforces the import order ([8d8e35d]).
+
 ### Fixed
 
-- Fixed peer dependencies with major version zero to use range notation ([565f4bc4]).
+- Fix peer dependencies with major version zero to use range notation ([565f4bc]).
 
 ## [0.0.1] - 2025-01-02
 
@@ -45,7 +51,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 - Add the [eslint-plugin-unicorn] to the configuration.
 - Add the [eslint-plugin-wc] to the configuration.
 - Add the [eslint-plugin-yml] to the configuration.
-- Add a custom rule to enforce the import order.
+- Add the custom rule to enforce the import order.
 
 <!-- Footnotes -->
 
@@ -55,7 +61,8 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...HEAD/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
-[565f4bc4]: https://github.com/vanyauhalin/moondusttheme/commit/565f4bc41552e5f19f638405ee9dc8e2801edd4c/
+[8d8e35d]: https://github.com/vanyauhalin/eslint-config/commit/8d8e35d613ad546362f05a339fbd4e6f3c18b73f/
+[565f4bc]: https://github.com/vanyauhalin/eslint-config/commit/565f4bc41552e5f19f638405ee9dc8e2801edd4c/
 
 [@eslint-community/eslint-plugin-eslint-comments]: https://www.npmjs.com/package/@eslint-community/eslint-plugin-eslint-comments/
 [@html-eslint/eslint-plugin]: https://www.npmjs.com/package/@html-eslint/eslint-plugin/
