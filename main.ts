@@ -616,7 +616,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/eslint-comments-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			"eslint-comments/disable-enable-pair": e,
+			"eslint-comments/disable-enable-pair": [e, {allowWholeFile: true}],
 			"eslint-comments/no-aggregating-enable": e,
 			"eslint-comments/no-duplicate-disable": e,
 			"eslint-comments/no-unlimited-disable": e,
