@@ -51,6 +51,7 @@ This configuration does not utilize any other configurations, only plugins:
 - [eslint-config-flat-gitignore]*
 - [eslint-plugin-ascii]
 - [eslint-plugin-clsx]
+- [eslint-plugin-de-morgan]
 - [eslint-plugin-depend]
 - [eslint-plugin-es-x]
 - [eslint-plugin-github]
@@ -98,6 +99,7 @@ This configuration is written specifically for ESLint 9 and, therefore, does not
 [eslint-config-flat-gitignore]: https://www.npmjs.com/package/eslint-config-flat-gitignore/
 [eslint-plugin-ascii]: https://www.npmjs.com/package/eslint-plugin-ascii/
 [eslint-plugin-clsx]: https://www.npmjs.com/package/eslint-plugin-clsx/
+[eslint-plugin-de-morgan]: https://github.com/azat-io/eslint-plugin-de-morgan/
 [eslint-plugin-depend]: https://www.npmjs.com/package/eslint-plugin-depend/
 [eslint-plugin-es-x]: https://www.npmjs.com/package/eslint-plugin-es-x/
 [eslint-plugin-github]: https://www.npmjs.com/package/eslint-plugin-github/

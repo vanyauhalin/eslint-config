@@ -8,6 +8,7 @@ import type {TSESLint} from "@typescript-eslint/utils"
 import gitignore from "eslint-config-flat-gitignore"
 import ascii from "eslint-plugin-ascii"
 import clsx from "eslint-plugin-clsx"
+import deMorgan from "eslint-plugin-de-morgan"
 import depend from "eslint-plugin-depend"
 import esX from "eslint-plugin-es-x"
 import github from "eslint-plugin-github"
@@ -128,6 +129,11 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/clsx-plugin",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		plugins: {clsx},
+	},
+	{
+		name: "@vanyauhalin/de-morgan",
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		plugins: {"de-morgan": deMorgan},
 	},
 	{
 		name: "@vanyauhalin/depend-plugin",
@@ -454,6 +460,14 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"clsx/no-spreading": e,
 			"clsx/prefer-logical-over-objects": e,
 			"clsx/prefer-merged-neighboring-elements": e,
+		},
+	},
+	{
+		name: "@vanyauhalin/de-morgan-rules",
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		rules: {
+			"de-morgan/no-negated-conjunction": e,
+			"de-morgan/no-negated-disjunction": e,
 		},
 	},
 	{
