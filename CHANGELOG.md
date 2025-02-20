@@ -6,6 +6,17 @@ This document records all notable changes to the project, following the [Keep a 
 
 There are no noticeable changes in version [unreleased].
 
+## [0.0.4] - 2025-02-20
+
+### Added
+
+- Add rules to the eslint configuration files ([d73c0d8]).
+- Add the [eslint-plugin-de-morgan] package to the configuration ([8b759b0]).
+
+### Changed
+
+- Allow the use of eslint disable comments for the entire file ([02e9493]).
+
 ## [0.0.3] - 2025-01-21
 
 ### Fixed
@@ -66,11 +77,15 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 
-[Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.3...HEAD/
+[Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.4...HEAD/
+[0.0.4]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.4/
 [0.0.3]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.3/
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[8b759b0]: https://github.com/vanyauhalin/eslint-config/commit/8b759b0cf15a5c46300f2142324157ac018a7795/
+[d73c0d8]: https://github.com/vanyauhalin/eslint-config/commit/d73c0d8592f4f665025186bc82042e09a53cd165/
+[02e9493]: https://github.com/vanyauhalin/eslint-config/commit/02e9493d48bb1d41666af2a298a873dc80c759df/
 [782fb28]: https://github.com/vanyauhalin/eslint-config/commit/782fb2885dcb51019b8c1ca69b3593c26fa43823/
 [8d8e35d]: https://github.com/vanyauhalin/eslint-config/commit/8d8e35d613ad546362f05a339fbd4e6f3c18b73f/
 [565f4bc]: https://github.com/vanyauhalin/eslint-config/commit/565f4bc41552e5f19f638405ee9dc8e2801edd4c/
@@ -82,6 +97,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [eslint-config-flat-gitignore]: https://www.npmjs.com/package/eslint-config-flat-gitignore/
 [eslint-plugin-ascii]: https://www.npmjs.com/package/eslint-plugin-ascii/
 [eslint-plugin-clsx]: https://www.npmjs.com/package/eslint-plugin-clsx/
+[eslint-plugin-de-morgan]: https://github.com/azat-io/eslint-plugin-de-morgan/
 [eslint-plugin-depend]: https://www.npmjs.com/package/eslint-plugin-depend/
 [eslint-plugin-es-x]: https://www.npmjs.com/package/eslint-plugin-es-x/
 [eslint-plugin-github]: https://www.npmjs.com/package/eslint-plugin-github/
