@@ -1634,6 +1634,13 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		},
 	},
 	{
+		name: "@vanyauhalin/eslint-config-file",
+		files: ["**/eslint.config.cjs", "**/eslint.config.js", "**/eslint.config.mjs", "**/eslint.config.cts", "**/eslint.config.mts", "**/eslint.config.ts"],
+		rules: {
+			"import-x/no-default-export": "off",
+		},
+	},
+	{
 		name: "@vanyauhalin/tsconfig-file",
 		files: ["**/tsconfig.*.json", "**/tsconfig.json"],
 		rules: {
