@@ -962,7 +962,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"n/no-exports-assign": e,
 			"n/no-new-require": e,
 			"n/no-path-concat": e,
-			"n/no-process-exit": e,
+			// "n/no-process-exit": e,  // The unicorn/no-process-exit has better functionality.
 			"n/prefer-global/buffer": e,
 			"n/prefer-global/console": e,
 			"n/prefer-global/process": e,
