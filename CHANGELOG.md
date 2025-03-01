@@ -6,6 +6,17 @@ This document records all notable changes to the project, following the [Keep a 
 
 There are no noticeable changes in version [unreleased].
 
+## [0.0.5] - 2025-03-01
+
+### Changed
+
+- Disable the `n/no-process-exit` rule ([70f4caf]).
+- Allow variables with names containing multiple underscores to be unused ([87eac07]).
+
+### Fixed
+
+- Disable a few TypeScript-specific rules for JavaScript files ([2c429e9]).
+
 ## [0.0.4] - 2025-02-20
 
 ### Added
@@ -77,12 +88,16 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 
-[Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.4...HEAD/
-[0.0.4]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.4/
-[0.0.3]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.3/
-[0.0.2]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.2/
+[Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.5...HEAD/
+[0.0.5]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.4...v0.0.5/
+[0.0.4]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.3...v0.0.4/
+[0.0.3]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.2...v0.0.3/
+[0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[2c429e9]: https://github.com/vanyauhalin/eslint-config/commit/2c429e9710898efb5e87470fc60c7f14d75300dd/
+[87eac07]: https://github.com/vanyauhalin/eslint-config/commit/87eac0717bb4d99233a8c84b0f379e63ecd691da/
+[70f4caf]: https://github.com/vanyauhalin/eslint-config/commit/70f4cafc7d331e9447a41d01b467981a84eeef6b/
 [8b759b0]: https://github.com/vanyauhalin/eslint-config/commit/8b759b0cf15a5c46300f2142324157ac018a7795/
 [d73c0d8]: https://github.com/vanyauhalin/eslint-config/commit/d73c0d8592f4f665025186bc82042e09a53cd165/
 [02e9493]: https://github.com/vanyauhalin/eslint-config/commit/02e9493d48bb1d41666af2a298a873dc80c759df/
