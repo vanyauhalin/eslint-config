@@ -1371,6 +1371,14 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		},
 	},
 	{
+		name: "@vanyauhalin/typescript-rules/javascript-exceptions",
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs"],
+		rules: {
+			"typescript/explicit-function-return-type": "off",
+			"typescript/explicit-module-boundary-types": "off",
+		},
+	},
+	{
 		name: "@vanyauhalin/typescript-rules/html-script-exceptions",
 		files: ["**/*.html"],
 		rules: {
