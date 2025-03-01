@@ -1318,7 +1318,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"typescript/no-unsafe-function-type": e,
 			"typescript/no-unsafe-unary-minus": e,
 			"typescript/no-unused-expressions": e,
-			"typescript/no-unused-vars": [e, {args: "all", argsIgnorePattern: "^_", caughtErrors: "all", caughtErrorsIgnorePattern: "^_", destructuredArrayIgnorePattern: "^_", ignoreRestSiblings: true, varsIgnorePattern: "^_"}],
+			"typescript/no-unused-vars": [e, {args: "all", argsIgnorePattern: "^_+", caughtErrors: "all", caughtErrorsIgnorePattern: "^_+", destructuredArrayIgnorePattern: "^_+", ignoreRestSiblings: true, varsIgnorePattern: "^_+"}],
 			"typescript/no-useless-constructor": e,
 			"typescript/no-useless-empty-export": e,
 			"typescript/no-wrapper-object-types": e,
