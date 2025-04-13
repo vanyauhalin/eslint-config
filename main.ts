@@ -40,8 +40,6 @@ import {ignorePattern} from "./fragments/max-len.ts"
 
 const e = "error"
 
-/* eslint-disable stylistic/max-len */
-
 const config: TSESLint.FlatConfig.ConfigArray = [
 	//
 	// Ignores
@@ -140,10 +138,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		plugins: {depend},
 	},
-	// {
-	// 	Does not support ESLint 9. See https://github.com/phanect/eslint-plugin-editorconfig/issues/68/.
-	// 	name: "@vanyauhalin/editorconfig-plugin",
-	// },
 	{
 		name: "@vanyauhalin/es-x-plugin",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
@@ -209,10 +203,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		plugins: {n},
 	},
-	// {
-	// 	Use eslint-plugin-depend instead.
-	// 	name: "@vanyauhalin/no-jquery-plugin",
-	// },
 	{
 		name: "@vanyauhalin/no-unsanitized-plugin",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
@@ -283,10 +273,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		files: ["**/*.yaml", "**/*.yml"],
 		plugins: {yml},
 	},
-	// {
-	// 	Use eslint-plugin-depend instead.
-	// 	name: "@vanyauhalin/you-dont-need-momentjs-plugin",
-	// },
 
 	//
 	// Rules and Settings
@@ -296,8 +282,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/builtin-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			// no-duplicate-imports // Does not support TypeScript imports. Use import-x/no-duplicates instead.
-			// no-undefined         // Does not work well with TypeScript.
 			"camelcase": e,
 			"constructor-super": e,
 			"curly": e,
@@ -350,7 +334,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"no-implicit-globals": e,
 			"no-implied-eval": e,
 			"no-import-assign": e,
-			// "no-inline-comments": e, // Sometimes, you want to add a short description, for example, convert milliseconds to seconds.
 			"no-invalid-regexp": e,
 			"no-invalid-this": e,
 			"no-irregular-whitespace": e,
@@ -527,71 +510,42 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"es-x/no-map-groupby": e,
 			"es-x/no-new-target": e,
 			"es-x/no-nonstandard-array-properties": e,
-			// "es-x/no-nonstandard-array-prototype-properties": e,
 			"es-x/no-nonstandard-arraybuffer-properties": e,
-			// "es-x/no-nonstandard-arraybuffer-prototype-properties": e,
 			"es-x/no-nonstandard-atomics-properties": e,
 			"es-x/no-nonstandard-bigint-properties": e,
-			// "es-x/no-nonstandard-bigint-prototype-properties": e,
 			"es-x/no-nonstandard-boolean-properties": e,
-			// "es-x/no-nonstandard-boolean-prototype-properties": e,
 			"es-x/no-nonstandard-dataview-properties": e,
-			// "es-x/no-nonstandard-dataview-prototype-properties": e,
 			"es-x/no-nonstandard-date-properties": e,
-			// "es-x/no-nonstandard-date-prototype-properties": e,
 			"es-x/no-nonstandard-finalizationregistry-properties": e,
-			// "es-x/no-nonstandard-finalizationregistry-prototype-properties": e,
 			"es-x/no-nonstandard-function-properties": e,
 			"es-x/no-nonstandard-intl-collator-properties": e,
-			// "es-x/no-nonstandard-intl-collator-prototype-properties": e,
 			"es-x/no-nonstandard-intl-datetimeformat-properties": e,
-			// "es-x/no-nonstandard-intl-datetimeformat-prototype-properties": e,
 			"es-x/no-nonstandard-intl-displaynames-properties": e,
-			// "es-x/no-nonstandard-intl-displaynames-prototype-properties": e,
 			"es-x/no-nonstandard-intl-listformat-properties": e,
-			// "es-x/no-nonstandard-intl-listformat-prototype-properties": e,
 			"es-x/no-nonstandard-intl-locale-properties": e,
-			// "es-x/no-nonstandard-intl-locale-prototype-properties": e,
 			"es-x/no-nonstandard-intl-numberformat-properties": e,
-			// "es-x/no-nonstandard-intl-numberformat-prototype-properties": e,
 			"es-x/no-nonstandard-intl-pluralrules-properties": e,
-			// "es-x/no-nonstandard-intl-pluralrules-prototype-properties": e,
 			"es-x/no-nonstandard-intl-properties": e,
 			"es-x/no-nonstandard-intl-relativetimeformat-properties": e,
-			// "es-x/no-nonstandard-intl-relativetimeformat-prototype-properties": e,
 			"es-x/no-nonstandard-intl-segmenter-properties": e,
-			// "es-x/no-nonstandard-intl-segmenter-prototype-properties": e,
 			"es-x/no-nonstandard-iterator-properties": e,
-			// "es-x/no-nonstandard-iterator-prototype-properties": e,
 			"es-x/no-nonstandard-json-properties": e,
 			"es-x/no-nonstandard-map-properties": e,
-			// "es-x/no-nonstandard-map-prototype-properties": e,
 			"es-x/no-nonstandard-math-properties": e,
 			"es-x/no-nonstandard-number-properties": e,
-			// "es-x/no-nonstandard-number-prototype-properties": e,
 			"es-x/no-nonstandard-object-properties": e,
 			"es-x/no-nonstandard-promise-properties": e,
-			// "es-x/no-nonstandard-promise-prototype-properties": e,
 			"es-x/no-nonstandard-proxy-properties": e,
 			"es-x/no-nonstandard-reflect-properties": e,
 			"es-x/no-nonstandard-regexp-properties": e,
-			// "es-x/no-nonstandard-regexp-prototype-properties": e,
 			"es-x/no-nonstandard-set-properties": e,
-			// "es-x/no-nonstandard-set-prototype-properties": e,
 			"es-x/no-nonstandard-sharedarraybuffer-properties": e,
-			// "es-x/no-nonstandard-sharedarraybuffer-prototype-properties": e,
 			"es-x/no-nonstandard-string-properties": e,
-			// "es-x/no-nonstandard-string-prototype-properties": e,
 			"es-x/no-nonstandard-symbol-properties": e,
-			// "es-x/no-nonstandard-symbol-prototype-properties": e,
 			"es-x/no-nonstandard-typed-array-properties": e,
-			// "es-x/no-nonstandard-typed-array-prototype-properties": e,
 			"es-x/no-nonstandard-weakmap-properties": e,
-			// "es-x/no-nonstandard-weakmap-prototype-properties": e,
 			"es-x/no-nonstandard-weakref-properties": e,
-			// "es-x/no-nonstandard-weakref-prototype-properties": e,
 			"es-x/no-nonstandard-weakset-properties": e,
-			// "es-x/no-nonstandard-weakset-prototype-properties": e,
 			"es-x/no-nullish-coalescing-operators": e,
 			"es-x/no-numeric-separators": e,
 			"es-x/no-object-assign": e,
@@ -642,8 +596,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/github-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			// github/async-currenttarget  // Does not work with a top-level await.
-			// github/async-preventdefault // Does not work with a top-level await.
 			"github/a11y-aria-label-is-well-formatted": e,
 			"github/a11y-no-title-attribute": e,
 			"github/a11y-role-supports-aria-props": e,
@@ -655,7 +607,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"github/no-dynamic-script-tag": e,
 			"github/no-implicit-buggy-globals": e,
 			"github/no-inner-html": e,
-			// "github/no-then": e, // Use promise/prefer-await-to-then instead.
 			"github/no-useless-passive": e,
 			"github/prefer-observers": e,
 			"github/require-passive-events": e,
@@ -937,32 +888,16 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"math/prefer-number-min-safe-integer": e,
 		},
 	},
-	// {
-	// 	name: "@vanyauhalin/mysticatea-rules",
-	// 	rules: {
-	// 		// mysticatea/no-instanceof-wrapper // Does not support ESLint 9. See https://github.com/eslint-community/eslint-plugin-mysticatea/issues/183/.
-	// 		// mysticatea/no-literal-call       // Does not support ESLint 9. See https://github.com/eslint-community/eslint-plugin-mysticatea/issues/183/.
-	// 		// mysticatea/no-use-ignored-vars   // Does not support ESLint 9. See https://github.com/eslint-community/eslint-plugin-mysticatea/issues/183/.
-	// 	},
-	// },
 	{
 		name: "@vanyauhalin/n-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			// n/no-extraneous-import   // This often causes false positive results.
-			// n/no-extraneous-require  // This often causes false positive results.
-			// n/no-missing-import      // This often causes false positive results.
-			// n/no-missing-require     // This often causes false positive results.
-			// n/no-unpublished-bin     // This often causes false positive results.
-			// n/no-unpublished-import  // This often causes false positive results.
-			// n/no-unpublished-require // This often causes false positive results.
 			"n/exports-style": e,
 			"n/hashbang": e,
 			"n/no-deprecated-api": e,
 			"n/no-exports-assign": e,
 			"n/no-new-require": e,
 			"n/no-path-concat": e,
-			// "n/no-process-exit": e,  // The unicorn/no-process-exit has better functionality.
 			"n/prefer-global/buffer": e,
 			"n/prefer-global/console": e,
 			"n/prefer-global/process": e,
@@ -1021,7 +956,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/promise-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			// promise/prefer-await-to-callbacks // This causes more discomfort than it provides benefits.
 			"promise/always-return": e,
 			"promise/catch-or-return": e,
 			"promise/no-callback-in-promise": e,
@@ -1070,7 +1004,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"regexp/no-optional-assertion": e,
 			"regexp/no-potentially-useless-backreference": e,
 			"regexp/no-super-linear-backtracking": e,
-			// regexp/no-super-linear-move // This causes more discomfort than it provides benefits.
 			"regexp/no-trivially-nested-assertion": e,
 			"regexp/no-trivially-nested-quantifier": e,
 			"regexp/no-unused-capturing-group": e,
@@ -1114,9 +1047,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/security-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			// security/detect-non-literal-fs-filename // This causes more discomfort than it provides benefits.
-			// security/detect-object-injection        // This causes more discomfort than it provides benefits.
-			// security/detect-unsafe-regex            // This causes more discomfort than it provides benefits.
 			"security/detect-bidi-characters": e,
 			"security/detect-buffer-noassert": e,
 			"security/detect-child-process": e,
@@ -1124,7 +1054,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"security/detect-eval-with-expression": e,
 			"security/detect-new-buffer": e,
 			"security/detect-no-csrf-before-method-override": e,
-			// security/detect-non-literal-regexp      // This causes more discomfort than it provides benefits.
 			"security/detect-non-literal-require": e,
 			"security/detect-possible-timing-attacks": e,
 			"security/detect-pseudoRandomBytes": e,
@@ -1251,17 +1180,9 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/typescript-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			// typescript/no-unnecessary-condition // This causes more discomfort than it provides benefits.
-			// typescript/no-unsafe-argument       // This causes more discomfort than it provides benefits.
-			// typescript/no-unsafe-assignment     // This causes more discomfort than it provides benefits.
-			// typescript/no-unsafe-call           // This causes more discomfort than it provides benefits.
-			// typescript/no-unsafe-member-access  // This causes more discomfort than it provides benefits.
-			// typescript/no-unsafe-return         // This causes more discomfort than it provides benefits.
-			// typescript/no-unsafe-type-assertion // This causes more discomfort than it provides benefits.
 			"typescript/adjacent-overload-signatures": e,
 			"typescript/array-type": e,
 			"typescript/await-thenable": e,
-			// typescript/ban-ts-comment           // You can usually tell from the context why the comment is being used.
 			"typescript/ban-tslint-comment": e,
 			"typescript/class-literal-property-style": [e, "getters"],
 			"typescript/consistent-generic-constructors": e,
@@ -1431,7 +1352,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/unicorn-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			// unicorn/template-indent // This waits for the String.dedent proposal to be accepted. See https://github.com/tc39/proposal-string-dedent/.
 			"unicorn/better-regex": e,
 			"unicorn/catch-error-name": [e, {name: "err"}],
 			"unicorn/consistent-empty-array-spread": e,
@@ -1688,7 +1608,5 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		},
 	},
 ]
-
-/* eslint-enable stylistic/max-len */
 
 export default config
