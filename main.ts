@@ -1240,7 +1240,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"typescript/prefer-includes": e,
 			"typescript/prefer-literal-enum-member": e,
 			"typescript/prefer-namespace-keyword": e,
-			"typescript/prefer-nullish-coalescing": e,
 			"typescript/prefer-promise-reject-errors": e,
 			"typescript/prefer-reduce-type-parameter": e,
 			"typescript/prefer-regexp-exec": e,
