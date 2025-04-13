@@ -29,7 +29,6 @@ import promise from "eslint-plugin-promise"
 import regexp from "eslint-plugin-regexp"
 import security from "eslint-plugin-security"
 import toml from "eslint-plugin-toml"
-import tsdoc from "eslint-plugin-tsdoc"
 import unicorn from "eslint-plugin-unicorn"
 import wc from "eslint-plugin-wc"
 import yml from "eslint-plugin-yml"
@@ -247,11 +246,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/toml-plugin",
 		files: ["**/*.toml"],
 		plugins: {toml},
-	},
-	{
-		name: "@vanyauhalin/tsdoc-plugin",
-		files: ["**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
-		plugins: {tsdoc},
 	},
 	{
 		name: "@vanyauhalin/typescript-plugin",
@@ -1167,13 +1161,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"toml/spaced-comment": e,
 			"toml/table-bracket-spacing": e,
 			"toml/tables-order": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/tsdoc-rules",
-		files: ["**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
-		rules: {
-			"tsdoc/syntax": e,
 		},
 	},
 	{
