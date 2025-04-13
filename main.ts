@@ -732,7 +732,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"jsdoc/require-throws": e,
 			"jsdoc/require-yields-check": e,
 			"jsdoc/require-yields": e,
-			"jsdoc/tag-lines": [e, "never"],
 			"jsdoc/valid-types": e,
 		},
 	},
