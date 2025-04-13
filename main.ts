@@ -1664,7 +1664,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/tsconfig-file",
-		files: ["**/tsconfig.*.json", "**/tsconfig.json"],
+		files: ["**/jsconfig.json", "**/jsconfig.*.json", "**/tsconfig.json", "**/tsconfig.*.json"],
 		rules: {
 			"jsonc/no-comments": "off",
 			"jsonc/sort-keys": [
