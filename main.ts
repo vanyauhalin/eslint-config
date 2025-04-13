@@ -655,7 +655,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"github/no-dynamic-script-tag": e,
 			"github/no-implicit-buggy-globals": e,
 			"github/no-inner-html": e,
-			"github/no-then": e,
+			// "github/no-then": e, // Use promise/prefer-await-to-then instead.
 			"github/no-useless-passive": e,
 			"github/prefer-observers": e,
 			"github/require-passive-events": e,
