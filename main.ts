@@ -1193,7 +1193,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"stylistic/operator-linebreak": [e, "after"],
 			"stylistic/padded-blocks": [e, "never"],
 			"stylistic/quote-props": [e, "consistent-as-needed"],
-			"stylistic/quotes": [e, "double", {avoidEscape: true}],
+			"stylistic/quotes": [e, "double", {avoidEscape: true, allowTemplateLiterals: true}],
 			"stylistic/rest-spread-spacing": e,
 			"stylistic/semi-spacing": e,
 			"stylistic/semi-style": [e, "first"],
