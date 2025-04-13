@@ -350,7 +350,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"no-implicit-globals": e,
 			"no-implied-eval": e,
 			"no-import-assign": e,
-			"no-inline-comments": e,
+			// "no-inline-comments": e, // Sometimes, you want to add a short description, for example, convert milliseconds to seconds.
 			"no-invalid-regexp": e,
 			"no-invalid-this": e,
 			"no-irregular-whitespace": e,
