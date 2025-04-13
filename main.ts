@@ -1070,7 +1070,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"regexp/no-optional-assertion": e,
 			"regexp/no-potentially-useless-backreference": e,
 			"regexp/no-super-linear-backtracking": e,
-			"regexp/no-super-linear-move": e,
+			// regexp/no-super-linear-move // This causes more discomfort than it provides benefits.
 			"regexp/no-trivially-nested-assertion": e,
 			"regexp/no-trivially-nested-quantifier": e,
 			"regexp/no-unused-capturing-group": e,
