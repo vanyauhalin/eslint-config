@@ -1124,7 +1124,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"security/detect-eval-with-expression": e,
 			"security/detect-new-buffer": e,
 			"security/detect-no-csrf-before-method-override": e,
-			"security/detect-non-literal-regexp": e,
+			// security/detect-non-literal-regexp      // This causes more discomfort than it provides benefits.
 			"security/detect-non-literal-require": e,
 			"security/detect-possible-timing-attacks": e,
 			"security/detect-pseudoRandomBytes": e,
