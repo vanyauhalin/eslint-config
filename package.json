@@ -1,6 +1,6 @@
 {
 	"name": "@vanyauhalin/eslint-config",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "vanyauhalin's ESLint config",
 	"keywords": [
 		"config",
