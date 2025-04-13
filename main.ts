@@ -1384,7 +1384,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/no-useless-promise-resolve-reject": e,
 			"unicorn/no-useless-spread": e,
 			"unicorn/no-useless-switch-case": e,
-			"unicorn/no-useless-undefined": e,
+			"unicorn/no-useless-undefined": [e, {checkArguments: false, checkArrowFunctionBody: false}],
 			"unicorn/no-zero-fractions": e,
 			"unicorn/number-literal-case": e,
 			"unicorn/prefer-add-event-listener": e,
