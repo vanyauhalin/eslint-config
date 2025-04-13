@@ -1346,7 +1346,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"typescript/restrict-plus-operands": e,
 			"typescript/restrict-template-expressions": e,
 			"typescript/return-await": [e, "always"],
-			"typescript/switch-exhaustiveness-check": e,
+			"typescript/switch-exhaustiveness-check": [e, {allowDefaultCaseForExhaustiveSwitch: true, considerDefaultExhaustiveForUnions: true, requireDefaultForNonUnion: false}],
 			"typescript/triple-slash-reference": e,
 			"typescript/unbound-method": e,
 			"typescript/unified-signatures": e,
