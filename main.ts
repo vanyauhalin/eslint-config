@@ -1182,7 +1182,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"stylistic/no-floating-decimal": e,
 			"stylistic/no-mixed-spaces-and-tabs": e,
 			"stylistic/no-multi-spaces": e,
-			"stylistic/no-multiple-empty-lines": [e, {max: 1}],
+			"stylistic/no-multiple-empty-lines": [e, {max: 1, maxBOF: 0, maxEOF: 0}],
 			"stylistic/no-trailing-spaces": e,
 			"stylistic/no-whitespace-before-property": e,
 			"stylistic/nonblock-statement-body-position": e,
