@@ -4,7 +4,26 @@ This document records all notable changes to the project, following the [Keep a 
 
 ## [Unreleased]
 
-There are no noticeable changes in version [unreleased].
+<!-- There are no noticeable changes in version [unreleased]. -->
+
+### Added
+
+- Support using TypeScript config files in JavaScript ([4fc30b4]).
+
+### Changed
+
+- Disable the `github/no-then` rule ([fdb1b02]).
+- Disable the `regexp/no-super-linear-move` rule ([cc4938a]).
+- Disable the `security/detect-non-literal-regexp` rule ([4a56f27]).
+- Disallow using empty lines at the beginning and end of files ([1d349fb]).
+- Allow template literals for the `stylistic/quotes` rule ([b417573]).
+- Disable the `typescript/ban-ts-comment` rule ([6e51998]).
+- Be less strict with the `typescript/switch-exhaustiveness-check` rule ([f0c05dc]).
+- Disable the `no-inline-comments` rule ([a1d3122]).
+- Remove the `eslint-plugin-tsdoc` plugin ([c857ff6]).
+- Disable the `jsdoc/tag-lines` rule ([9736775]).
+- Disable the `typescript/prefer-nullish-coalescing` rule ([95a840b]).
+- Be less strict with the `unicorn/no-useless-undefined` rule ([eccbe11]).
 
 ## [0.0.5] - 2025-03-01
 
@@ -95,6 +114,19 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[eccbe11]: https://github.com/vanyauhalin/eslint-config/commit/eccbe11d7204ca0a5cb5d134fbc779dbd72e6ffa/
+[95a840b]: https://github.com/vanyauhalin/eslint-config/commit/95a840b6af1b269f379733c2a5998ab73e7ed67e/
+[9736775]: https://github.com/vanyauhalin/eslint-config/commit/97367757f5160e307933172fb9b94992b74d5957/
+[c857ff6]: https://github.com/vanyauhalin/eslint-config/commit/c857ff6f4fc507382fe7679b8ab0ea404c3407dc/
+[a1d3122]: https://github.com/vanyauhalin/eslint-config/commit/a1d312259a6abbdbfb6b2d2830a00b4a1be0af77/
+[4fc30b4]: https://github.com/vanyauhalin/eslint-config/commit/4fc30b4f716f6bda799e0c201946e2abe718e03b/
+[f0c05dc]: https://github.com/vanyauhalin/eslint-config/commit/f0c05dccbb6cb3f71dea328e05345b729ff01b7a/
+[6e51998]: https://github.com/vanyauhalin/eslint-config/commit/6e519983fac911cf2ec3764452d2050b07b60b26/
+[b417573]: https://github.com/vanyauhalin/eslint-config/commit/b41757368ca395d93260cbe8d789a6c053fe2972/
+[1d349fb]: https://github.com/vanyauhalin/eslint-config/commit/1d349fb692aa2ce16dc19641bc5e17d55bebec65/
+[4a56f27]: https://github.com/vanyauhalin/eslint-config/commit/4a56f27ff61b6ef496033131acd4f26f8f260392/
+[cc4938a]: https://github.com/vanyauhalin/eslint-config/commit/cc4938a0607c58cd2839722b85735ee7c7c47ec4/
+[fdb1b02]: https://github.com/vanyauhalin/eslint-config/commit/fdb1b0255ea9b20b6b4fe9a4b1adaa8ba9161fe1/
 [2c429e9]: https://github.com/vanyauhalin/eslint-config/commit/2c429e9710898efb5e87470fc60c7f14d75300dd/
 [87eac07]: https://github.com/vanyauhalin/eslint-config/commit/87eac0717bb4d99233a8c84b0f379e63ecd691da/
 [70f4caf]: https://github.com/vanyauhalin/eslint-config/commit/70f4cafc7d331e9447a41d01b467981a84eeef6b/
