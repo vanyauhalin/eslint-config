@@ -1261,7 +1261,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"typescript/adjacent-overload-signatures": e,
 			"typescript/array-type": e,
 			"typescript/await-thenable": e,
-			"typescript/ban-ts-comment": [e, {"minimumDescriptionLength": 3, "ts-check": true, "ts-expect-error": false, "ts-ignore": "allow-with-description", "ts-nocheck": "allow-with-description"}],
+			// typescript/ban-ts-comment           // You can usually tell from the context why the comment is being used.
 			"typescript/ban-tslint-comment": e,
 			"typescript/class-literal-property-style": [e, "getters"],
 			"typescript/consistent-generic-constructors": e,
