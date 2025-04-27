@@ -515,6 +515,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"es-x/no-nonstandard-intl-collator-properties": e,
 			"es-x/no-nonstandard-intl-datetimeformat-properties": e,
 			"es-x/no-nonstandard-intl-displaynames-properties": e,
+			"es-x/no-nonstandard-intl-durationformat-properties": e,
 			"es-x/no-nonstandard-intl-listformat-properties": e,
 			"es-x/no-nonstandard-intl-locale-properties": e,
 			"es-x/no-nonstandard-intl-numberformat-properties": e,
