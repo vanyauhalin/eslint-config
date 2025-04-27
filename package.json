@@ -48,7 +48,7 @@
 		"test-package": "tsc"
 	},
 	"devDependencies": {
-		"@eslint-community/eslint-plugin-eslint-comments": "4.4.1",
+		"@eslint-community/eslint-plugin-eslint-comments": "4.5.0",
 		"@eslint/config-inspector": "0.6.0",
 		"@html-eslint/eslint-plugin": "0.31.1",
 		"@html-eslint/parser": "0.31.0",
@@ -94,7 +94,7 @@
 		"yaml-eslint-parser": "1.2.1"
 	},
 	"peerDependencies": {
-		"@eslint-community/eslint-plugin-eslint-comments": "^4.0.0",
+		"@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
 		"@html-eslint/eslint-plugin": ">=0.0.0 <1.0.0",
 		"@html-eslint/parser": ">=0.0.0 <1.0.0",
 		"@stylistic/eslint-plugin": "^2.0.0",
