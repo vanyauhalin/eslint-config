@@ -46,7 +46,13 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 
 	{
 		name: "@vanyauhalin/git-ignores",
-		ignores: gitignore().ignores,
+		ignores: (() => {
+			try {
+				return gitignore().ignores
+			} catch {
+				return []
+			}
+		})(),
 	},
 	{
 		name: "@vanyauhalin/vanyauhalin-ignores",
