@@ -50,7 +50,7 @@
 	"devDependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "4.5.0",
 		"@eslint/config-inspector": "1.0.2",
-		"@html-eslint/eslint-plugin": "0.31.1",
+		"@html-eslint/eslint-plugin": "0.39.0",
 		"@html-eslint/parser": "0.31.0",
 		"@stylistic/eslint-plugin": "2.12.1",
 		"@types/node": "22.10.2",
@@ -95,7 +95,7 @@
 	},
 	"peerDependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
-		"@html-eslint/eslint-plugin": ">=0.0.0 <1.0.0",
+		"@html-eslint/eslint-plugin": ">=0.39.0 <1.0.0",
 		"@html-eslint/parser": ">=0.0.0 <1.0.0",
 		"@stylistic/eslint-plugin": "^2.0.0",
 		"@types/node": "^22.0.0",
