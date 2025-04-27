@@ -282,7 +282,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/builtin-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			"camelcase": e,
 			"constructor-super": e,
 			"curly": e,
 			"default-case-last": e,
