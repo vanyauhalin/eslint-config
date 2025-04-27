@@ -711,6 +711,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/import-x-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
+			"import-x/order": [e, {"alphabetize": {order: "asc", orderImportKind: "asc"}, "named": true, "newlines-between": "never", "warnOnUnassignedImports": true}],
 			"import-x/consistent-type-specifier-style": e,
 			"import-x/default": e,
 			"import-x/export": e,
