@@ -978,7 +978,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"promise/no-new-statics": e,
 			"promise/no-return-in-finally": e,
 			"promise/no-return-wrap": e,
-			"promise/param-names": [e, {rejectPattern: "^(_+|rej)$", resolvePattern: "^(_+|res)$"}],
+			"promise/param-names": [e, {rejectPattern: "^(_+|rej|reject)$", resolvePattern: "^(_+|res|resolve)$"}],
 			"promise/prefer-await-to-then": e,
 			"promise/prefer-catch": e,
 			"promise/spec-only": e,
