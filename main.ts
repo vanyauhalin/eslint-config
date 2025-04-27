@@ -1192,7 +1192,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		files: ["**/*.toml"],
 		rules: {
 			"toml/array-bracket-newline": e,
-			"toml/array-bracket-spacing": e,
+			"toml/array-bracket-spacing": [e, "never"],
 			"toml/array-element-newline": e,
 			"toml/comma-style": e,
 			"toml/indent": e,
