@@ -1195,7 +1195,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"toml/array-bracket-spacing": [e, "never"],
 			"toml/array-element-newline": e,
 			"toml/comma-style": e,
-			"toml/indent": e,
+			"toml/indent": [e, "tab"],
 			"toml/inline-table-curly-spacing": [e, "never", {arraysInObjects: false, objectsInObjects: false}],
 			"toml/key-spacing": e,
 			"toml/keys-order": e,
