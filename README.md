@@ -40,46 +40,6 @@ Sometimes a group may have a subgroup:
 
 The [ESLint Config Inspector] can help you gain a more detailed understanding of how the configuration is organized.
 
-## Dependencies
-
-This configuration does not utilize any other configurations, only plugins:
-
-- [@eslint-community/eslint-plugin-eslint-comments]
-- [@html-eslint/eslint-plugin]
-- [@stylistic/eslint-plugin]
-- [@typescript-eslint/eslint-plugin]
-- [eslint-config-flat-gitignore]*
-- [eslint-plugin-ascii]
-- [eslint-plugin-clsx]
-- [eslint-plugin-de-morgan]
-- [eslint-plugin-depend]
-- [eslint-plugin-es-x]
-- [eslint-plugin-github]
-- [eslint-plugin-html]
-- [eslint-plugin-import-newlines]
-- [eslint-plugin-import-x]
-- [eslint-plugin-jsdoc]
-- [eslint-plugin-jsonc]
-- [eslint-plugin-jsx-a11y]
-- [eslint-plugin-markdown]
-- [eslint-plugin-math]
-- [eslint-plugin-n]
-- [eslint-plugin-no-unsanitized]
-- [eslint-plugin-node-dependencies]
-- [eslint-plugin-package-json]
-- [eslint-plugin-prefer-let]
-- [eslint-plugin-promise]
-- [eslint-plugin-regexp]
-- [eslint-plugin-security]
-- [eslint-plugin-toml]
-- [eslint-plugin-tsdoc]
-- [eslint-plugin-unicorn]
-- [eslint-plugin-wc]
-- [eslint-plugin-yml]
-
-\* The eslint-config-flat-gitignore is the only exception to the rule of not
-using other people's configurations because it is a rather specific case.
-
 ## Compatibility
 
 This configuration is written specifically for ESLint 9 and, therefore, does not support previous versions. The project itself uses one of the latest versions of Node.js at the time of writing which is 23, but the minimum required version is the latest 18.
