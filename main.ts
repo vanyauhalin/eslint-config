@@ -396,7 +396,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"no-useless-escape": e,
 			"no-useless-rename": e,
 			"no-var": e,
-			"no-void": e,
+			"no-void": [e, {allowAsStatement: true}],
 			"no-with": e,
 			"object-shorthand": e,
 			"one-var": [e, "never"],
