@@ -60,8 +60,8 @@ importers:
         specifier: 1.0.0
         version: 1.0.0
       eslint-plugin-es-x:
-        specifier: 8.4.1
-        version: 8.4.1(eslint@9.25.1(jiti@2.4.2))
+        specifier: 8.6.1
+        version: 8.6.1(eslint@9.25.1(jiti@2.4.2))
       eslint-plugin-github:
         specifier: 5.1.4
         version: 5.1.4(eslint@9.25.1(jiti@2.4.2))(typescript@5.7.2)
@@ -1246,8 +1246,8 @@ packages:
     peerDependencies:
       eslint: '>=8'
 
-  eslint-plugin-es-x@8.4.1:
-    resolution: {integrity: sha512-2L2F9VI/EdE4cDg/8zkLJJgIJguY3foKf0cLHPk633smZCfWeRqcRuCLHYSICwI6HmkML4uKzoSHdivnTYGYuA==}
+  eslint-plugin-es-x@8.6.1:
+    resolution: {integrity: sha512-jpElqvrTBh35AQP8oH+xtHpzZp8+2y/8FSW7+ssKS0f92ZC7AFWaf6n+jBa9ieGU9HNroTWx4/L5U4tBeBV38g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=8'
@@ -3866,7 +3866,7 @@ snapshots:
       eslint: 9.25.1(jiti@2.4.2)
       eslint-compat-utils: 0.5.1(eslint@9.25.1(jiti@2.4.2))
 
-  eslint-plugin-es-x@8.4.1(eslint@9.25.1(jiti@2.4.2)):
+  eslint-plugin-es-x@8.6.1(eslint@9.25.1(jiti@2.4.2)):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.25.1(jiti@2.4.2))
       '@eslint-community/regexpp': 4.12.1
