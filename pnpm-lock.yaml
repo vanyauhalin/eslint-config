@@ -51,8 +51,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0
       eslint-plugin-clsx:
-        specifier: 0.0.9
-        version: 0.0.9(eslint@9.25.1(jiti@2.4.2))(typescript@5.7.2)
+        specifier: 0.0.10
+        version: 0.0.10(eslint@9.25.1(jiti@2.4.2))(typescript@5.7.2)
       eslint-plugin-de-morgan:
         specifier: 1.1.0
         version: 1.1.0(eslint@9.25.1(jiti@2.4.2))
@@ -1226,10 +1226,10 @@ packages:
   eslint-plugin-ascii@2.0.0:
     resolution: {integrity: sha512-hITZHSGWjot8R7iRuEBFRr7atPf2Rre31Kgwr2KryXGq1ah/KwpwtnhoX3uCo+xEE5SWDz2o85WfJ9fRdMCb/A==}
 
-  eslint-plugin-clsx@0.0.9:
-    resolution: {integrity: sha512-t/HOq0yuy+VuEYFg4JYZax6KvPuJRVM11wtZpK5THh//mA5DMM3EL5w7aK4LrLcxpTYn2ETBYggFY8xagN9q6Q==}
+  eslint-plugin-clsx@0.0.10:
+    resolution: {integrity: sha512-fDTd3BWqfhhGAZPvL2Ast4fHRWal++9NN24FxgZDsWwkuEbvEobg3ST4N4JAIZUfBdaG1gEecF0dTgTJnugcBg==}
     peerDependencies:
-      eslint: ^8
+      eslint: ^8 || ^9
 
   eslint-plugin-de-morgan@1.1.0:
     resolution: {integrity: sha512-68nLDXi9EJtD/8q7JrTbzbpBp3CIePTLfLQFkDivj8OHzscQeT7g2RKkNqmy5sgMDZXN6saS6npfBXsnZkvWIA==}
@@ -2321,8 +2321,8 @@ packages:
     resolution: {integrity: sha512-qx+xQGZVsy55CH0a1hiVwHmqjLryfh7wQyF5HO07XJ9f7dQMY/gPQHhlyDkIzJKC+x2fUCpCcUODUUUFrm7SHA==}
     hasBin: true
 
-  remeda@2.18.0:
-    resolution: {integrity: sha512-wvHvaApA7crz46HWhGTotPawkzd45w1iXzPK7r4ECQgbmcSqHLrVio2LOr7ZEp1pu5QDH1U391ZKu+qra7OoLw==}
+  remeda@2.21.3:
+    resolution: {integrity: sha512-XXrZdLA10oEOQhLLzEJEiFFSKi21REGAkHdImIb4rt/XXy8ORGXh5HCcpUOsElfPNDb+X6TA/+wkh+p2KffYmg==}
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -2593,8 +2593,8 @@ packages:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
 
-  type-fest@4.30.2:
-    resolution: {integrity: sha512-UJShLPYi1aWqCdq9HycOL/gwsuqda1OISdBO3t8RlXQC4QvtuIz4b5FCfe2dQIWEpmlRExKmcTBfP1r9bhY7ig==}
+  type-fest@4.40.1:
+    resolution: {integrity: sha512-9YvLNnORDpI+vghLU/Nf+zSv0kL47KbVJ1o3sKgoTefl6i+zebxbiDQWoe/oWWqPhIgQdRZRT1KA9sCPL810SA==}
     engines: {node: '>=16'}
 
   typed-array-buffer@1.0.3:
@@ -3838,13 +3838,13 @@ snapshots:
 
   eslint-plugin-ascii@2.0.0: {}
 
-  eslint-plugin-clsx@0.0.9(eslint@9.25.1(jiti@2.4.2))(typescript@5.7.2):
+  eslint-plugin-clsx@0.0.10(eslint@9.25.1(jiti@2.4.2))(typescript@5.7.2):
     dependencies:
-      '@typescript-eslint/types': 8.18.1
-      '@typescript-eslint/utils': 8.18.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.7.2)
+      '@typescript-eslint/types': 8.31.0
+      '@typescript-eslint/utils': 8.31.0(eslint@9.25.1(jiti@2.4.2))(typescript@5.7.2)
       eslint: 9.25.1(jiti@2.4.2)
       esquery: 1.6.0
-      remeda: 2.18.0
+      remeda: 2.21.3
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -5081,9 +5081,9 @@ snapshots:
     dependencies:
       jsesc: 0.5.0
 
-  remeda@2.18.0:
+  remeda@2.21.3:
     dependencies:
-      type-fest: 4.30.2
+      type-fest: 4.40.1
 
   require-directory@2.1.1: {}
 
@@ -5370,7 +5370,7 @@ snapshots:
 
   type-fest@0.8.1: {}
 
-  type-fest@4.30.2: {}
+  type-fest@4.40.1: {}
 
   typed-array-buffer@1.0.3:
     dependencies:
