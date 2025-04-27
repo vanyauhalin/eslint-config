@@ -90,7 +90,7 @@
 		"jsonc-eslint-parser": "2.4.0",
 		"toml-eslint-parser": "0.10.0",
 		"tsx": "4.19.3",
-		"typescript": "5.7.2",
+		"typescript": "5.8.3",
 		"yaml-eslint-parser": "1.2.1"
 	},
 	"peerDependencies": {
@@ -132,7 +132,7 @@
 		"eslint-plugin-yml": "^1.18.0",
 		"jsonc-eslint-parser": "^2.0.0",
 		"toml-eslint-parser": ">=0.0.0 <1.0.0",
-		"typescript": "^5.0.0",
+		"typescript": "^5.8.3",
 		"yaml-eslint-parser": "^1.0.0"
 	}
 }
