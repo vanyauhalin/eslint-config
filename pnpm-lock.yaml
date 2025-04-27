@@ -36,8 +36,8 @@ importers:
         specifier: 8.31.0
         version: 8.31.0(eslint@9.17.0(jiti@2.4.2))(typescript@5.7.2)
       '@typescript-eslint/utils':
-        specifier: 8.18.1
-        version: 8.18.1(eslint@9.17.0(jiti@2.4.2))(typescript@5.7.2)
+        specifier: 8.31.0
+        version: 8.31.0(eslint@9.17.0(jiti@2.4.2))(typescript@5.7.2)
       clean-publish:
         specifier: 5.1.0
         version: 5.1.0
