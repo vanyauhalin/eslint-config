@@ -486,6 +486,8 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"es-x/no-array-prototype-tospliced": e,
 			"es-x/no-array-prototype-values": e,
 			"es-x/no-array-prototype-with": e,
+			"es-x/no-class-private-fields": e,
+			"es-x/no-class-private-methods": e,
 			"es-x/no-class-static-block": e,
 			"es-x/no-date-prototype-getyear-setyear": e,
 			"es-x/no-date-prototype-togmtstring": e,
