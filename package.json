@@ -110,7 +110,7 @@
 		"eslint-plugin-import-x": "^4.11.0",
 		"eslint-plugin-jsdoc": "^50.6.11",
 		"eslint-plugin-jsonc": "^2.20.0",
-		"eslint-plugin-jsx-a11y": "^6.0.0",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
 		"eslint-plugin-markdown": "^5.0.0",
 		"eslint-plugin-math": ">=0.6.1 <1.0.0",
 		"eslint-plugin-n": "^17.17.0",
