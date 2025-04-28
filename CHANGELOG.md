@@ -11,7 +11,7 @@ This document records all notable changes to the project, following the [Keep a 
 - Enable new `@html-eslint/eslint-plugin` rules: `no-duplicate-class`, `no-heading-inside-button`, `no-invalid-role`, `no-nested-interactive`, `prefer-https`, `require-explicit-size`, `require-form-method`, `require-input-label`, `use-baseline` ([b473eac]).
 - Enable new `@stylistic/eslint-plugin` rules: value `avoidEscape` of option `allowTemplateLiteral` of rule `quotes` ([e2f15db]).
 - Enable new `@typescript-eslint/eslint-plugin` rules: `typescript/no-misused-spread` ([b7e90d0]).
-- Enable new `eslint-plugin-es-x` rules: `es-x/no-nonstandard-intl-durationformat-properties` ([caffcf9]).
+- Enable new `eslint-plugin-es-x` rules: `es-x/no-nonstandard-intl-durationformat-properties`, `es-x/no-nonstandard-intl-durationformat-prototype-properties` ([caffcf9], [df4ed73]).
 - Enable new `eslint-plugin-package-json` rules: `no-empty-fields`, `no-redundant-files`, `require-author`, `require-keywords`, `require-name`, `require-version`, `valid-package-definition` ([e859d13]).
 - Enable new `eslint-plugin-unicorn` rules: `consistent-assert`, `consistent-date-clone`, `no-accessor-recursion`, `no-instanceof-builtins`, `no-named-default`, `no-unnecessary-array-flat-depth`, `no-unnecessary-array-splice-count`, `no-unnecessary-slice-end`, `prefer-import-meta-properties` ([1a7bb67]).
 - Enable rules `no-class-private-fields` and `no-class-private-methods` from `eslint-plugin-es-x` ([5b32ce5]).
@@ -56,6 +56,18 @@ This document records all notable changes to the project, following the [Keep a 
 - Remove rules `no-object-fromentries` and `no-typed-arrays` from `eslint-plugin-es-x` ([1047e15]).
 - Modify rule `array-bracket-spacing` from `eslint-plugin-toml`: disallow use of spaces ([48be071]).
 - Modify rule `indent` from `eslint-plugin-toml`: use tabs ([e3c80b7]).
+- Update dependency `eslint-plugin-html` ([6069988]).
+- Update dependency `eslint-plugin-import-newlines` ([e0fcf99]).
+- Update dependency `eslint-plugin-jsonc` ([e179ac1]).
+- Update dependency `eslint-plugin-jsx-a11y` ([1c12f9a]).
+- Update dependency `eslint-plugin-markdown` ([8566e6f]).
+- Update dependency `eslint-plugin-no-unsanitized` ([8e74cdb]).
+- Update dependency `eslint-plugin-promise` ([e2fc8f7]).
+- Update dependency `eslint-plugin-regexp` ([59c5f4d]).
+- Update dependency `eslint-plugin-security` ([b67362f]).
+- Update dependency `eslint-plugin-toml` ([82c4215]).
+- Update dependency `jsonc-eslint-parser` ([1f81bbf]).
+- Update dependency `toml-eslint-parser` ([64da194]).
 
 ### Fixed
 
@@ -173,6 +185,18 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[64da194]: https://github.com/vanyauhalin/eslint-config/commit/64da194f1a5bb8814bdd02e4f16ea2fd5ca84596/
+[1f81bbf]: https://github.com/vanyauhalin/eslint-config/commit/1f81bbfb54b3137e0f55def74430478c0fa386a1/
+[82c4215]: https://github.com/vanyauhalin/eslint-config/commit/82c4215fca16cb676ca5627f8118bf48b259f62d/
+[b67362f]: https://github.com/vanyauhalin/eslint-config/commit/b67362fbef3567bbef37b3db28e12a2008d34784/
+[59c5f4d]: https://github.com/vanyauhalin/eslint-config/commit/59c5f4d5d942ebcbcfed985871e6576880a2b6a0/
+[e2fc8f7]: https://github.com/vanyauhalin/eslint-config/commit/e2fc8f75f2e19dfab7c809d9248aaf444f530f88/
+[8e74cdb]: https://github.com/vanyauhalin/eslint-config/commit/8e74cdb1351bb859fd834adc869f7d8ea1342612/
+[8566e6f]: https://github.com/vanyauhalin/eslint-config/commit/8566e6f1641115d9d621ae104c13757a5b246f82/
+[1c12f9a]: https://github.com/vanyauhalin/eslint-config/commit/1c12f9ac9f8f23e81d000268c24593cfadcc0d61/
+[e179ac1]: https://github.com/vanyauhalin/eslint-config/commit/e179ac16ea0bc43efe47ae0cc159cb200829f5ff/
+[e0fcf99]: https://github.com/vanyauhalin/eslint-config/commit/e0fcf997e131747ae393a1bfeec5e10dd9c4c6ab/
+[6069988]: https://github.com/vanyauhalin/eslint-config/commit/606998835363ec840bef2166ebee46efcde099a8/
 [06e08c2]: https://github.com/vanyauhalin/eslint-config/commit/06e08c20ad1b453463f1d1594a27d687b45e3a3b/
 [e3c80b7]: https://github.com/vanyauhalin/eslint-config/commit/e3c80b78cf7ab5c27e193d03a74d63c2d9a2e0bd/
 [48be071]: https://github.com/vanyauhalin/eslint-config/commit/48be071f41696824b84132b3d7cacc7246edf307/
