@@ -4,7 +4,9 @@ This document records all notable changes to the project, following the [Keep a 
 
 ## [Unreleased]
 
-There are no noticeable changes in version [unreleased].
+<!-- There are no noticeable changes in version [unreleased]. -->
+
+## [0.0.9] - 2025-04-28
 
 ### Fixed
 
@@ -190,7 +192,8 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 
-[Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.8...HEAD/
+[Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.9...HEAD/
+[0.0.9]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.8...v0.0.9/
 [0.0.8]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.7...v0.0.8/
 [0.0.7]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.6...v0.0.7/
 [0.0.6]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.5...v0.0.6/
