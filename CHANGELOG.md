@@ -4,7 +4,12 @@ This document records all notable changes to the project, following the [Keep a 
 
 ## [Unreleased]
 
-There are no noticeable changes in version [unreleased].
+<!-- There are no noticeable changes in version [unreleased]. -->
+
+### Changed
+
+- Remove peer dependencies ([a4aad74]).
+- Remove `es-x/no-nonstandard-*-prototype-properties` rules ([b1b86e4]).
 
 ## [0.0.7] - 2025-04-28
 
@@ -188,6 +193,8 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[b1b86e4]: https://github.com/vanyauhalin/eslint-config/commit/b1b86e40bfb0617103975b5e07c026815334b937/
+[a4aad74]: https://github.com/vanyauhalin/eslint-config/commit/a4aad742e3de3f23b3d1c9d3ab8ece6601a2099e/
 [64da194]: https://github.com/vanyauhalin/eslint-config/commit/64da194f1a5bb8814bdd02e4f16ea2fd5ca84596/
 [1f81bbf]: https://github.com/vanyauhalin/eslint-config/commit/1f81bbfb54b3137e0f55def74430478c0fa386a1/
 [82c4215]: https://github.com/vanyauhalin/eslint-config/commit/82c4215fca16cb676ca5627f8118bf48b259f62d/
