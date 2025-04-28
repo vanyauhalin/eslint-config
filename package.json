@@ -114,7 +114,7 @@
 		"eslint-plugin-markdown": "^5.1.0",
 		"eslint-plugin-math": ">=0.6.1 <1.0.0",
 		"eslint-plugin-n": "^17.17.0",
-		"eslint-plugin-no-unsanitized": "^4.0.0",
+		"eslint-plugin-no-unsanitized": "^4.1.2",
 		"eslint-plugin-node-dependencies": ">=0.13.0 <1.0.0",
 		"eslint-plugin-package-json": ">=0.31.0 <1.0.0",
 		"eslint-plugin-prefer-let": "^4.0.0",
