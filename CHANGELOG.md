@@ -6,6 +6,10 @@ This document records all notable changes to the project, following the [Keep a 
 
 There are no noticeable changes in version [unreleased].
 
+### Fixed
+
+- Extract production dependencies from the development one ([e6633b4]).
+
 ## [0.0.8] - 2025-04-28
 
 ### Changed
@@ -187,7 +191,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 
 [Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.8...HEAD/
-[0.0.7]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.7...v0.0.8/
+[0.0.8]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.7...v0.0.8/
 [0.0.7]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.6...v0.0.7/
 [0.0.6]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.5...v0.0.6/
 [0.0.5]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.4...v0.0.5/
@@ -196,6 +200,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[e6633b4]: https://github.com/vanyauhalin/eslint-config/commit/e6633b4638ee4ef7519be719835b1daa0f834e8c/
 [b1b86e4]: https://github.com/vanyauhalin/eslint-config/commit/b1b86e40bfb0617103975b5e07c026815334b937/
 [a4aad74]: https://github.com/vanyauhalin/eslint-config/commit/a4aad742e3de3f23b3d1c9d3ab8ece6601a2099e/
 [64da194]: https://github.com/vanyauhalin/eslint-config/commit/64da194f1a5bb8814bdd02e4f16ea2fd5ca84596/
