@@ -86,7 +86,6 @@
 	"devDependencies": {
 		"@eslint/config-inspector": "1.0.2",
 		"@typescript-eslint/rule-tester": "8.31.0",
-		"clean-publish": "5.1.0",
-		"tsx": "4.19.3"
+		"clean-publish": "5.1.0"
 	}
 }
