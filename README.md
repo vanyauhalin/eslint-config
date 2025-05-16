@@ -1,6 +1,6 @@
 # ESLint Config
 
-A comprehensive, strict, and not very flexible highly personalized ESLint configuration. This package is suitable for those who prefer minimalism in language, a rejection of abstractions, and do not shy away from mutability.
+A comprehensive, strict, and not very flexible highly personalized ESLint configuration.
 
 ## Installation
 
