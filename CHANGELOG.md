@@ -23,7 +23,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Remove the `unicorn/prefer-set-has` rule ([76851c3]);
 - Set the `always` for the `jsonc/array-bracket-newline` rule for the `package.json` ([c66676e]);
 - Update `eslint-plugin-html` to v8.1.3 ([183a01d]);
-- Update `@typescript-eslint/eslint-plugin` to v8.39.1 ([1295a51]).
+- Update `@typescript-eslint/eslint-plugin` to v8.39.1 ([1295a51]);
+- Remove unnecessary disabling of the `typescript/naming-convention` rule ([dc06ffe]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -222,6 +223,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[dc06ffe]: https://github.com/vanyauhalin/eslint-config/commit/dc06ffe6baa1c8f8c1c91360e48542457dbcbee0/
 [a822086]: https://github.com/vanyauhalin/eslint-config/commit/a82208606e962ebe4cac5a55000f9e17647bd463/
 [cecdead]: https://github.com/vanyauhalin/eslint-config/commit/cecdeadc8bbb61bba41b2b8fb736fdbc1ed1266e/
 [1295a51]: https://github.com/vanyauhalin/eslint-config/commit/1295a515e6f3e0fa9864e5434f0a401e78f6606f/
