@@ -639,6 +639,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"html/no-heading-inside-button": e,
 			"html/no-ineffective-attrs": e,
 			"html/no-inline-styles": e,
+			"html/no-invalid-entity": e,
 			"html/no-invalid-role": e,
 			"html/no-multiple-empty-lines": e,
 			"html/no-multiple-h1": e,
