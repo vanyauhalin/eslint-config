@@ -959,6 +959,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"package-json/unique-dependencies": e,
 			"package-json/valid-bin": e,
 			"package-json/valid-bundleDependencies": e,
+			"package-json/valid-config": e,
 			"package-json/valid-license": e,
 			"package-json/valid-name": e,
 			"package-json/valid-package-definition": e,
