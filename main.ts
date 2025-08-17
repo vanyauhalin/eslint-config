@@ -960,6 +960,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"package-json/require-version": [e, {ignorePrivate: true}],
 			"package-json/sort-collections": e,
 			"package-json/unique-dependencies": e,
+			"package-json/valid-author": e,
 			"package-json/valid-bin": e,
 			"package-json/valid-bundleDependencies": e,
 			"package-json/valid-config": e,
