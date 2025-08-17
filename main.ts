@@ -967,6 +967,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"package-json/valid-cpu": e,
 			"package-json/valid-dependencies": e,
 			"package-json/valid-description": e,
+			"package-json/valid-devDependencies": e,
 			"package-json/valid-exports": e,
 			"package-json/valid-license": e,
 			"package-json/valid-name": e,
