@@ -890,6 +890,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"math/prefer-math-sqrt": e,
 			"math/prefer-math-sqrt1-2": e,
 			"math/prefer-math-sqrt2": e,
+			"math/prefer-math-sum-precise": e,
 			"math/prefer-math-trunc": e,
 			"math/prefer-number-epsilon": e,
 			"math/prefer-number-is-finite": e,
