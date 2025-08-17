@@ -961,6 +961,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"package-json/valid-name": e,
 			"package-json/valid-package-definition": e,
 			"package-json/valid-repository-directory": e,
+			"package-json/valid-type": e,
 			"package-json/valid-version": e,
 		},
 	},
