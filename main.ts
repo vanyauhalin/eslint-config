@@ -950,7 +950,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"package-json/no-redundant-files": e,
 			"package-json/order-properties": e,
 			"package-json/repository-shorthand": e,
-			"package-json/require-author": e,
+			"package-json/require-author": [e, {ignorePrivate: true}],
 			"package-json/require-keywords": e,
 			"package-json/require-name": e,
 			"package-json/require-version": e,
