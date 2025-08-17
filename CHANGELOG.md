@@ -39,7 +39,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Enable the `html/no-aria-hidden-on-focusable` rule ([00b9a88]);
 - Enable the `html/no-duplicate-in-head` rule ([bfe4352]);
 - Enable the `html/no-empty-headings` rule ([5684f46]);
-- Enable the `html/no-ineffective-attrs` rule ([3ead6b5]).
+- Enable the `html/no-ineffective-attrs` rule ([3ead6b5]);
+- Enable the `html/no-invalid-entity` rule ([58afe2b]).
 
 ### Changed
 
@@ -272,6 +273,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[58afe2b]: https://github.com/vanyauhalin/eslint-config/commit/58afe2bb016eb057cee459fadfd4662364b4ef50/
 [3ead6b5]: https://github.com/vanyauhalin/eslint-config/commit/3ead6b521d3a17163b296a8000ffcc99f06598f4/
 [5684f46]: https://github.com/vanyauhalin/eslint-config/commit/5684f467988a4b27ac814c60cd819efc829c2106/
 [bfe4352]: https://github.com/vanyauhalin/eslint-config/commit/bfe4352d59c975877ca558f3dbc5215a90c322b3/
