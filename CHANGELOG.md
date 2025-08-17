@@ -30,7 +30,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Enable the `package-json/require-bugs` rule ([79a54e4]);
 - Enable the `package-json/require-description` rule ([1077e0d]);
 - Enable the `package-json/require-engines` rule ([8357952]);
-- Enable the `package-json/valid-author` rule ([990f0ea]).
+- Enable the `package-json/valid-author` rule ([990f0ea]);
+- Enable the `package-json/valid-devDependencies` rule ([50afa9e]).
 
 ### Changed
 
@@ -259,6 +260,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[50afa9e]: https://github.com/vanyauhalin/eslint-config/commit/50afa9eafdca5731a660a79145591fcae9b7683c/
 [990f0ea]: https://github.com/vanyauhalin/eslint-config/commit/990f0ea6007cb9565f1144ba9e9e0c7d95951cfa/
 [8357952]: https://github.com/vanyauhalin/eslint-config/commit/8357952bd71a33b9dadf4515e62fece36297b120/
 [1077e0d]: https://github.com/vanyauhalin/eslint-config/commit/1077e0dd40c00035df3d9e247f6d2787e38beda2/
