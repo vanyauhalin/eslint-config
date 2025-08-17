@@ -63,7 +63,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Update `eslint-plugin-jsdoc` to v54.1.0 ([0cc4038]);
 - Update `eslint-plugin-unicorn` to v60.0.0 ([83b13d6]);
 - Update `eslint-plugin-package-json` to v0.54.0 ([eb461d7]);
-- Remove the `package-json/valid-local-dependency` rule ([efbd670]).
+- Remove the `package-json/valid-local-dependency` rule ([efbd670]);
+- Update `eslint-plugin-node-dependencies` to v1.1.2 ([4b82e8c]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -262,6 +263,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[4b82e8c]: https://github.com/vanyauhalin/eslint-config/commit/4b82e8c7f88aeea7f843157a10f8104aef1a355d/
 [68e951c]: https://github.com/vanyauhalin/eslint-config/commit/68e951c14d43352edbe91f30d69050e2d4c9980a/
 [e1fe1c1]: https://github.com/vanyauhalin/eslint-config/commit/e1fe1c1e2926e26c2360fabf4ffa34fcfd3de547/
 [50afa9e]: https://github.com/vanyauhalin/eslint-config/commit/50afa9eafdca5731a660a79145591fcae9b7683c/
