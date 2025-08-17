@@ -14,7 +14,8 @@ This document records all notable changes to the project, following the [Keep a 
 
 - Disallow named imports ([6b55729]);
 - Remove the `es-x/no-array-from` rule ([3037d16]);
-- Remove the `es-x/no-export-ns-from` rule ([0be9644]).
+- Remove the `es-x/no-export-ns-from` rule ([0be9644]);
+- Use the `type` instead of `interface` in the `typescript/consistent-type-definitions` rule ([d7c6e73]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -213,6 +214,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[d7c6e73]: https://github.com/vanyauhalin/eslint-config/commit/d7c6e73f4e2345245072ec9e6f16bac53e6a9637/
 [0be9644]: https://github.com/vanyauhalin/eslint-config/commit/0be9644b06dd865de703bc1e56b5f9f896834107/
 [3037d16]: https://github.com/vanyauhalin/eslint-config/commit/3037d161832a57e0cf70da5cde0ec9c0ec43f92f/
 [6b55729]: https://github.com/vanyauhalin/eslint-config/commit/6b55729622f89d161b02038b00502492ea9d020d/
