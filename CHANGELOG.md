@@ -22,7 +22,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Enable the `package-json/valid-scripts` rule ([a6f757e]);
 - Enable the `package-json/valid-bundleDependencies` rule ([2018573]);
 - Enable the `package-json/valid-license` rule ([6486038]);
-- Enable the `package-json/valid-config` rule ([e3652a3]).
+- Enable the `package-json/valid-config` rule ([e3652a3]);
+- Enable the `package-json/valid-cpu` rule ([1d409ae]).
 
 ### Changed
 
@@ -251,6 +252,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[1d409ae]: https://github.com/vanyauhalin/eslint-config/commit/1d409aea0ed1c29d5f761ce61be4445d866edc6f/
 [e3652a3]: https://github.com/vanyauhalin/eslint-config/commit/e3652a35133e767fd0ada419c204a87cd00c83fa/
 [6486038]: https://github.com/vanyauhalin/eslint-config/commit/648603836075773d5a4a688a7a8de09fadabdbb7/
 [2018573]: https://github.com/vanyauhalin/eslint-config/commit/20185732eeccde1118828782062793f330683010/
