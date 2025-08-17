@@ -37,7 +37,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Update `typescript` to v5.9.2 ([be82446]);
 - Update `eslint-plugin-jsonc` to v2.20.1 ([b990c5c]);
 - Update `@stylistic/eslint-plugin` to v5.2.3 ([847bb95]);
-- Update `eslint-plugin-es-x` to v9.0.0 ([0415d66]).
+- Update `eslint-plugin-es-x` to v9.0.0 ([0415d66]);
+- Update `eslint-plugin-jsdoc` to v54.1.0 ([0cc4038]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -236,6 +237,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[0cc4038]: https://github.com/vanyauhalin/eslint-config/commit/0cc4038010b0dbd8c4ff9f1f63fc1693d1b46169/
 [bfd5220]: https://github.com/vanyauhalin/eslint-config/commit/bfd5220891a0ab9aa0c72b8b5f047e22f75abf66/
 [0415d66]: https://github.com/vanyauhalin/eslint-config/commit/0415d66872344062e136e63666ea9d915ca302ac/
 [847bb95]: https://github.com/vanyauhalin/eslint-config/commit/847bb9503d783bb8e547dd5a53fdbfd6c2a63e6d/
