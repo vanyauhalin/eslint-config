@@ -63,9 +63,13 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 	},
 
 	//
-	// Parsers and Processors
+	// Linters, Parsers and Processors
 	//
 
+	{
+		name: "@vanyauhalin/builtin-linter",
+		linterOptions: {reportUnusedDisableDirectives: e},
+	},
 	{
 		name: "@vanyauhalin/html-parser",
 		files: ["**/*.html"],
