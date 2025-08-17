@@ -40,7 +40,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Update `@stylistic/eslint-plugin` to v5.2.3 ([847bb95]);
 - Update `eslint-plugin-es-x` to v9.0.0 ([0415d66]);
 - Update `eslint-plugin-jsdoc` to v54.1.0 ([0cc4038]);
-- Update `eslint-plugin-unicorn` to v60.0.0 ([83b13d6]).
+- Update `eslint-plugin-unicorn` to v60.0.0 ([83b13d6]);
+- Update `eslint-plugin-package-json` to v0.54.0 ([eb461d7]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -239,6 +240,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[eb461d7]: https://github.com/vanyauhalin/eslint-config/commit/eb461d79375d71a11febfd2af96459a274466ea8/
 [38252bf]: https://github.com/vanyauhalin/eslint-config/commit/38252bfdd073c0a3b477ee54faaa93eff7c12723/
 [83b13d6]: https://github.com/vanyauhalin/eslint-config/commit/83b13d65748e79084a9af691a0904209645717de/
 [0cc4038]: https://github.com/vanyauhalin/eslint-config/commit/0cc4038010b0dbd8c4ff9f1f63fc1693d1b46169/
