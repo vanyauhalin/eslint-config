@@ -1451,7 +1451,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/prefer-query-selector": e,
 			"unicorn/prefer-reflect-apply": e,
 			"unicorn/prefer-regexp-test": e,
-			"unicorn/prefer-set-has": e,
 			"unicorn/prefer-set-size": e,
 			"unicorn/prefer-spread": e,
 			"unicorn/prefer-string-raw": e,
