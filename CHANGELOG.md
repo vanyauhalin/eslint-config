@@ -15,7 +15,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Enable the `unicorn/no-useless-error-capture-stack-trace` rule ([38252bf]);
 - Enable the `ignorePrivate` option for the `package-json/require-author` rule ([c07e7b4]);
 - Enable the `ignorePrivate` option for the `package-json/require-keywords` rule ([a1c2f7c]);
-- Enable the `ignorePrivate` option for the `package-json/require-version` rule ([fe9256d]).
+- Enable the `ignorePrivate` option for the `package-json/require-version` rule ([fe9256d]);
+- Enable the `package-json/valid-bin` rule ([a924c06]).
 
 ### Changed
 
@@ -244,6 +245,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[a924c06]: https://github.com/vanyauhalin/eslint-config/commit/a924c0651e607484df587a566e648624291c428a/
 [efbd670]: https://github.com/vanyauhalin/eslint-config/commit/efbd67026571513a4600448a63ba7e393613935e/
 [fe9256d]: https://github.com/vanyauhalin/eslint-config/commit/fe9256dca98a5d20bf62693fdcd7d42926e61498/
 [a1c2f7c]: https://github.com/vanyauhalin/eslint-config/commit/a1c2f7c7a0db98303db24a1cea98077a28a209dd/
