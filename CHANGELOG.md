@@ -32,7 +32,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Update `eslint-plugin-depend` to v1.2.0 ([ef4d642]);
 - Update `eslint-plugin-import-x` to v4.16.1 ([54b3026]);
 - Update `eslint-plugin-n` to v17.21.3 ([7e37beb]);
-- Update `eslint-plugin-regexp` to v2.10.0 ([89b2a87]).
+- Update `eslint-plugin-regexp` to v2.10.0 ([89b2a87]);
+- Update `typescript` to v.5.9.2 ([be82446]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -231,6 +232,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[be82446]: https://github.com/vanyauhalin/eslint-config/commit/be824466c97b730565eae5f8d1245890a925032f/
 [89b2a87]: https://github.com/vanyauhalin/eslint-config/commit/89b2a8718935b1b3d61201f88069fabbc09846ba/
 [7e37beb]: https://github.com/vanyauhalin/eslint-config/commit/7e37bebf55d140bab672e6f9e74d32f3a78384b3/
 [54b3026]: https://github.com/vanyauhalin/eslint-config/commit/54b30266e8cb8bd17cece302b60713b588477ace/
