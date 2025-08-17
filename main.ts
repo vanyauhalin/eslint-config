@@ -730,7 +730,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"jsdoc/empty-tags": e,
 			"jsdoc/implements-on-classes": e,
 			"jsdoc/imports-as-dependencies": e,
-			"jsdoc/lines-before-block": e,
+			"jsdoc/lines-before-block": [e, {ignoreSingleLines: false}],
 			"jsdoc/multiline-blocks": e,
 			"jsdoc/no-bad-blocks": e,
 			"jsdoc/no-blank-block-descriptions": e,
