@@ -26,7 +26,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Update `@typescript-eslint/eslint-plugin` to v8.39.1 ([1295a51]);
 - Remove unnecessary disabling of the `typescript/naming-convention` rule ([dc06ffe]);
 - Update `@typescript-eslint/parser` to v8.39.1 ([762d1fa]);
-- Update `@typescript-eslint/utils` to v8.39.1 ([839f6d3]).
+- Update `@typescript-eslint/utils` to v8.39.1 ([839f6d3]);
+- Update `eslint` to v9.33.0 ([a3789f2]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -225,6 +226,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[a3789f2]: https://github.com/vanyauhalin/eslint-config/commit/a3789f2b579869460778a3d1d7f64babcab4b88d/
 [839f6d3]: https://github.com/vanyauhalin/eslint-config/commit/839f6d3eb8992181339c46ce73e22349a9298009/
 [762d1fa]: https://github.com/vanyauhalin/eslint-config/commit/762d1fa9c95655e5e32d975e15c6ec2ed2d31eb4/
 [dc06ffe]: https://github.com/vanyauhalin/eslint-config/commit/dc06ffe6baa1c8f8c1c91360e48542457dbcbee0/
