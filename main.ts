@@ -1598,6 +1598,13 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		},
 	},
 	{
+		name: "@vanyauhalin/package-file",
+		files: ["**/package.json"],
+		rules: {
+			"jsonc/array-bracket-newline": [e, "always"],
+		},
+	},
+	{
 		name: "@vanyauhalin/tsconfig-file",
 		files: ["**/jsconfig.json", "**/jsconfig.*.json", "**/tsconfig.json", "**/tsconfig.*.json"],
 		rules: {
