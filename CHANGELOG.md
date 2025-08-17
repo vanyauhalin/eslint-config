@@ -35,7 +35,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Enable the `package-json/valid-optionalDependencies` rule ([e1fe1c1]);
 - Enable the `package-json/valid-peerDependencies` rule ([68e951c]);
 - Enable the `math/prefer-math-sum-precise` rule ([81123b2]);
-- Enable the `math/prefer-number-min-value` rule ([8a55d7b]).
+- Enable the `math/prefer-number-min-value` rule ([8a55d7b]);
+- Enable the `html/no-aria-hidden-on-focusable` rule ([00b9a88]).
 
 ### Changed
 
@@ -268,6 +269,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[00b9a88]: https://github.com/vanyauhalin/eslint-config/commit/00b9a88361ed9137b48cc87944f8693a14be9f76/
 [01002be]: https://github.com/vanyauhalin/eslint-config/commit/01002be09da110cd2f65ad6d404e63b0a83e1180/
 [bdc86e4]: https://github.com/vanyauhalin/eslint-config/commit/bdc86e4247e36b1c0ae62a92135fd478bb5184d5/
 [1b11b49]: https://github.com/vanyauhalin/eslint-config/commit/1b11b4918fb957aedec5a4302679615c7a20af89/
