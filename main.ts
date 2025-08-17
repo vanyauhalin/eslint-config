@@ -1245,6 +1245,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"typescript/no-unnecessary-type-arguments": e,
 			"typescript/no-unnecessary-type-assertion": e,
 			"typescript/no-unnecessary-type-constraint": e,
+			"typescript/no-unnecessary-type-conversion": e,
 			"typescript/no-unsafe-declaration-merging": e,
 			"typescript/no-unsafe-enum-comparison": e,
 			"typescript/no-unsafe-function-type": e,
