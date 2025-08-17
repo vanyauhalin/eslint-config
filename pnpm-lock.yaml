@@ -75,8 +75,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0(eslint@9.33.0(jiti@2.4.2))
       eslint-plugin-math:
-        specifier: 0.6.1
-        version: 0.6.1(eslint@9.33.0(jiti@2.4.2))
+        specifier: 0.13.0
+        version: 0.13.0(eslint@9.33.0(jiti@2.4.2))
       eslint-plugin-n:
         specifier: 17.21.3
         version: 17.21.3(eslint@9.33.0(jiti@2.4.2))(typescript@5.9.2)
@@ -322,12 +322,6 @@ packages:
 
   '@eslint-community/eslint-utils@4.4.1':
     resolution: {integrity: sha512-s3O3waFUrMV8P/XaF/+ZTp1X9XBZW1a4B97ZnjQF2KYWaFD2A8KyFBsrsfSjEmjn3RGWAIuvlneuZm3CUK3jbA==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
-
-  '@eslint-community/eslint-utils@4.6.1':
-    resolution: {integrity: sha512-KTsJMmobmbrFLe3LDh0PC2FXpcSYJt/MLjlkh/9LEnmKYLSYmT/0EW9JWANjeoemiuZrmogti0tW5Ch+qNUYDw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
@@ -1346,8 +1340,8 @@ packages:
     peerDependencies:
       eslint: '>=8'
 
-  eslint-plugin-math@0.6.1:
-    resolution: {integrity: sha512-TjPew6TUf5pK2eSYqNEELht2mlgch8z9Z7Zc9swbpi8ua+dfeolP3/iUw5i1sqrP8issbbFurmVBR9EaWYhk0g==}
+  eslint-plugin-math@0.13.0:
+    resolution: {integrity: sha512-6k6Bd7qMzLLQvG9D03fAePH5I5oOLWc7m4JkQBrkuPYa5PbGhTvvmEgWl9+m6Iw/oMfo1Z2UU3ik42ian5P0/A==}
     engines: {node: ^18 || >=20}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -2816,11 +2810,6 @@ snapshots:
       eslint: 9.33.0(jiti@2.4.2)
       eslint-visitor-keys: 3.4.3
 
-  '@eslint-community/eslint-utils@4.6.1(eslint@9.33.0(jiti@2.4.2))':
-    dependencies:
-      eslint: 9.33.0(jiti@2.4.2)
-      eslint-visitor-keys: 3.4.3
-
   '@eslint-community/eslint-utils@4.7.0(eslint@9.33.0(jiti@2.4.2))':
     dependencies:
       eslint: 9.33.0(jiti@2.4.2)
@@ -4050,10 +4039,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-math@0.6.1(eslint@9.33.0(jiti@2.4.2)):
+  eslint-plugin-math@0.13.0(eslint@9.33.0(jiti@2.4.2)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.6.1(eslint@9.33.0(jiti@2.4.2))
+      '@eslint-community/eslint-utils': 4.7.0(eslint@9.33.0(jiti@2.4.2))
       eslint: 9.33.0(jiti@2.4.2)
+      eslint-type-tracer: 0.4.1(eslint@9.33.0(jiti@2.4.2))
 
   eslint-plugin-n@17.21.3(eslint@9.33.0(jiti@2.4.2))(typescript@5.9.2):
     dependencies:
