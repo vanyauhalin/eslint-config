@@ -6,6 +6,10 @@ This document records all notable changes to the project, following the [Keep a 
 
 <!-- There are no noticeable changes in version [unreleased]. -->
 
+### Added
+
+- Report unused disable directives ([b3d9449]).
+
 ## [0.0.9] - 2025-04-28
 
 ### Fixed
@@ -203,6 +207,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[b3d9449]: https://github.com/vanyauhalin/eslint-config/commit/b3d94496b9f167d359ea3d1910174d93b94e1b77/
 [e6633b4]: https://github.com/vanyauhalin/eslint-config/commit/e6633b4638ee4ef7519be719835b1daa0f834e8c/
 [b1b86e4]: https://github.com/vanyauhalin/eslint-config/commit/b1b86e40bfb0617103975b5e07c026815334b937/
 [a4aad74]: https://github.com/vanyauhalin/eslint-config/commit/a4aad742e3de3f23b3d1c9d3ab8ece6601a2099e/
