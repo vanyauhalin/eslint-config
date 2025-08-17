@@ -468,7 +468,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/es-x-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			"es-x/no-array-from": e,
 			"es-x/no-array-of": e,
 			"es-x/no-array-prototype-at": e,
 			"es-x/no-array-prototype-copywithin": e,
