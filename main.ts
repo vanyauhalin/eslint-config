@@ -628,6 +628,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"html/no-abstract-roles": e,
 			"html/no-accesskey-attrs": e,
 			"html/no-aria-hidden-body": e,
+			"html/no-aria-hidden-on-focusable": e,
 			"html/no-duplicate-attrs": e,
 			"html/no-duplicate-class": e,
 			"html/no-duplicate-id": e,
