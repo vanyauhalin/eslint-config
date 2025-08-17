@@ -900,6 +900,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"math/prefer-number-max-safe-integer": e,
 			"math/prefer-number-max-value": e,
 			"math/prefer-number-min-safe-integer": e,
+			"math/prefer-number-min-value": e,
 		},
 	},
 	{
