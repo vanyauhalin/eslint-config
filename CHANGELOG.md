@@ -10,10 +10,11 @@ This document records all notable changes to the project, following the [Keep a 
 
 - Report unused disable directives ([b3d9449]);
 - Enable the `typescript/no-unnecessary-type-conversion` rule ([cecdead]);
-- Enable the `checkUnknown` option in the `typescript/no-base-to-string` rule ([a822086]);
+- Enable the `checkUnknown` option for the `typescript/no-base-to-string` rule ([a822086]);
 - Enable the `es-x/no-nonstandard-error-properties` rule ([bfd5220]);
 - Enable the `unicorn/no-useless-error-capture-stack-trace` rule ([38252bf]);
-- Enable the `ignorePrivate` option in the `package-json/require-author` rule ([c07e7b4]).
+- Enable the `ignorePrivate` option for the `package-json/require-author` rule ([c07e7b4]);
+- Enable the `ignorePrivate` option for the `package-json/require-keywords` rule ([a1c2f7c]).
 
 ### Changed
 
@@ -241,6 +242,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[a1c2f7c]: https://github.com/vanyauhalin/eslint-config/commit/a1c2f7c7a0db98303db24a1cea98077a28a209dd/
 [c07e7b4]: https://github.com/vanyauhalin/eslint-config/commit/c07e7b45428870aca6fa2cc209fc6549c91d08f2/
 [eb461d7]: https://github.com/vanyauhalin/eslint-config/commit/eb461d79375d71a11febfd2af96459a274466ea8/
 [38252bf]: https://github.com/vanyauhalin/eslint-config/commit/38252bfdd073c0a3b477ee54faaa93eff7c12723/
