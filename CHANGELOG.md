@@ -17,7 +17,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Remove the `es-x/no-export-ns-from` rule ([0be9644]);
 - Use the `type` instead of `interface` in the `typescript/consistent-type-definitions` rule ([d7c6e73]);
 - Remove the `typescript/no-dynamic-delete` rule ([aef3994]);
-- Remove the `unicorn/prefer-add-event-listener` rule ([d97eed1]).
+- Remove the `unicorn/prefer-add-event-listener` rule ([d97eed1]);
+- Remove the `unicorn/prefer-set-has` rule ([76851c3]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -216,6 +217,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[76851c3]: https://github.com/vanyauhalin/eslint-config/commit/76851c3b73b21633019b4313daef4d266ff5198e/
 [d97eed1]: https://github.com/vanyauhalin/eslint-config/commit/d97eed17274fa4b9b53bbd32f1671e8c30ac6c83/
 [aef3994]: https://github.com/vanyauhalin/eslint-config/commit/aef399475643389dea8dcbcdf0442f12915924a4/
 [d7c6e73]: https://github.com/vanyauhalin/eslint-config/commit/d7c6e73f4e2345245072ec9e6f16bac53e6a9637/
