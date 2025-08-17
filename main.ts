@@ -498,7 +498,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"es-x/no-default-parameters": e,
 			"es-x/no-escape-unescape": e,
 			"es-x/no-exponential-operators": e,
-			"es-x/no-export-ns-from": e,
 			"es-x/no-function-declarations-in-if-statement-clauses-without-block": e,
 			"es-x/no-initializers-in-for-in": e,
 			"es-x/no-iterator-prototype-every": e,
