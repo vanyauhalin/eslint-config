@@ -29,7 +29,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Update `@typescript-eslint/utils` to v8.39.1 ([839f6d3]);
 - Update `eslint` to v9.33.0 ([a3789f2]);
 - Update `eslint-plugin-de-morgan` to v1.3.1 ([d0cebcb]);
-- Update `eslint-plugin-depend` to v1.2.0 ([ef4d642]).
+- Update `eslint-plugin-depend` to v1.2.0 ([ef4d642]);
+- Update `eslint-plugin-import-x` to v4.16.1 ([54b3026]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -228,6 +229,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[54b3026]: https://github.com/vanyauhalin/eslint-config/commit/54b30266e8cb8bd17cece302b60713b588477ace/
 [ef4d642]: https://github.com/vanyauhalin/eslint-config/commit/ef4d64269bc40966089aa189d80ea41549284f21/
 [d0cebcb]: https://github.com/vanyauhalin/eslint-config/commit/d0cebcba88a7f603162789dcb0108af4de2910f5/
 [a3789f2]: https://github.com/vanyauhalin/eslint-config/commit/a3789f2b579869460778a3d1d7f64babcab4b88d/
