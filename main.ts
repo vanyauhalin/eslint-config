@@ -1418,7 +1418,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/no-useless-undefined": [e, {checkArguments: false, checkArrowFunctionBody: false}],
 			"unicorn/no-zero-fractions": e,
 			"unicorn/number-literal-case": e,
-			"unicorn/prefer-add-event-listener": e,
 			"unicorn/prefer-array-find": e,
 			"unicorn/prefer-array-flat-map": e,
 			"unicorn/prefer-array-flat": e,
