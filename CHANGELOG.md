@@ -11,7 +11,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Report unused disable directives ([b3d9449]);
 - Enable the `typescript/no-unnecessary-type-conversion` rule ([cecdead]);
 - Enable the `checkUnknown` option in the `typescript/no-base-to-string` rule ([a822086]);
-- Enable the `es-x/no-nonstandard-error-properties` rule ([bfd5220]).
+- Enable the `es-x/no-nonstandard-error-properties` rule ([bfd5220]);
+- Enable the `unicorn/no-useless-error-capture-stack-trace` rule ([38252bf]).
 
 ### Changed
 
@@ -238,6 +239,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[38252bf]: https://github.com/vanyauhalin/eslint-config/commit/38252bfdd073c0a3b477ee54faaa93eff7c12723/
 [83b13d6]: https://github.com/vanyauhalin/eslint-config/commit/83b13d65748e79084a9af691a0904209645717de/
 [0cc4038]: https://github.com/vanyauhalin/eslint-config/commit/0cc4038010b0dbd8c4ff9f1f63fc1693d1b46169/
 [bfd5220]: https://github.com/vanyauhalin/eslint-config/commit/bfd5220891a0ab9aa0c72b8b5f047e22f75abf66/
