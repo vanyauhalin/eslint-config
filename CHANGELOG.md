@@ -8,7 +8,8 @@ This document records all notable changes to the project, following the [Keep a 
 
 ### Added
 
-- Report unused disable directives ([b3d9449]).
+- Report unused disable directives ([b3d9449]);
+- Enable the `typescript/no-unnecessary-type-conversion` rule ([cecdead]).
 
 ### Changed
 
@@ -220,6 +221,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[cecdead]: https://github.com/vanyauhalin/eslint-config/commit/cecdeadc8bbb61bba41b2b8fb736fdbc1ed1266e/
 [1295a51]: https://github.com/vanyauhalin/eslint-config/commit/1295a515e6f3e0fa9864e5434f0a401e78f6606f/
 [183a01d]: https://github.com/vanyauhalin/eslint-config/commit/183a01d0291a1260376178de636f5caebbe85396/
 [c66676e]: https://github.com/vanyauhalin/eslint-config/commit/c66676e55242bd2dd609ed221bce2c9348489c11/
