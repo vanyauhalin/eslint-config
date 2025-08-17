@@ -632,6 +632,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"html/no-duplicate-attrs": e,
 			"html/no-duplicate-class": e,
 			"html/no-duplicate-id": e,
+			"html/no-duplicate-in-head": e,
 			"html/no-extra-spacing-attrs": e,
 			"html/no-extra-spacing-text": e,
 			"html/no-heading-inside-button": e,
