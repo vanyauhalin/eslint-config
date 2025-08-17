@@ -6,7 +6,7 @@ Welcome to the contributing guidelines.
 
 Before pursuing specific contribution goals, please ensure you have the necessary tools:
 
-- [Node.js] version 23.4.0.
+- [Node.js] version 24.6.0.
 - [pnpm] version 9.15.0.
 
 The project uses [mise], a polyglot tool version manager, to manage the version of Node.js and pnpm. If you already have experience with tools like asdf, nvm, or nodenv, you will find it very familiar.

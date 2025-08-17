@@ -42,7 +42,7 @@ The [ESLint Config Inspector] can help you gain a more detailed understanding of
 
 ## Compatibility
 
-This configuration is written specifically for ESLint 9 and, therefore, does not support previous versions. The project itself uses one of the latest versions of Node.js at the time of writing which is 23, but the minimum required version is the latest 18.
+This configuration is written specifically for ESLint 9 and, therefore, does not support previous versions. The project itself uses one of the latest versions of Node.js at the time of writing which is 24, but the minimum required version is the latest 22.
 
 ## License
 
