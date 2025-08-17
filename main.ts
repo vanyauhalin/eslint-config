@@ -520,6 +520,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"es-x/no-nonstandard-boolean-properties": e,
 			"es-x/no-nonstandard-dataview-properties": e,
 			"es-x/no-nonstandard-date-properties": e,
+			"es-x/no-nonstandard-error-properties": e,
 			"es-x/no-nonstandard-finalizationregistry-properties": e,
 			"es-x/no-nonstandard-function-properties": e,
 			"es-x/no-nonstandard-intl-collator-properties": e,
