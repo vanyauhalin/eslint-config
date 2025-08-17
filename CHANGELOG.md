@@ -19,7 +19,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Remove the `typescript/no-dynamic-delete` rule ([aef3994]);
 - Remove the `unicorn/prefer-add-event-listener` rule ([d97eed1]);
 - Remove the `unicorn/prefer-set-has` rule ([76851c3]);
-- Set the `always` for the `jsonc/array-bracket-newline` rule for the `package.json` ([c66676e]).
+- Set the `always` for the `jsonc/array-bracket-newline` rule for the `package.json` ([c66676e]);
+- Update `eslint-plugin-html` to v8.1.3 ([183a01d]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -218,6 +219,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[183a01d]: https://github.com/vanyauhalin/eslint-config/commit/183a01d0291a1260376178de636f5caebbe85396/
 [c66676e]: https://github.com/vanyauhalin/eslint-config/commit/c66676e55242bd2dd609ed221bce2c9348489c11/
 [76851c3]: https://github.com/vanyauhalin/eslint-config/commit/76851c3b73b21633019b4313daef4d266ff5198e/
 [d97eed1]: https://github.com/vanyauhalin/eslint-config/commit/d97eed17274fa4b9b53bbd32f1671e8c30ac6c83/
