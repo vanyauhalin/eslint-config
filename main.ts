@@ -1208,7 +1208,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"typescript/method-signature-style": [e, "method"],
 			"typescript/no-array-constructor": e,
 			"typescript/no-array-delete": e,
-			"typescript/no-base-to-string": e,
+			"typescript/no-base-to-string": [e, {checkUnknown: true}],
 			"typescript/no-confusing-non-null-assertion": e,
 			"typescript/no-confusing-void-expression": e,
 			"typescript/no-deprecated": e,
