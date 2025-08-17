@@ -33,7 +33,9 @@
 	},
 	"main": "dist/main.js",
 	"types": "dist/main.d.ts",
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build-docs": "eslint-config-inspector build --config main.ts --outDir docs",
 		"build-package": "tsc --project tsconfig.build.json",
