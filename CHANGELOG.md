@@ -12,7 +12,8 @@ This document records all notable changes to the project, following the [Keep a 
 
 ### Changed
 
-- Disallow named imports ([6b55729]).
+- Disallow named imports ([6b55729]);
+- Remove the `es-x/no-array-from` rule ([3037d16]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -211,6 +212,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[3037d16]: https://github.com/vanyauhalin/eslint-config/commit/3037d161832a57e0cf70da5cde0ec9c0ec43f92f/
 [6b55729]: https://github.com/vanyauhalin/eslint-config/commit/6b55729622f89d161b02038b00502492ea9d020d/
 [b3d9449]: https://github.com/vanyauhalin/eslint-config/commit/b3d94496b9f167d359ea3d1910174d93b94e1b77/
 [e6633b4]: https://github.com/vanyauhalin/eslint-config/commit/e6633b4638ee4ef7519be719835b1daa0f834e8c/
