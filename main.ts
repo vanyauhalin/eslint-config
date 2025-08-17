@@ -1199,7 +1199,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"typescript/consistent-generic-constructors": e,
 			"typescript/consistent-indexed-object-style": e,
 			"typescript/consistent-type-assertions": e,
-			"typescript/consistent-type-definitions": e,
+			"typescript/consistent-type-definitions": [e, "type"],
 			"typescript/consistent-type-imports": e,
 			"typescript/default-param-last": e,
 			"typescript/dot-notation": e,
