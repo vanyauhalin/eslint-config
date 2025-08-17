@@ -74,7 +74,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Update `eslint-plugin-node-dependencies` to v1.1.2 ([4b82e8c]);
 - Update `eslint-plugin-math` to v0.13.0 ([1b11b49]);
 - Update `@html-eslint/eslint-plugin` to v0.45.0 ([bdc86e4]);
-- Update `@html-eslint/parser` to v0.45.0 ([01002be]).
+- Update `@html-eslint/parser` to v0.45.0 ([01002be]);
+- Explicitly set the minimum Node.js version to v22.18.0 ([a9b6dad]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -273,6 +274,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[a9b6dad]: https://github.com/vanyauhalin/eslint-config/commit/a9b6dadc98329eedadf9cfc7bb9000265785f6ce/
 [58afe2b]: https://github.com/vanyauhalin/eslint-config/commit/58afe2bb016eb057cee459fadfd4662364b4ef50/
 [3ead6b5]: https://github.com/vanyauhalin/eslint-config/commit/3ead6b521d3a17163b296a8000ffcc99f06598f4/
 [5684f46]: https://github.com/vanyauhalin/eslint-config/commit/5684f467988a4b27ac814c60cd819efc829c2106/
