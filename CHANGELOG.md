@@ -32,7 +32,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Enable the `package-json/require-engines` rule ([8357952]);
 - Enable the `package-json/valid-author` rule ([990f0ea]);
 - Enable the `package-json/valid-devDependencies` rule ([50afa9e]);
-- Enable the `package-json/valid-optionalDependencies` rule ([e1fe1c1]).
+- Enable the `package-json/valid-optionalDependencies` rule ([e1fe1c1]);
+- Enable the `package-json/valid-peerDependencies` rule ([68e951c]).
 
 ### Changed
 
@@ -261,6 +262,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[68e951c]: https://github.com/vanyauhalin/eslint-config/commit/68e951c14d43352edbe91f30d69050e2d4c9980a/
 [e1fe1c1]: https://github.com/vanyauhalin/eslint-config/commit/e1fe1c1e2926e26c2360fabf4ffa34fcfd3de547/
 [50afa9e]: https://github.com/vanyauhalin/eslint-config/commit/50afa9eafdca5731a660a79145591fcae9b7683c/
 [990f0ea]: https://github.com/vanyauhalin/eslint-config/commit/990f0ea6007cb9565f1144ba9e9e0c7d95951cfa/
