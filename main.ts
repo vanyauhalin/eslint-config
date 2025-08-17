@@ -1215,7 +1215,6 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"typescript/no-dupe-class-members": e,
 			"typescript/no-duplicate-enum-values": e,
 			"typescript/no-duplicate-type-constituents": e,
-			"typescript/no-dynamic-delete": e,
 			"typescript/no-empty-object-type": [e, {allowInterfaces: "always"}],
 			"typescript/no-explicit-any": e,
 			"typescript/no-extra-non-null-assertion": e,
