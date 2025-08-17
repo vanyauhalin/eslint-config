@@ -953,7 +953,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"package-json/require-author": [e, {ignorePrivate: true}],
 			"package-json/require-keywords": [e, {ignorePrivate: true}],
 			"package-json/require-name": e,
-			"package-json/require-version": e,
+			"package-json/require-version": [e, {ignorePrivate: true}],
 			"package-json/sort-collections": e,
 			"package-json/unique-dependencies": e,
 			"package-json/valid-local-dependency": e,
