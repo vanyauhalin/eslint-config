@@ -28,7 +28,8 @@ This document records all notable changes to the project, following the [Keep a 
 - Enable the `package-json/valid-description` rule ([610887c]);
 - Enable the `package-json/valid-exports` rule ([8aa2021]);
 - Enable the `package-json/require-bugs` rule ([79a54e4]);
-- Enable the `package-json/require-description` rule ([1077e0d]).
+- Enable the `package-json/require-description` rule ([1077e0d]);
+- Enable the `package-json/require-engines` rule ([8357952]).
 
 ### Changed
 
@@ -257,6 +258,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[8357952]: https://github.com/vanyauhalin/eslint-config/commit/8357952bd71a33b9dadf4515e62fece36297b120/
 [1077e0d]: https://github.com/vanyauhalin/eslint-config/commit/1077e0dd40c00035df3d9e247f6d2787e38beda2/
 [79a54e4]: https://github.com/vanyauhalin/eslint-config/commit/79a54e470b8e1cf5059fa57025b67361946c9492/
 [8aa2021]: https://github.com/vanyauhalin/eslint-config/commit/8aa2021ec810d79d1dd6939b4e4b55d84e8d8cde/
