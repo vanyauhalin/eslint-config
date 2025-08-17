@@ -4,7 +4,7 @@ import htmlParser from "@html-eslint/parser"
 import stylistic from "@stylistic/eslint-plugin"
 import typescript from "@typescript-eslint/eslint-plugin"
 import typescriptParser from "@typescript-eslint/parser"
-import type {TSESLint} from "@typescript-eslint/utils"
+import type * as typescriptUtils from "@typescript-eslint/utils"
 import gitignore from "eslint-config-flat-gitignore"
 import ascii from "eslint-plugin-ascii"
 import clsx from "eslint-plugin-clsx"
@@ -14,7 +14,7 @@ import esX from "eslint-plugin-es-x"
 import github from "eslint-plugin-github"
 import htmlScript from "eslint-plugin-html"
 import importNewlines from "eslint-plugin-import-newlines"
-import importX from "eslint-plugin-import-x"
+import importX from "eslint-plugin-import-x" // eslint-disable-line import-x/no-named-as-default
 import jsdoc from "eslint-plugin-jsdoc"
 import jsonc from "eslint-plugin-jsonc"
 import jsxA11y from "eslint-plugin-jsx-a11y"
@@ -35,11 +35,11 @@ import yml from "eslint-plugin-yml"
 import jsoncParser from "jsonc-eslint-parser"
 import tomlParser from "toml-eslint-parser"
 import yamlParser from "yaml-eslint-parser"
-import {ignorePattern} from "./fragments/max-len.ts"
+import * as maxLen from "./fragments/max-len.ts"
 
 const e = "error"
 
-const config: TSESLint.FlatConfig.ConfigArray = [
+const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	//
 	// Ignores
 	//
@@ -1143,7 +1143,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
 			"stylistic/key-spacing": e,
 			"stylistic/keyword-spacing": e,
 			"stylistic/linebreak-style": e,
-			"stylistic/max-len": [e, {code: 100, tabWidth: 2, ignorePattern, ignoreComments: false, ignoreTrailingComments: true, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true}],
+			"stylistic/max-len": [e, {code: 100, tabWidth: 2, ignorePattern: maxLen.ignorePattern, ignoreComments: false, ignoreTrailingComments: true, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true}],
 			"stylistic/max-statements-per-line": e,
 			"stylistic/member-delimiter-style": [e, {multiline: {delimiter: "none", requireLast: false}, singleline: {delimiter: "semi", requireLast: false}, multilineDetection: "brackets"}],
 			"stylistic/multiline-ternary": e,
