@@ -93,8 +93,8 @@ importers:
         specifier: 60.0.0
         version: 60.0.0(eslint@9.33.0(jiti@2.4.2))
       eslint-plugin-wc:
-        specifier: 3.0.1
-        version: 3.0.1(eslint@9.33.0(jiti@2.4.2))
+        specifier: 3.0.2
+        version: 3.0.2(eslint@9.33.0(jiti@2.4.2))
       eslint-plugin-yml:
         specifier: 1.18.0
         version: 1.18.0(eslint@9.33.0(jiti@2.4.2))
@@ -1353,8 +1353,8 @@ packages:
     peerDependencies:
       eslint: '>=9.29.0'
 
-  eslint-plugin-wc@3.0.1:
-    resolution: {integrity: sha512-0p1wkSlA2Ue3FA4qW+5LZ+15sy0p1nUyVl1eyBMLq4rtN1LtE9IdI49BXNWMz8N8bM/y7Ulx8SWGAni5f8XO5g==}
+  eslint-plugin-wc@3.0.2:
+    resolution: {integrity: sha512-siwTrxPTw6GU2JmP3faInw8nhi0ZCnKsiSRM3j7EAkZmBTGYdDAToeseLYsvPrc5Urp/vPz+g7Ewh7XcICLxww==}
     peerDependencies:
       eslint: '>=8.40.0'
 
@@ -4015,7 +4015,7 @@ snapshots:
       semver: 7.7.2
       strip-indent: 4.0.0
 
-  eslint-plugin-wc@3.0.1(eslint@9.33.0(jiti@2.4.2)):
+  eslint-plugin-wc@3.0.2(eslint@9.33.0(jiti@2.4.2)):
     dependencies:
       eslint: 9.33.0(jiti@2.4.2)
       is-valid-element-name: 1.0.0
