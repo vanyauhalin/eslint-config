@@ -11,12 +11,6 @@ importers:
       '@eslint-community/eslint-plugin-eslint-comments':
         specifier: 4.5.0
         version: 4.5.0(eslint@9.33.0(jiti@2.4.2))
-      '@html-eslint/eslint-plugin':
-        specifier: 0.45.0
-        version: 0.45.0(eslint@9.33.0(jiti@2.4.2))
-      '@html-eslint/parser':
-        specifier: 0.45.0
-        version: 0.45.0
       '@stylistic/eslint-plugin':
         specifier: 5.2.3
         version: 5.2.3(eslint@9.33.0(jiti@2.4.2))
@@ -385,21 +379,6 @@ packages:
 
   '@github/browserslist-config@1.0.0':
     resolution: {integrity: sha512-gIhjdJp/c2beaIWWIlsXdqXVRUz3r2BxBCpfz/F3JXHvSAQ1paMYjLH+maEATtENg+k5eLV7gA+9yPp762ieuw==}
-
-  '@html-eslint/eslint-plugin@0.45.0':
-    resolution: {integrity: sha512-FpECVjHYBOcCwFXffb7lPG2gGnzXMYPxyDrn2hSmkFn6NwZeh9Pda9RSCGuDzYDa+wKcXALkv0PlyHcx1DOEeg==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-    peerDependencies:
-      eslint: ^8.0.0 || ^9.0.0
-
-  '@html-eslint/parser@0.45.0':
-    resolution: {integrity: sha512-dGU0IMzQTe85xk1Eqqv8H1q/JOM/yVIb4qnwCs2T/indTDUeVkQgzC0UoMoGk4yxu8rpFe2ppDZjH5E90LHzDg==}
-
-  '@html-eslint/template-parser@0.45.0':
-    resolution: {integrity: sha512-YVkFkgBTqT5hW+QWZRGrw2A9ySY04g1Ms+CtDc4TvxHnI2Kh/DUeIYJ2qC0FDgqSuhx74UBdfQLUArWdXLX1Pg==}
-
-  '@html-eslint/template-syntax-parser@0.45.0':
-    resolution: {integrity: sha512-yQcvaaZvHBCyt0zNNTDjVsgas1doC1MBaAVHREUbmnRrX3LnEPsGoaU3OBj65ydeX+I2JQBNKAKMwiDTMR6yFA==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1116,9 +1095,6 @@ packages:
   es-errors@1.3.0:
     resolution: {integrity: sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==}
     engines: {node: '>= 0.4'}
-
-  es-html-parser@0.3.0:
-    resolution: {integrity: sha512-86KsmbP/zqoG7LIoXiCXv7KFDVbF9N9SCpavmRzeKtCODmF+LyLEBt3UPSlcntNQEwGGe0xn4ZED186rLmwKSw==}
 
   es-object-atoms@1.0.0:
     resolution: {integrity: sha512-MZ4iQ6JwHOBQjahnjwaC1ZtIBH+2ohjamzAO3oaHcXYup7qxjF2fixyH+Q71voWHeOkI2q/TnJao/KfXYIZWbw==}
@@ -2888,25 +2864,6 @@ snapshots:
 
   '@github/browserslist-config@1.0.0': {}
 
-  '@html-eslint/eslint-plugin@0.45.0(eslint@9.33.0(jiti@2.4.2))':
-    dependencies:
-      '@eslint/plugin-kit': 0.3.5
-      '@html-eslint/parser': 0.45.0
-      '@html-eslint/template-parser': 0.45.0
-      '@html-eslint/template-syntax-parser': 0.45.0
-      eslint: 9.33.0(jiti@2.4.2)
-
-  '@html-eslint/parser@0.45.0':
-    dependencies:
-      '@html-eslint/template-syntax-parser': 0.45.0
-      es-html-parser: 0.3.0
-
-  '@html-eslint/template-parser@0.45.0':
-    dependencies:
-      es-html-parser: 0.3.0
-
-  '@html-eslint/template-syntax-parser@0.45.0': {}
-
   '@humanfs/core@0.19.1': {}
 
   '@humanfs/node@0.16.6':
@@ -3728,8 +3685,6 @@ snapshots:
   es-define-property@1.0.1: {}
 
   es-errors@1.3.0: {}
-
-  es-html-parser@0.3.0: {}
 
   es-object-atoms@1.0.0:
     dependencies:
