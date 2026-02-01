@@ -13,7 +13,8 @@ There are no noticeable changes in version [unreleased].
 - Remove the `unicorn/import-style` rule ([9dbbe67]);
 - Remove the `unicorn/prefer-top-level-await` rule ([79d1994]);
 - Remove the `n/hashbang` rule ([024e407]);
-- Remove the `github/unescaped-html-literal` rule ([87bde5c]).
+- Remove the `github/unescaped-html-literal` rule ([87bde5c]);
+- Remove the `new-cap` rule ([a0c015d]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -286,6 +287,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[a0c015d]: https://github.com/vanyauhalin/eslint-config/commit/a0c015d1f74985479e3621d4a89f7435dce95bf6/
 [87bde5c]: https://github.com/vanyauhalin/eslint-config/commit/87bde5c25dcc594c2228cf23ed107133c698135d/
 [024e407]: https://github.com/vanyauhalin/eslint-config/commit/024e40718b8d83bd8d61f1140045fa665e0cf589/
 [79d1994]: https://github.com/vanyauhalin/eslint-config/commit/79d199460eae472703f6133b8428d1ef60d0a6ad/
