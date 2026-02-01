@@ -69,7 +69,7 @@
 		"eslint-plugin-package-json": "0.54.0",
 		"eslint-plugin-prefer-let": "4.0.1",
 		"eslint-plugin-promise": "7.2.1",
-		"eslint-plugin-regexp": "2.10.0",
+		"eslint-plugin-regexp": "3.0.0",
 		"eslint-plugin-security": "3.0.1",
 		"eslint-plugin-toml": "1.0.3",
 		"eslint-plugin-unicorn": "62.0.0",
