@@ -40,6 +40,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Enable `package-json/valid-repository` ([84b9b9d]).
 - Enable `package-json/valid-sideEffects` ([84b9b9d]).
 - Enable `package-json/valid-workspaces` ([84b9b9d]).
+- Enable `package-json/exports-subpaths-style` ([5916271]).
 
 ### Changed
 
@@ -438,6 +439,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[5916271]: https://github.com/vanyauhalin/eslint-config/commit/5916271906b601844581763f58b32a278dae4c27/
 [84b9b9d]: https://github.com/vanyauhalin/eslint-config/commit/84b9b9d644ce4ab90c2b5cf694f43194660f89ee/
 [d45f70a]: https://github.com/vanyauhalin/eslint-config/commit/d45f70a0d285f2f41876bc8358c06946cce4d9cb/
 [ed4c9f8]: https://github.com/vanyauhalin/eslint-config/commit/ed4c9f8c6e46a133995e21392ebadb5b06f7acbe/
