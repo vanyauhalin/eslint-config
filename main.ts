@@ -5,7 +5,6 @@ import typescriptParser from "@typescript-eslint/parser"
 import type * as typescriptUtils from "@typescript-eslint/utils"
 import gitignore from "eslint-config-flat-gitignore"
 import ascii from "eslint-plugin-ascii"
-import clsx from "eslint-plugin-clsx"
 import deMorgan from "eslint-plugin-de-morgan"
 import depend from "eslint-plugin-depend"
 import esX from "eslint-plugin-es-x"
@@ -122,11 +121,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/ascii-plugin",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		plugins: {ascii},
-	},
-	{
-		name: "@vanyauhalin/clsx-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
-		plugins: {clsx},
 	},
 	{
 		name: "@vanyauhalin/de-morgan",
@@ -413,19 +407,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
 			"ascii/valid-name": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/clsx-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
-		rules: {
-			"clsx/forbid-array-expressions": e,
-			"clsx/forbid-false-inside-object-expressions": e,
-			"clsx/forbid-true-inside-object-expressions": e,
-			"clsx/no-redundant-clsx": e,
-			"clsx/no-spreading": e,
-			"clsx/prefer-logical-over-objects": e,
-			"clsx/prefer-merged-neighboring-elements": e,
 		},
 	},
 	{
