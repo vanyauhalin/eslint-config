@@ -1,122 +1,132 @@
 # Changelog
 
-This document records all notable changes to the project, following the [Keep a Changelog] format and adhering to [Semantic Versioning].
+This document records all notable changes to the project, following the [Keep a
+Changelog] format and adhering to [Semantic Versioning].
 
 ## [Unreleased]
 
-There are no noticeable changes in version [unreleased].
+<!-- There are no notable changes in this release. -->
 
 ### Added
 
-- Enable the `unicorn/prefer-class-fields` rule ([a1c09d7]).
+- Enable `unicorn/prefer-class-fields` rule ([a1c09d7]).
 
 ### Changed
 
-- Remove the `no-restricted-syntax` rule ([3083f41]);
-- Use comma delimiter for types on the same line ([28cd893]);
-- Remove the `unicorn/import-style` rule ([9dbbe67]);
-- Remove the `unicorn/prefer-top-level-await` rule ([79d1994]);
-- Remove the `n/hashbang` rule ([024e407]);
-- Remove the `github/unescaped-html-literal` rule ([87bde5c]);
-- Remove the `new-cap` rule ([a0c015d]);
-- Remove the `stylistic/max-len` rule ([2d3a08b]);
-- Remove `@html-eslint/eslint-plugin` and `@html-eslint/parser` ([ad00512]);
-- Remove `eslint-plugin-html` ([6c8308c]);
-- Remove `eslint-plugin-clsx` ([4539eae]);
-- Remove `eslint-plugin-jsx-a11y` ([0defe2e]);
-- Remove the `github/a11y-aria-label-is-well-formatted` rule ([5a2a31f]);
-- Remove the `github/a11y-no-title-attribute` rule ([e691514]);
-- Remove the `github/a11y-role-supports-aria-props` rule ([1c888d9]);
-- Remove the `github/a11y-svg-has-accessible-name` rule ([bdfb4e7]);
-- Remove the `stylistic/jsx-child-element-spacing` rule ([4a42be1]);
-- Remove the `stylistic/jsx-closing-bracket-location` rule ([ba32983]);
-- Remove the `stylistic/jsx-closing-tag-location` rule ([663e5e4]);
-- Remove the `stylistic/jsx-curly-brace-presence` rule ([22526e3]);
-- Remove the `stylistic/jsx-curly-newline` rule ([dbfbfd3]);
-- Remove the `stylistic/jsx-curly-spacing` rule ([491e7fd]);
-- Remove the `stylistic/jsx-equals-spacing` rule ([9070a7a]);
-- Remove the `stylistic/jsx-first-prop-new-line` rule ([5a26934]);
-- Remove the `stylistic/jsx-indent-props` rule ([82c0301]);
-- Remove the `stylistic/jsx-newline` rule ([f9f4051]);
-- Remove the `stylistic/jsx-pascal-case` rule ([e0c889a]);
-- Remove the `stylistic/jsx-props-no-multi-spaces` rule ([6035a4e]);
-- Remove the `stylistic/jsx-quotes` rule ([4a5aca2]);
-- Remove the `stylistic/jsx-tag-spacing` rule ([0602dd4]);
-- Stop linting HTML files ([56aa4d9]);
+- Modify `stylistic/member-delimiter-style`: use comma delimiter for types on
+  the same line ([28cd893]).
+
+### Removed
+
+- Remove `no-restricted-syntax` ([3083f41]).
+- Remove `unicorn/import-style` ([9dbbe67]).
+- Remove `unicorn/prefer-top-level-await` ([79d1994]).
+- Remove `n/hashbang` ([024e407]).
+- Remove `github/unescaped-html-literal` ([87bde5c]).
+- Remove `new-cap` ([a0c015d]).
+- Remove `stylistic/max-len` ([2d3a08b]).
+- Remove `@html-eslint/eslint-plugin` and `@html-eslint/parser` ([ad00512]).
+- Remove `eslint-plugin-html` ([6c8308c]).
+- Remove `eslint-plugin-clsx` ([4539eae]).
+- Remove `eslint-plugin-jsx-a11y` ([0defe2e]).
+- Remove `github/a11y-aria-label-is-well-formatted` ([5a2a31f]).
+- Remove `github/a11y-no-title-attribute` ([e691514]).
+- Remove `github/a11y-role-supports-aria-props` ([1c888d9]).
+- Remove `github/a11y-svg-has-accessible-name` ([bdfb4e7]).
+- Remove `stylistic/jsx-child-element-spacing` ([4a42be1]).
+- Remove `stylistic/jsx-closing-bracket-location` ([ba32983]).
+- Remove `stylistic/jsx-closing-tag-location` ([663e5e4]).
+- Remove `stylistic/jsx-curly-brace-presence` ([22526e3]).
+- Remove `stylistic/jsx-curly-newline` ([dbfbfd3]).
+- Remove `stylistic/jsx-curly-spacing` ([491e7fd]).
+- Remove `stylistic/jsx-equals-spacing` ([9070a7a]).
+- Remove `stylistic/jsx-first-prop-new-line` ([5a26934]).
+- Remove `stylistic/jsx-indent-props` ([82c0301]).
+- Remove `stylistic/jsx-newline` ([f9f4051]).
+- Remove `stylistic/jsx-pascal-case` ([e0c889a]).
+- Remove `stylistic/jsx-props-no-multi-spaces` ([6035a4e]).
+- Remove `stylistic/jsx-quotes` ([4a5aca2]).
+- Remove `stylistic/jsx-tag-spacing` ([0602dd4]).
+- Stop linting HTML files ([56aa4d9]).
 - Stop linting JSX files ([db69ad6]).
 
 ## [0.0.10] - 2025-08-17
 
 ### Added
 
-- Report unused disable directives ([b3d9449]);
-- Enable the `typescript/no-unnecessary-type-conversion` rule ([cecdead]);
-- Enable the `checkUnknown` option for the `typescript/no-base-to-string` rule ([a822086]);
-- Enable the `es-x/no-nonstandard-error-properties` rule ([bfd5220]);
-- Enable the `unicorn/no-useless-error-capture-stack-trace` rule ([38252bf]);
-- Enable the `ignorePrivate` option for the `package-json/require-author` rule ([c07e7b4]);
-- Enable the `ignorePrivate` option for the `package-json/require-keywords` rule ([a1c2f7c]);
-- Enable the `ignorePrivate` option for the `package-json/require-version` rule ([fe9256d]);
-- Enable the `package-json/valid-bin` rule ([a924c06]);
-- Enable the `package-json/require-type` rule ([80a3b4a]);
-- Enable the `package-json/valid-type` rule ([e75ca13]);
-- Enable the `package-json/valid-scripts` rule ([a6f757e]);
-- Enable the `package-json/valid-bundleDependencies` rule ([2018573]);
-- Enable the `package-json/valid-license` rule ([6486038]);
-- Enable the `package-json/valid-config` rule ([e3652a3]);
-- Enable the `package-json/valid-cpu` rule ([1d409ae]);
-- Enable the `package-json/valid-dependencies` rule ([220e8a5]);
-- Enable the `package-json/valid-description` rule ([610887c]);
-- Enable the `package-json/valid-exports` rule ([8aa2021]);
-- Enable the `package-json/require-bugs` rule ([79a54e4]);
-- Enable the `package-json/require-description` rule ([1077e0d]);
-- Enable the `package-json/require-engines` rule ([8357952]);
-- Enable the `package-json/valid-author` rule ([990f0ea]);
-- Enable the `package-json/valid-devDependencies` rule ([50afa9e]);
-- Enable the `package-json/valid-optionalDependencies` rule ([e1fe1c1]);
-- Enable the `package-json/valid-peerDependencies` rule ([68e951c]);
-- Enable the `math/prefer-math-sum-precise` rule ([81123b2]);
-- Enable the `math/prefer-number-min-value` rule ([8a55d7b]);
-- Enable the `html/no-aria-hidden-on-focusable` rule ([00b9a88]);
-- Enable the `html/no-duplicate-in-head` rule ([bfe4352]);
-- Enable the `html/no-empty-headings` rule ([5684f46]);
-- Enable the `html/no-ineffective-attrs` rule ([3ead6b5]);
-- Enable the `html/no-invalid-entity` rule ([58afe2b]).
+- Report unused disable directives ([b3d9449]).
+- Enable `typescript/no-unnecessary-type-conversion` ([cecdead]).
+- Enable `checkUnknown` for `typescript/no-base-to-string` ([a822086]).
+- Enable `es-x/no-nonstandard-error-properties` ([bfd5220]).
+- Enable `unicorn/no-useless-error-capture-stack-trace` ([38252bf]).
+- Enable `ignorePrivate` for `package-json/require-author` ([c07e7b4]).
+- Enable `ignorePrivate` for `package-json/require-keywords` ([a1c2f7c]).
+- Enable `ignorePrivate` for `package-json/require-version` ([fe9256d]).
+- Enable `package-json/valid-bin` ([a924c06]).
+- Enable `package-json/require-type` ([80a3b4a]).
+- Enable `package-json/valid-type` ([e75ca13]).
+- Enable `package-json/valid-scripts` ([a6f757e]).
+- Enable `package-json/valid-bundleDependencies` ([2018573]).
+- Enable `package-json/valid-license` ([6486038]).
+- Enable `package-json/valid-config` ([e3652a3]).
+- Enable `package-json/valid-cpu` ([1d409ae]).
+- Enable `package-json/valid-dependencies` ([220e8a5]).
+- Enable `package-json/valid-description` ([610887c]).
+- Enable `package-json/valid-exports` ([8aa2021]).
+- Enable `package-json/require-bugs` ([79a54e4]).
+- Enable `package-json/require-description` ([1077e0d]).
+- Enable `package-json/require-engines` ([8357952]).
+- Enable `package-json/valid-author` ([990f0ea]).
+- Enable `package-json/valid-devDependencies` ([50afa9e]).
+- Enable `package-json/valid-optionalDependencies` ([e1fe1c1]).
+- Enable `package-json/valid-peerDependencies` ([68e951c]).
+- Enable `math/prefer-math-sum-precise` ([81123b2]).
+- Enable `math/prefer-number-min-value` ([8a55d7b]).
+- Enable `html/no-aria-hidden-on-focusable` ([00b9a88]).
+- Enable `html/no-duplicate-in-head` ([bfe4352]).
+- Enable `html/no-empty-headings` ([5684f46]).
+- Enable `html/no-ineffective-attrs` ([3ead6b5]).
+- Enable `html/no-invalid-entity` ([58afe2b]).
+- Enable `no-restricted-syntax` to disallow named imports ([6b55729]).
 
 ### Changed
 
-- Disallow named imports ([6b55729]);
-- Remove the `es-x/no-array-from` rule ([3037d16]);
-- Remove the `es-x/no-export-ns-from` rule ([0be9644]);
-- Use the `type` instead of `interface` in the `typescript/consistent-type-definitions` rule ([d7c6e73]);
-- Remove the `typescript/no-dynamic-delete` rule ([aef3994]);
-- Remove the `unicorn/prefer-add-event-listener` rule ([d97eed1]);
-- Remove the `unicorn/prefer-set-has` rule ([76851c3]);
-- Set the `always` for the `jsonc/array-bracket-newline` rule for the `package.json` ([c66676e]);
-- Update `eslint-plugin-html` to v8.1.3 ([183a01d]);
-- Update `@typescript-eslint/eslint-plugin` to v8.39.1 ([1295a51]);
-- Remove unnecessary disabling of the `typescript/naming-convention` rule ([dc06ffe]);
-- Update `@typescript-eslint/parser` to v8.39.1 ([762d1fa]);
-- Update `@typescript-eslint/utils` to v8.39.1 ([839f6d3]);
-- Update `eslint` to v9.33.0 ([a3789f2]);
-- Update `eslint-plugin-de-morgan` to v1.3.1 ([d0cebcb]);
-- Update `eslint-plugin-depend` to v1.2.0 ([ef4d642]);
-- Update `eslint-plugin-import-x` to v4.16.1 ([54b3026]);
-- Update `eslint-plugin-n` to v17.21.3 ([7e37beb]);
-- Update `eslint-plugin-regexp` to v2.10.0 ([89b2a87]);
-- Update `typescript` to v5.9.2 ([be82446]);
-- Update `eslint-plugin-jsonc` to v2.20.1 ([b990c5c]);
-- Update `@stylistic/eslint-plugin` to v5.2.3 ([847bb95]);
-- Update `eslint-plugin-es-x` to v9.0.0 ([0415d66]);
-- Update `eslint-plugin-jsdoc` to v54.1.0 ([0cc4038]);
-- Update `eslint-plugin-unicorn` to v60.0.0 ([83b13d6]);
-- Update `eslint-plugin-package-json` to v0.54.0 ([eb461d7]);
-- Remove the `package-json/valid-local-dependency` rule ([efbd670]);
-- Update `eslint-plugin-node-dependencies` to v1.1.2 ([4b82e8c]);
-- Update `eslint-plugin-math` to v0.13.0 ([1b11b49]);
-- Update `@html-eslint/eslint-plugin` to v0.45.0 ([bdc86e4]);
-- Update `@html-eslint/parser` to v0.45.0 ([01002be]);
+- Modify `typescript/consistent-type-definitions`: use `type` instead of
+  `interface` ([d7c6e73]).
+- Modify `jsonc/array-bracket-newline`: set `always` for `package.json`
+  ([c66676e]).
+- Update `eslint-plugin-html` to v8.1.3 ([183a01d]).
+- Update `@typescript-eslint/eslint-plugin` to v8.39.1 ([1295a51]).
+- Update `@typescript-eslint/parser` to v8.39.1 ([762d1fa]).
+- Update `@typescript-eslint/utils` to v8.39.1 ([839f6d3]).
+- Update `eslint` to v9.33.0 ([a3789f2]).
+- Update `eslint-plugin-de-morgan` to v1.3.1 ([d0cebcb]).
+- Update `eslint-plugin-depend` to v1.2.0 ([ef4d642]).
+- Update `eslint-plugin-import-x` to v4.16.1 ([54b3026]).
+- Update `eslint-plugin-n` to v17.21.3 ([7e37beb]).
+- Update `eslint-plugin-regexp` to v2.10.0 ([89b2a87]).
+- Update `typescript` to v5.9.2 ([be82446]).
+- Update `eslint-plugin-jsonc` to v2.20.1 ([b990c5c]).
+- Update `@stylistic/eslint-plugin` to v5.2.3 ([847bb95]).
+- Update `eslint-plugin-es-x` to v9.0.0 ([0415d66]).
+- Update `eslint-plugin-jsdoc` to v54.1.0 ([0cc4038]).
+- Update `eslint-plugin-unicorn` to v60.0.0 ([83b13d6]).
+- Update `eslint-plugin-package-json` to v0.54.0 ([eb461d7]).
+- Update `eslint-plugin-node-dependencies` to v1.1.2 ([4b82e8c]).
+- Update `eslint-plugin-math` to v0.13.0 ([1b11b49]).
+- Update `@html-eslint/eslint-plugin` to v0.45.0 ([bdc86e4]).
+- Update `@html-eslint/parser` to v0.45.0 ([01002be]).
 - Explicitly set the minimum Node.js version to v22.18.0 ([a9b6dad]).
+
+### Removed
+
+- Remove `es-x/no-array-from` ([3037d16]).
+- Remove `es-x/no-export-ns-from` ([0be9644]).
+- Remove `typescript/no-dynamic-delete` ([aef3994]).
+- Remove `unicorn/prefer-add-event-listener` ([d97eed1]).
+- Remove `unicorn/prefer-set-has` ([76851c3]).
+- Remove unnecessary disabling of `typescript/naming-convention` ([dc06ffe]).
+- Remove `package-json/valid-local-dependency` ([efbd670]).
 
 ## [0.0.9] - 2025-04-28
 
@@ -126,80 +136,101 @@ There are no noticeable changes in version [unreleased].
 
 ## [0.0.8] - 2025-04-28
 
-### Changed
+### Removed
 
 - Remove peer dependencies ([a4aad74]).
-- Remove `es-x/no-nonstandard-*-prototype-properties` rules ([b1b86e4]).
+- Remove `es-x/no-nonstandard-*-prototype-properties` ([b1b86e4]).
 
 ## [0.0.7] - 2025-04-28
 
 ### Added
 
-- Enable new `@html-eslint/eslint-plugin` rules: `no-duplicate-class`, `no-heading-inside-button`, `no-invalid-role`, `no-nested-interactive`, `prefer-https`, `require-explicit-size`, `require-form-method`, `require-input-label`, `use-baseline` ([b473eac]).
-- Enable new `@stylistic/eslint-plugin` rules: value `avoidEscape` of option `allowTemplateLiteral` of rule `quotes` ([e2f15db]).
-- Enable new `@typescript-eslint/eslint-plugin` rules: `typescript/no-misused-spread` ([b7e90d0]).
-- Enable new `eslint-plugin-es-x` rules: `es-x/no-nonstandard-intl-durationformat-properties`, `es-x/no-nonstandard-intl-durationformat-prototype-properties` ([caffcf9], [df4ed73]).
-- Enable new `eslint-plugin-package-json` rules: `no-empty-fields`, `no-redundant-files`, `require-author`, `require-keywords`, `require-name`, `require-version`, `valid-package-definition` ([e859d13]).
-- Enable new `eslint-plugin-unicorn` rules: `consistent-assert`, `consistent-date-clone`, `no-accessor-recursion`, `no-instanceof-builtins`, `no-named-default`, `no-unnecessary-array-flat-depth`, `no-unnecessary-array-splice-count`, `no-unnecessary-slice-end`, `prefer-import-meta-properties` ([1a7bb67]).
-- Enable rules `no-class-private-fields` and `no-class-private-methods` from `eslint-plugin-es-x` ([5b32ce5]).
-- Enable rule `order` from `eslint-plugin-import-x` ([06e08c2]).
+- Enable new `@html-eslint/eslint-plugin` rules: `no-duplicate-class`,
+  `no-heading-inside-button`, `no-invalid-role`, `no-nested-interactive`,
+  `prefer-https`, `require-explicit-size`, `require-form-method`,
+  `require-input-label`, `use-baseline` ([b473eac]).
+- Enable new `@typescript-eslint/eslint-plugin` rules:
+  `typescript/no-misused-spread` ([b7e90d0]).
+- Enable new `eslint-plugin-es-x` rules:
+  `es-x/no-nonstandard-intl-durationformat-properties`,
+  `es-x/no-nonstandard-intl-durationformat-prototype-properties` ([caffcf9],
+  [df4ed73]).
+- Enable new `eslint-plugin-package-json` rules: `no-empty-fields`,
+  `no-redundant-files`, `require-author`, `require-keywords`, `require-name`,
+  `require-version`, `valid-package-definition` ([e859d13]).
+- Enable new `eslint-plugin-unicorn` rules: `consistent-assert`,
+  `consistent-date-clone`, `no-accessor-recursion`, `no-instanceof-builtins`,
+  `no-named-default`, `no-unnecessary-array-flat-depth`,
+  `no-unnecessary-array-splice-count`, `no-unnecessary-slice-end`,
+  `prefer-import-meta-properties` ([1a7bb67]).
+- Enable new `eslint-plugin-es-x` rules: `no-class-private-fields` and
+  `no-class-private-methods` ([5b32ce5]).
+- Enable new `eslint-plugin-import-x` rules: `order` ([06e08c2]).
 
 ### Changed
 
-- Update dependency `@eslint-community/eslint-plugin-eslint-comments` ([e593b18]).
-- Update dependency `@eslint/config-inspector` ([b16913e]).
-- Update dependency `@html-eslint/eslint-plugin` ([7e79b53]).
-- Update dependency `@html-eslint/parser` ([33d99c1]).
-- Update dependency `@stylistic/eslint-plugin` ([9103a93]).
-- Update dependency `@types/node` ([30b7a93]).
-- Update dependency `@typescript-eslint/eslint-plugin` ([dc68dbd]).
-- Update dependency `@typescript-eslint/parser` ([660906a]).
-- Update dependency `@typescript-eslint/rule-tester` ([b61a3f2]).
-- Update dependency `@typescript-eslint/utils` ([987f283]).
-- Update dependency `eslint` ([13fea48]).
-- Update dependency `eslint-config-flat-gitignore` ([3cdb570]).
-- Update dependency `eslint-plugin-clsx` ([c02f09e]).
-- Update dependency `eslint-plugin-de-morgan` ([57985e5]).
-- Update dependency `eslint-plugin-depend` ([594b33a]).
-- Update dependency `eslint-plugin-es-x` ([d3785f5]).
-- Update dependency `eslint-plugin-github` ([1f6c622]).
-- Update dependency `eslint-plugin-import-x` ([4054266]).
-- Update dependency `eslint-plugin-jsdoc` ([3376a54]).
-- Update dependency `eslint-plugin-jsonc` ([78cf21e]).
-- Update dependency `eslint-plugin-math` ([0577fcb]).
-- Update dependency `eslint-plugin-n` ([10c00f6]).
-- Update dependency `eslint-plugin-node-dependencies` ([2c0be4d]).
-- Update dependency `eslint-plugin-package-json` ([26ca433]).
-- Update dependency `eslint-plugin-unicorn` ([93ee8c8]).
-- Update dependency `eslint-plugin-wc` ([c8a8ec7], [cf9c853]).
-- Update dependency `eslint-plugin-yml` ([65910a6]).
-- Update dependency `tsx` ([6a842b6]).
-- Update dependency `typescript` ([1c0067a]).
-- Update dependency `yaml-eslint-parser` ([01a6e2e]).
-- Remove unnecessary disabling of rule `prefer-nullish-coalescing` from `@typescript-eslint/eslint-plugin` ([9ef3cb9]).
-- Remove rule `camelcase` from `builtin` ([7ab416b]).
-- Modify rule `no-void` from `builtin`: allow `void` as statement ([a43a9fd]).
-- Modify rule `param-names` from `eslint-plugin-promise`: allow use of full names ([ac1800c]).
-- Remove rules `no-object-fromentries` and `no-typed-arrays` from `eslint-plugin-es-x` ([1047e15]).
-- Modify rule `array-bracket-spacing` from `eslint-plugin-toml`: disallow use of spaces ([48be071]).
-- Modify rule `indent` from `eslint-plugin-toml`: use tabs ([e3c80b7]).
-- Update dependency `eslint-plugin-html` ([6069988]).
-- Update dependency `eslint-plugin-import-newlines` ([e0fcf99]).
-- Update dependency `eslint-plugin-jsonc` ([e179ac1]).
-- Update dependency `eslint-plugin-jsx-a11y` ([1c12f9a]).
-- Update dependency `eslint-plugin-markdown` ([8566e6f]).
-- Update dependency `eslint-plugin-no-unsanitized` ([8e74cdb]).
-- Update dependency `eslint-plugin-promise` ([e2fc8f7]).
-- Update dependency `eslint-plugin-regexp` ([59c5f4d]).
-- Update dependency `eslint-plugin-security` ([b67362f]).
-- Update dependency `eslint-plugin-toml` ([82c4215]).
-- Update dependency `jsonc-eslint-parser` ([1f81bbf]).
-- Update dependency `toml-eslint-parser` ([64da194]).
+- Update `@eslint-community/eslint-plugin-eslint-comments` to v4.5.0
+  ([e593b18]).
+- Update `@eslint/config-inspector` to v1.0.2 ([b16913e]).
+- Update `@html-eslint/eslint-plugin` to v0.39.0 ([7e79b53]).
+- Update `@html-eslint/parser` to v0.39.0 ([33d99c1]).
+- Update `@stylistic/eslint-plugin` to v4.2.0 ([9103a93]).
+- Modify `stylistic/quotes`: enable `avoidEscape` value for
+  `allowTemplateLiteral` option ([e2f15db]).
+- Update `@types/node` to v22.15.2 ([30b7a93]).
+- Update `@typescript-eslint/eslint-plugin` to v8.31.0 ([dc68dbd]).
+- Update `@typescript-eslint/parser` to v8.31.0 ([660906a]).
+- Update `@typescript-eslint/rule-tester` to v8.31.0 ([b61a3f2]).
+- Update `@typescript-eslint/utils` to v8.31.0 ([987f283]).
+- Update `eslint` to v9.25.1 ([13fea48]).
+- Update `eslint-config-flat-gitignore` to v2.1.0 ([3cdb570]).
+- Update `eslint-plugin-clsx` to v0.0.10 ([c02f09e]).
+- Update `eslint-plugin-de-morgan` to v1.2.1 ([57985e5]).
+- Update `eslint-plugin-depend` to v1.0.0 ([594b33a]).
+- Update `eslint-plugin-es-x` to v8.6.1 ([d3785f5]).
+- Update `eslint-plugin-github` to v6.0.0 ([1f6c622]).
+- Update `eslint-plugin-import-x` to v4.11.0 ([4054266]).
+- Update `eslint-plugin-jsdoc` to v50.6.11 ([3376a54]).
+- Update `eslint-plugin-jsonc` to v2.20.0 ([78cf21e]).
+- Update `eslint-plugin-math` to v0.6.1 ([0577fcb]).
+- Update `eslint-plugin-n` to v17.17.0 ([10c00f6]).
+- Update `eslint-plugin-node-dependencies` to v0.13.0 ([2c0be4d]).
+- Update `eslint-plugin-package-json` to v0.31.0 ([26ca433]).
+- Update `eslint-plugin-unicorn` to v59.0.0 ([93ee8c8]).
+- Update `eslint-plugin-wc` to v3.0.0 ([c8a8ec7]).
+- Update `eslint-plugin-wc` to v3.0.1 ([cf9c853]).
+- Update `eslint-plugin-yml` to v1.18.0 ([65910a6]).
+- Update `tsx` to v4.19.3 ([6a842b6]).
+- Update `typescript` to v5.8.3 ([1c0067a]).
+- Update `yaml-eslint-parser` to v1.3.0 ([01a6e2e]).
+- Update `eslint-plugin-html` to v8.1.2 ([6069988]).
+- Update `eslint-plugin-import-newlines` to v1.4.0 ([e0fcf99]).
+- Update `eslint-plugin-jsonc` to v2.20.0 ([e179ac1]).
+- Update `eslint-plugin-jsx-a11y` to v6.10.2 ([1c12f9a]).
+- Update `eslint-plugin-markdown` to v5.1.0 ([8566e6f]).
+- Update `eslint-plugin-no-unsanitized` to v4.1.2 ([8e74cdb]).
+- Update `eslint-plugin-promise` to v7.2.1 ([e2fc8f7]).
+- Update `eslint-plugin-regexp` to v2.7.0 ([59c5f4d]).
+- Update `eslint-plugin-security` to v3.0.1 ([b67362f]).
+- Update `eslint-plugin-toml` to v0.12.0 ([82c4215]).
+- Update `jsonc-eslint-parser` to v2.4.0 ([1f81bbf]).
+- Update `toml-eslint-parser` to v0.10.0 ([64da194]).
+- Modify `no-void`: allow `void` as statement ([a43a9fd]).
+- Modify `promise/param-names`: allow use of full names ([ac1800c]).
+- Modify `toml/array-bracket-spacing`: disallow use of spaces ([48be071]).
+- Modify `toml/indent`: use tabs ([e3c80b7]).
+
+### Removed
+
+- Remove unnecessary disabling of `typescript/prefer-nullish-coalescing`
+  ([9ef3cb9]).
+- Remove `camelcase` ([7ab416b]).
+- Remove `es-x/no-object-fromentries` and `es-x/no-typed-arrays` ([1047e15]).
 
 ### Fixed
 
 - Catch possible exceptions from `eslint-config-flat-gitignore` ([6a77f06]).
-- Restore rules `no-nonstandard-*-prototype-properties` from `eslint-plugin-es-x` ([df4ed73]).
+- Restore `es-x/no-nonstandard-*-prototype-properties` ([df4ed73]).
 
 ## [0.0.6] - 2025-04-13
 
@@ -209,97 +240,112 @@ There are no noticeable changes in version [unreleased].
 
 ### Changed
 
-- Disable the `github/no-then` rule ([fdb1b02]).
-- Disable the `regexp/no-super-linear-move` rule ([cc4938a]).
-- Disable the `security/detect-non-literal-regexp` rule ([4a56f27]).
-- Disallow using empty lines at the beginning and end of files ([1d349fb]).
-- Allow template literals for the `stylistic/quotes` rule ([b417573]).
-- Disable the `typescript/ban-ts-comment` rule ([6e51998]).
-- Be less strict with the `typescript/switch-exhaustiveness-check` rule ([f0c05dc]).
-- Disable the `no-inline-comments` rule ([a1d3122]).
-- Remove the `eslint-plugin-tsdoc` plugin ([c857ff6]).
-- Disable the `jsdoc/tag-lines` rule ([9736775]).
-- Disable the `typescript/prefer-nullish-coalescing` rule ([95a840b]).
-- Be less strict with the `unicorn/no-useless-undefined` rule ([eccbe11]).
+- Modify `stylistic/no-multiple-empty-lines`: disallow empty lines at beginning
+  and end of files ([1d349fb]).
+- Modify `stylistic/quotes`: allow template literals ([b417573]).
+- Modify `typescript/switch-exhaustiveness-check`: be less strict ([f0c05dc]).
+- Modify `unicorn/no-useless-undefined`: be less strict ([eccbe11]).
+
+### Removed
+
+- Remove `github/no-then` ([fdb1b02]).
+- Remove `regexp/no-super-linear-move` ([cc4938a]).
+- Remove `security/detect-non-literal-regexp` ([4a56f27]).
+- Remove `typescript/ban-ts-comment` ([6e51998]).
+- Remove `no-inline-comments` ([a1d3122]).
+- Remove `eslint-plugin-tsdoc` plugin ([c857ff6]).
+- Remove `jsdoc/tag-lines` ([9736775]).
+- Remove `typescript/prefer-nullish-coalescing` ([95a840b]).
 
 ## [0.0.5] - 2025-03-01
 
 ### Changed
 
-- Disable the `n/no-process-exit` rule ([70f4caf]).
-- Allow variables with names containing multiple underscores to be unused ([87eac07]).
+- Modify `typescript/no-unused-vars`: allow variables with names containing
+  multiple underscores to be unused ([87eac07]).
+
+### Removed
+
+- Remove `n/no-process-exit` ([70f4caf]).
 
 ### Fixed
 
-- Disable a few TypeScript-specific rules for JavaScript files ([2c429e9]).
+- Fix TypeScript-specific rules incorrectly applied to JavaScript files
+  ([2c429e9]).
 
 ## [0.0.4] - 2025-02-20
 
 ### Added
 
-- Add rules to the eslint configuration files ([d73c0d8]).
-- Add the `eslint-plugin-de-morgan` package to the configuration ([8b759b0]).
+- Modify `import-x/no-default-export`: allow default exports in ESLint config
+  files ([d73c0d8]).
+- Add `eslint-plugin-de-morgan` v1.1.0 ([8b759b0]).
 
 ### Changed
 
-- Allow the use of eslint disable comments for the entire file ([02e9493]).
+- Modify `eslint-comments/disable-enable-pair`: allow eslint disable comments
+  for the entire file ([02e9493]).
 
 ## [0.0.3] - 2025-01-21
 
 ### Fixed
 
-- Temporarily disable the `es-x/no-nonstandard-*-prototype-properties` rules ([782fb28]).
+- Temporarily remove `es-x/no-nonstandard-*-prototype-properties` ([782fb28]).
 
 ## [0.0.2] - 2025-01-21
 
-### Changed
+### Removed
 
-- **Breaking** Remove the custom rule that enforces the import order ([8d8e35d]).
+- Remove custom rule that enforces import order ([8d8e35d]).
 
 ### Fixed
 
-- Fix peer dependencies with major version zero to use range notation ([565f4bc]).
+- Fix peer dependencies with major version zero to use range notation
+  ([565f4bc]).
 
 ## [0.0.1] - 2025-01-02
 
-This is the first, initial release. The version 0.0.1 was chosen to test the publishing process and attempt to integrate it into other projects. If everything functions well, the version will be updated to 0.1.0, possibly with some changes.
+This is the first, initial release. The version 0.0.1 was chosen to test the
+publishing process and attempt to integrate it into other projects. If
+everything functions well, the version will be updated to 0.1.0, possibly with
+some changes.
 
 ### Added
 
-- Add the `@eslint-community/eslint-plugin-eslint-comments` to the configuration.
-- Add the `@html-eslint/eslint-plugin` to the configuration.
-- Add the `@stylistic/eslint-plugin` to the configuration.
-- Add the `@typescript-eslint/eslint-plugin` to the configuration.
-- Add the `eslint-config-flat-gitignore` to the configuration.
-- Add the `eslint-plugin-ascii` to the configuration.
-- Add the `eslint-plugin-clsx` to the configuration.
-- Add the `eslint-plugin-depend` to the configuration.
-- Add the `eslint-plugin-es-x` to the configuration.
-- Add the `eslint-plugin-github` to the configuration.
-- Add the `eslint-plugin-html` to the configuration.
-- Add the `eslint-plugin-import-newlines` to the configuration.
-- Add the `eslint-plugin-import-x` to the configuration.
-- Add the `eslint-plugin-jsdoc` to the configuration.
-- Add the `eslint-plugin-jsonc` to the configuration.
-- Add the `eslint-plugin-jsx-a11y` to the configuration.
-- Add the `eslint-plugin-markdown` to the configuration.
-- Add the `eslint-plugin-math` to the configuration.
-- Add the `eslint-plugin-n` to the configuration.
-- Add the `eslint-plugin-no-unsanitized` to the configuration.
-- Add the `eslint-plugin-node-dependencies` to the configuration.
-- Add the `eslint-plugin-package-json` to the configuration.
-- Add the `eslint-plugin-prefer-let` to the configuration.
-- Add the `eslint-plugin-promise` to the configuration.
-- Add the `eslint-plugin-regexp` to the configuration.
-- Add the `eslint-plugin-security` to the configuration.
-- Add the `eslint-plugin-toml` to the configuration.
-- Add the `eslint-plugin-tsdoc` to the configuration.
-- Add the `eslint-plugin-unicorn` to the configuration.
-- Add the `eslint-plugin-wc` to the configuration.
-- Add the `eslint-plugin-yml` to the configuration.
-- Add the custom rule to enforce the import order.
+- Add `@eslint-community/eslint-plugin-eslint-comments` v4.4.1.
+- Add `@html-eslint/eslint-plugin` v0.31.1.
+- Add `@stylistic/eslint-plugin` v2.12.1.
+- Add `@typescript-eslint/eslint-plugin` v8.18.1.
+- Add `eslint-config-flat-gitignore` v0.3.0.
+- Add `eslint-plugin-ascii` v2.0.0.
+- Add `eslint-plugin-clsx` v0.0.9.
+- Add `eslint-plugin-depend` v0.12.0.
+- Add `eslint-plugin-es-x` v8.4.1.
+- Add `eslint-plugin-github` v5.1.4.
+- Add `eslint-plugin-html` v8.1.2.
+- Add `eslint-plugin-import-newlines` v1.4.0.
+- Add `eslint-plugin-import-x` v4.6.1.
+- Add `eslint-plugin-jsdoc` v50.6.1.
+- Add `eslint-plugin-jsonc` v2.18.2.
+- Add `eslint-plugin-jsx-a11y` v6.10.2.
+- Add `eslint-plugin-markdown` v5.1.0.
+- Add `eslint-plugin-math` v0.6.0.
+- Add `eslint-plugin-n` v17.15.0.
+- Add `eslint-plugin-no-unsanitized` v4.1.2.
+- Add `eslint-plugin-node-dependencies` v0.12.0.
+- Add `eslint-plugin-package-json` v0.18.0.
+- Add `eslint-plugin-prefer-let` v4.0.0.
+- Add `eslint-plugin-promise` v7.2.1.
+- Add `eslint-plugin-regexp` v2.7.0.
+- Add `eslint-plugin-security` v3.0.1.
+- Add `eslint-plugin-toml` v0.12.0.
+- Add `eslint-plugin-tsdoc` v0.4.0.
+- Add `eslint-plugin-unicorn` v56.0.1.
+- Add `eslint-plugin-wc` v2.2.0.
+- Add `eslint-plugin-yml` v1.16.0.
+- Add custom rule to enforce import order.
 
-<!-- Footnotes -->
+<!-- Definitions -->
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
