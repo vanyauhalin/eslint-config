@@ -55,7 +55,7 @@
 		"eslint-plugin-ascii": "2.0.0",
 		"eslint-plugin-de-morgan": "2.0.0",
 		"eslint-plugin-depend": "1.2.0",
-		"eslint-plugin-es-x": "9.0.0",
+		"eslint-plugin-es-x": "9.3.0",
 		"eslint-plugin-github": "6.0.0",
 		"eslint-plugin-import-newlines": "1.4.0",
 		"eslint-plugin-import-x": "4.16.1",
