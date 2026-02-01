@@ -82,7 +82,9 @@ jobs:
       run: pnpm publish *.tgz --no-git-checks --provenance --access public
 
   gr:
-    needs: [build, npm]
+    needs:
+    - build
+    - npm
     runs-on: ubuntu-latest
     permissions:
       contents: write
