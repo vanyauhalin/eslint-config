@@ -13,7 +13,6 @@ import importNewlines from "eslint-plugin-import-newlines"
 import importX from "eslint-plugin-import-x" // eslint-disable-line import-x/no-named-as-default
 import jsdoc from "eslint-plugin-jsdoc"
 import jsonc from "eslint-plugin-jsonc"
-import jsxA11y from "eslint-plugin-jsx-a11y"
 import markdown from "eslint-plugin-markdown"
 import math from "eslint-plugin-math"
 import n from "eslint-plugin-n"
@@ -166,11 +165,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/jsonc-plugin",
 		files: ["**/*.json", "**/*.json5", "**/*.jsonc"],
 		plugins: {jsonc},
-	},
-	{
-		name: "@vanyauhalin/jsx-a11y-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
-		plugins: {"jsx-a11y": jsxA11y},
 	},
 	{
 		name: "@vanyauhalin/markdown-plugin",
@@ -730,46 +724,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		files: ["**/*.jsonc"],
 		rules: {
 			"jsonc/no-comments": "off",
-		},
-	},
-	{
-		name: "@vanyauhalin/jsx-a11y-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
-		rules: {
-			"jsx-a11y/alt-text": e,
-			"jsx-a11y/anchor-has-content": e,
-			"jsx-a11y/anchor-is-valid": e,
-			"jsx-a11y/aria-activedescendant-has-tabindex": e,
-			"jsx-a11y/aria-props": e,
-			"jsx-a11y/aria-proptypes": e,
-			"jsx-a11y/aria-role": e,
-			"jsx-a11y/aria-unsupported-elements": e,
-			"jsx-a11y/autocomplete-valid": e,
-			"jsx-a11y/click-events-have-key-events": e,
-			"jsx-a11y/heading-has-content": e,
-			"jsx-a11y/html-has-lang": e,
-			"jsx-a11y/iframe-has-title": e,
-			"jsx-a11y/img-redundant-alt": e,
-			"jsx-a11y/interactive-supports-focus": e,
-			"jsx-a11y/label-has-associated-control": e,
-			"jsx-a11y/lang": e,
-			"jsx-a11y/media-has-caption": e,
-			"jsx-a11y/mouse-events-have-key-events": e,
-			"jsx-a11y/no-access-key": e,
-			"jsx-a11y/no-aria-hidden-on-focusable": e,
-			"jsx-a11y/no-autofocus": e,
-			"jsx-a11y/no-distracting-elements": e,
-			"jsx-a11y/no-interactive-element-to-noninteractive-role": e,
-			"jsx-a11y/no-noninteractive-element-interactions": e,
-			"jsx-a11y/no-noninteractive-element-to-interactive-role": e,
-			"jsx-a11y/no-noninteractive-tabindex": e,
-			"jsx-a11y/no-redundant-roles": e,
-			"jsx-a11y/no-static-element-interactions": e,
-			"jsx-a11y/prefer-tag-over-role": e,
-			"jsx-a11y/role-has-required-aria-props": e,
-			"jsx-a11y/role-supports-aria-props": e,
-			"jsx-a11y/scope": e,
-			"jsx-a11y/tabindex-no-positive": e,
 		},
 	},
 	{
