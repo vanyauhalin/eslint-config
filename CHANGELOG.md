@@ -34,7 +34,8 @@ There are no noticeable changes in version [unreleased].
 - Remove the `stylistic/jsx-curly-brace-presence` rule ([22526e3]);
 - Remove the `stylistic/jsx-curly-newline` rule ([dbfbfd3]);
 - Remove the `stylistic/jsx-curly-spacing` rule ([491e7fd]);
-- Remove the `stylistic/jsx-equals-spacing` rule ([9070a7a]).
+- Remove the `stylistic/jsx-equals-spacing` rule ([9070a7a]);
+- Remove the `stylistic/jsx-first-prop-new-line` rule ([5a26934]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -307,6 +308,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[5a26934]: https://github.com/vanyauhalin/eslint-config/commit/5a269347ef3538fe471f85d54f5d5e457740d3e9/
 [9070a7a]: https://github.com/vanyauhalin/eslint-config/commit/9070a7a34edb0f038a04ccd205274ff22a4df12b/
 [491e7fd]: https://github.com/vanyauhalin/eslint-config/commit/491e7fd00f387cb41ac1333012fda3c9e3e7cd2a/
 [dbfbfd3]: https://github.com/vanyauhalin/eslint-config/commit/dbfbfd387fccbaadd36b188004649e23b76bf847/
