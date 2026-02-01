@@ -613,7 +613,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"github/no-useless-passive": e,
 			"github/prefer-observers": e,
 			"github/require-passive-events": e,
-			"github/unescaped-html-literal": e,
 		},
 	},
 	{
