@@ -11,7 +11,6 @@ Changelog] format and adhering to [Semantic Versioning].
 
 - Enable `unicorn/prefer-class-fields` ([a1c09d7]).
 - Enable `jsonc/array-element-newline` ([778ab6b]).
-- Enable `node-dependencies/require-provenance-deps` ([b54dc0f]).
 - Enable `preserve-caught-error` ([38bbb3f]).
 - Enable `typescript/strict-void-return` ([e7e028f]).
 - Enable `unicorn/no-useless-collection-argument` ([61baa1f]).
