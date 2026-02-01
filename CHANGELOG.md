@@ -51,6 +51,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Remove `stylistic/jsx-tag-spacing` ([0602dd4]).
 - Stop linting HTML files ([56aa4d9]).
 - Stop linting JSX files ([db69ad6]).
+- Remove `yml/flow-mapping-curly-newline` ([8b0abd6]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -364,6 +365,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[8b0abd6]: https://github.com/vanyauhalin/eslint-config/commit/8b0abd6bd27f0178718e10c11b2f15ac2d890abc/
 [174ffdc]: https://github.com/vanyauhalin/eslint-config/commit/174ffdc9099f65a0af9fc6e37704c21804d6b32c/
 [4604ee5]: https://github.com/vanyauhalin/eslint-config/commit/4604ee5707060d822d0df2c0db39454fc1d8933f/
 [db69ad6]: https://github.com/vanyauhalin/eslint-config/commit/db69ad60dd92cf78625af8529826063dcbde7bf1/
