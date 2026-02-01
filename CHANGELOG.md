@@ -29,7 +29,8 @@ There are no noticeable changes in version [unreleased].
 - Remove the `github/a11y-role-supports-aria-props` rule ([1c888d9]);
 - Remove the `github/a11y-svg-has-accessible-name` rule ([bdfb4e7]);
 - Remove the `stylistic/jsx-child-element-spacing` rule ([4a42be1]);
-- Remove the `stylistic/jsx-closing-bracket-location` rule ([ba32983]).
+- Remove the `stylistic/jsx-closing-bracket-location` rule ([ba32983]);
+- Remove the `stylistic/jsx-closing-tag-location` rule ([663e5e4]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -302,6 +303,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[663e5e4]: https://github.com/vanyauhalin/eslint-config/commit/663e5e4a7952f23f22eda0c452995e00e280ab72/
 [ba32983]: https://github.com/vanyauhalin/eslint-config/commit/ba329839f2f645111271b412b72ac1ddc166b134/
 [4a42be1]: https://github.com/vanyauhalin/eslint-config/commit/4a42be195733c516edf40d6cd0c61de219083dcd/
 [bdfb4e7]: https://github.com/vanyauhalin/eslint-config/commit/bdfb4e728d3cacf31d2b1a568f90a1f666ac12bf/
