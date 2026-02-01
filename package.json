@@ -76,7 +76,7 @@
 		"eslint-plugin-wc": "3.0.2",
 		"eslint-plugin-yml": "3.0.0",
 		"jsonc-eslint-parser": "2.4.2",
-		"toml-eslint-parser": "0.10.0",
+		"toml-eslint-parser": "1.0.3",
 		"typescript": "5.9.3",
 		"yaml-eslint-parser": "2.0.0"
 	},
