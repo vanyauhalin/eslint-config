@@ -299,7 +299,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"getter-return": e,
 			"grouped-accessor-pairs": e,
 			"logical-assignment-operators": e,
-			"new-cap": e,
 			"no-alert": e,
 			"no-array-constructor": e,
 			"no-async-promise-executor": e,
