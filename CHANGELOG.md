@@ -24,7 +24,8 @@ There are no noticeable changes in version [unreleased].
 - Remove `eslint-plugin-html` ([6c8308c]);
 - Remove `eslint-plugin-clsx` ([4539eae]);
 - Remove `eslint-plugin-jsx-a11y` ([0defe2e]);
-- Remove the `github/a11y-aria-label-is-well-formatted` rule ([5a2a31f]).
+- Remove the `github/a11y-aria-label-is-well-formatted` rule ([5a2a31f]);
+- Remove the `github/a11y-no-title-attribute` rule ([e691514]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -297,6 +298,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[e691514]: https://github.com/vanyauhalin/eslint-config/commit/e6915149b0b5f85057013b03d00f94275921d3a7/
 [5a2a31f]: https://github.com/vanyauhalin/eslint-config/commit/5a2a31fe85a654ea1b9245ff529dc9b12b699590/
 [0defe2e]: https://github.com/vanyauhalin/eslint-config/commit/0defe2edcc9d536e9c5408925b7d58592f7ceaf8/
 [4539eae]: https://github.com/vanyauhalin/eslint-config/commit/4539eae486b9a897c5023580c4e8bb3cf2b6e4ad/
