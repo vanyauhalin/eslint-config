@@ -1444,6 +1444,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/prefer-array-index-of": e,
 			"unicorn/prefer-array-some": e,
 			"unicorn/prefer-blob-reading-methods": e,
+			"unicorn/prefer-class-fields": e,
 			"unicorn/prefer-code-point": e,
 			"unicorn/prefer-date-now": e,
 			"unicorn/prefer-dom-node-append": e,
