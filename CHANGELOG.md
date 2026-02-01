@@ -36,6 +36,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Update `typescript` to v5.9.3 ([9351885]).
 - Update `eslint` to v9.39.2 ([313e9e0]).
 - Update `eslint-plugin-yml` to v3.0.0 ([34a78b0]).
+- Update `eslint-plugin-toml` to v1.0.3 ([53c70a5]).
 
 ### Removed
 
@@ -387,6 +388,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[53c70a5]: https://github.com/vanyauhalin/eslint-config/commit/53c70a587a82ecaded05f5d12e0ff33d7b4bea51/
 [34a78b0]: https://github.com/vanyauhalin/eslint-config/commit/34a78b072578dfb28b21624224b3ef7ce90b9567/
 [38bbb3f]: https://github.com/vanyauhalin/eslint-config/commit/38bbb3f76eac375baf567a3c58ceb7b885ffa6aa/
 [313e9e0]: https://github.com/vanyauhalin/eslint-config/commit/313e9e037877d4eb24c89e6521acb3aed1bf4fe9/
