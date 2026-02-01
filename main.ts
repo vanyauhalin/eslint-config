@@ -1221,6 +1221,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/no-unnecessary-slice-end": e,
 			"unicorn/no-unreadable-array-destructuring": e,
 			"unicorn/no-unreadable-iife": e,
+			"unicorn/no-useless-collection-argument": e,
 			"unicorn/no-useless-error-capture-stack-trace": e,
 			"unicorn/no-useless-fallback-in-spread": e,
 			"unicorn/no-useless-length-check": e,
