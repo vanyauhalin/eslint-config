@@ -34,7 +34,7 @@
 	"main": "dist/main.js",
 	"types": "dist/main.d.ts",
 	"files": [
-		"dist"
+		"dist/"
 	],
 	"scripts": {
 		"build-docs": "eslint-config-inspector build --config main.ts --outDir docs",

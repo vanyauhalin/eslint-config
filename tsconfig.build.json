@@ -3,9 +3,10 @@
 	"compilerOptions": {
 		"declaration": true,
 		"noEmit": false,
-		"outDir": "dist"
+		"outDir": "dist/"
 	},
-	"exclude": [
-		"**/*.config.*"
+	"include": [
+		"index.d.ts",
+		"main.ts"
 	]
 }
