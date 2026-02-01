@@ -32,7 +32,8 @@ There are no noticeable changes in version [unreleased].
 - Remove the `stylistic/jsx-closing-bracket-location` rule ([ba32983]);
 - Remove the `stylistic/jsx-closing-tag-location` rule ([663e5e4]);
 - Remove the `stylistic/jsx-curly-brace-presence` rule ([22526e3]);
-- Remove the `stylistic/jsx-curly-newline` rule ([dbfbfd3]).
+- Remove the `stylistic/jsx-curly-newline` rule ([dbfbfd3]);
+- Remove the `stylistic/jsx-curly-spacing` rule ([491e7fd]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -305,6 +306,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[491e7fd]: https://github.com/vanyauhalin/eslint-config/commit/491e7fd00f387cb41ac1333012fda3c9e3e7cd2a/
 [dbfbfd3]: https://github.com/vanyauhalin/eslint-config/commit/dbfbfd387fccbaadd36b188004649e23b76bf847/
 [22526e3]: https://github.com/vanyauhalin/eslint-config/commit/22526e30615f24edc026fdd7ac9e62bacffb108a/
 [663e5e4]: https://github.com/vanyauhalin/eslint-config/commit/663e5e4a7952f23f22eda0c452995e00e280ab72/
