@@ -1,3 +1,4 @@
+import markdown from "@eslint/markdown"
 import eslintComments from "@eslint-community/eslint-plugin-eslint-comments"
 import stylistic from "@stylistic/eslint-plugin"
 import typescript from "@typescript-eslint/eslint-plugin"
@@ -13,7 +14,6 @@ import importNewlines from "eslint-plugin-import-newlines"
 import importX from "eslint-plugin-import-x" // eslint-disable-line import-x/no-named-as-default
 import jsdoc from "eslint-plugin-jsdoc" // eslint-disable-line import-x/no-named-as-default
 import jsonc from "eslint-plugin-jsonc"
-import markdown from "eslint-plugin-markdown"
 import math from "eslint-plugin-math"
 import n from "eslint-plugin-n"
 import noUnsanitized from "eslint-plugin-no-unsanitized"
