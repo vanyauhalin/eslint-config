@@ -56,9 +56,6 @@ importers:
       eslint-plugin-jsonc:
         specifier: 2.20.1
         version: 2.20.1(eslint@9.33.0(jiti@2.4.2))
-      eslint-plugin-jsx-a11y:
-        specifier: 6.10.2
-        version: 6.10.2(eslint@9.33.0(jiti@2.4.2))
       eslint-plugin-markdown:
         specifier: 5.1.0
         version: 5.1.0(eslint@9.33.0(jiti@2.4.2))
