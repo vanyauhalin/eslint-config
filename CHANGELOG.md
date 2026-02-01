@@ -21,7 +21,8 @@ There are no noticeable changes in version [unreleased].
 - Remove the `new-cap` rule ([a0c015d]);
 - Remove the `stylistic/max-len` rule ([2d3a08b]);
 - Remove `@html-eslint/eslint-plugin` and `@html-eslint/parser` ([ad00512]);
-- Remove `eslint-plugin-html` ([6c8308c]).
+- Remove `eslint-plugin-html` ([6c8308c]);
+- Remove `eslint-plugin-clsx` ([4539eae]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -294,6 +295,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[4539eae]: https://github.com/vanyauhalin/eslint-config/commit/4539eae486b9a897c5023580c4e8bb3cf2b6e4ad/
 [6c8308c]: https://github.com/vanyauhalin/eslint-config/commit/6c8308c4eb7ed0d6ab0e4180510940fda2b44957/
 [ad00512]: https://github.com/vanyauhalin/eslint-config/commit/ad00512d576866b8b37b4df8826f3a09495afec6/
 [a1c09d7]: https://github.com/vanyauhalin/eslint-config/commit/a1c09d74e8dfa8343a7870a1878d505b2adb6cc0/
