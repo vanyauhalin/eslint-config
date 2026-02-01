@@ -13,6 +13,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Enable `jsonc/array-element-newline` ([778ab6b]).
 - Enable `node-dependencies/require-provenance-deps` ([b54dc0f]).
 - Enable `preserve-caught-error` ([38bbb3f]).
+- Enable `typescript/strict-void-return` ([e7e028f]).
 
 ### Changed
 
@@ -396,6 +397,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[e7e028f]: https://github.com/vanyauhalin/eslint-config/commit/e7e028fa0ba1ca340adc363100051d3661b206a5/
 [aca7080]: https://github.com/vanyauhalin/eslint-config/commit/aca70800274934461a44c476bedbc571193b07f4/
 [2625006]: https://github.com/vanyauhalin/eslint-config/commit/26250061b5fac68b85510540f028558bab6a3b0d/
 [1308acb]: https://github.com/vanyauhalin/eslint-config/commit/1308acb4748925feb921fe6d066448b177464025/
