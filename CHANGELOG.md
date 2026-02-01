@@ -44,6 +44,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Modify `stylistic/indent`: set `assignmentOperator` to `1` ([437794a]).
 - Update `@typescript-eslint/eslint-plugin` to v8.54.0 ([1308acb]).
 - Update `@typescript-eslint/parser` to v8.54.0 ([2625006]).
+- Update `@typescript-eslint/utils` to v8.54.0 ([aca7080]).
 
 ### Removed
 
@@ -395,6 +396,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[aca7080]: https://github.com/vanyauhalin/eslint-config/commit/aca70800274934461a44c476bedbc571193b07f4/
 [2625006]: https://github.com/vanyauhalin/eslint-config/commit/26250061b5fac68b85510540f028558bab6a3b0d/
 [1308acb]: https://github.com/vanyauhalin/eslint-config/commit/1308acb4748925feb921fe6d066448b177464025/
 [437794a]: https://github.com/vanyauhalin/eslint-config/commit/437794a14fa4ef6b06b97df3fe7d993d50f6a824/
