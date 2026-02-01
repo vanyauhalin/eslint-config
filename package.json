@@ -39,10 +39,10 @@
 	"scripts": {
 		"build-docs": "eslint-config-inspector build --config main.ts --outDir docs",
 		"build-package": "tsc --project tsconfig.build.json",
-		"lint-package": "eslint .",
+		"lint-code": "eslint --no-warn-ignored .github *.*",
+		"lint-types": "tsc",
 		"prepare-package": "clear-package-json package.json --output package.json",
-		"serve-docs": "eslint-config-inspector --config main.ts --port 8080 --open false",
-		"test-package": "tsc"
+		"serve-docs": "eslint-config-inspector --config main.ts --port 8080 --open false"
 	},
 	"dependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "4.5.0",

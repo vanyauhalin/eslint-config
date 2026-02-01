@@ -1,5 +1,7 @@
 name: Audit
 
+permissions: {}
+
 on:
   pull_request:
     branches:
@@ -10,42 +12,24 @@ on:
 
 jobs:
   audit:
-    strategy:
-      matrix:
-        os:
-        - ubuntu-latest
-        - windows-latest
-        node:
-        - 20
-        - 22
-        - 24
-
-    runs-on: ${{matrix.os}}
-
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-    # https://github.com/actions/checkout/issues/135/
-    - name: Set LF Line Endings
-      run: |
-        git config --global core.autocrlf false
-        git config --global core.eol lf
-
-    - name: Checkout Repository
+    - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Prepare mise
-      run: sed --in-place 's/\(^node = \)".*"/\1"prefix:${{matrix.node}}"/' mise.toml
 
     - name: Setup mise
       uses: jdx/mise-action@v2
 
-    - name: Install Dependencies
+    - name: Install dependencies
       run: pnpm install --frozen-lockfile
 
-    - name: Build Package
+    - name: Build package
       run: pnpm build-package
 
-    - name: Lint Package
-      run: pnpm lint-package
+    - name: Lint types
+      run: pnpm lint-types
 
-    - name: Test Package
-      run: pnpm test-package
+    - name: Lint code
+      run: pnpm lint-code
