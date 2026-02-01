@@ -69,8 +69,8 @@ importers:
         specifier: 4.1.4
         version: 4.1.4(eslint@9.33.0(jiti@2.4.2))
       eslint-plugin-node-dependencies:
-        specifier: 1.1.2
-        version: 1.1.2(eslint@9.33.0(jiti@2.4.2))
+        specifier: 1.3.0
+        version: 1.3.0(eslint@9.33.0(jiti@2.4.2))
       eslint-plugin-package-json:
         specifier: 0.54.0
         version: 0.54.0(@types/estree@1.0.8)(eslint@9.33.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
@@ -1103,6 +1103,12 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
+  eslint-compat-utils@0.6.5:
+    resolution: {integrity: sha512-vAUHYzue4YAa2hNACjB8HvUQj5yehAZgiClyFVVom9cP8z5NSFq3PwB/TtJslN2zAMgRX6FCFCjYBbQh71g5RQ==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      eslint: '>=6.0.0'
+
   eslint-config-flat-gitignore@2.1.0:
     resolution: {integrity: sha512-cJzNJ7L+psWp5mXM7jBX+fjHtBvvh06RBlcweMhKD8jWqQw0G78hOW5tpVALGHGFPsBV+ot2H+pdDGJy6CV8pA==}
     peerDependencies:
@@ -1294,8 +1300,8 @@ packages:
     peerDependencies:
       eslint: ^8 || ^9
 
-  eslint-plugin-node-dependencies@1.1.2:
-    resolution: {integrity: sha512-H6tN05wH2DluXFgbOFpHMgfycJnvkCNfmFqcyTZd8spZRnSv67Tpk8JpopL8HSMlwRoiYRNol1IqHD8lz9g0QA==}
+  eslint-plugin-node-dependencies@1.3.0:
+    resolution: {integrity: sha512-DeB67/C1Cz8OIJPWj4O4Np1c/Xy/Igv9Cqd9UKwWcSZ+azseiNNBJb8lQtVLm7C6fuic/ePWm/ttb0iADtEKww==}
     engines: {node: ^18.17.0 || >=20.5.0}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -3662,6 +3668,11 @@ snapshots:
       eslint: 9.33.0(jiti@2.4.2)
       semver: 7.6.3
 
+  eslint-compat-utils@0.6.5(eslint@9.33.0(jiti@2.4.2)):
+    dependencies:
+      eslint: 9.33.0(jiti@2.4.2)
+      semver: 7.7.2
+
   eslint-config-flat-gitignore@2.1.0(eslint@9.33.0(jiti@2.4.2)):
     dependencies:
       '@eslint/compat': 1.2.8(eslint@9.33.0(jiti@2.4.2))
@@ -3923,9 +3934,10 @@ snapshots:
     dependencies:
       eslint: 9.33.0(jiti@2.4.2)
 
-  eslint-plugin-node-dependencies@1.1.2(eslint@9.33.0(jiti@2.4.2)):
+  eslint-plugin-node-dependencies@1.3.0(eslint@9.33.0(jiti@2.4.2)):
     dependencies:
       eslint: 9.33.0(jiti@2.4.2)
+      eslint-compat-utils: 0.6.5(eslint@9.33.0(jiti@2.4.2))
       jsonc-eslint-parser: 2.4.0
       npm-package-arg: 12.0.2
       package-json: 10.0.1
