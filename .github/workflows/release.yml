@@ -1,7 +1,6 @@
 name: Release
 
-permissions:
-  contents: write
+permissions: {}
 
 on:
   push:
@@ -9,46 +8,101 @@ on:
     - v*
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      version: ${{steps.version.outputs.version}}
+      anchor: ${{steps.anchor.outputs.anchor}}
     steps:
-    - name: Checkout Repository
+    - name: Checkout repository
       uses: actions/checkout@v4
 
     - name: Setup mise
       uses: jdx/mise-action@v2
 
-    - name: Install Dependencies
+    - name: Store version
+      id: version
+      run: echo "version=$(jq --raw-output ".version" package.json)" >> "$GITHUB_OUTPUT"
+
+    - name: Store anchor
+      id: anchor
+      run: |
+        v="${{steps.version.outputs.version}}"
+        r="^## \[$v\] - [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]$"
+        h=$(grep "$r" CHANGELOG.md 2>/dev/null)
+        if [ -z "$h" ]; then exit 1; fi
+        v="${v%.*.*}${v#*.}"
+        v="${v%.*}${v##*.}"
+        d="${h##* - }"
+        a="${v}---${d}"
+        echo "anchor=$a" >> "$GITHUB_OUTPUT"
+
+    - name: Install dependencies
       run: pnpm install --frozen-lockfile
 
-    - name: Build Package
+    - name: Build package
       run: pnpm build-package
 
-    - name: Prepare Package
-      run: pnpm prepare-package
+    - name: Build package.json
+      run: pnpm build-package-json
 
-    - name: Configure Registry
-      run: |
-        pnpm config set //registry.npmjs.org/:_authToken "\${NODE_AUTH_TOKEN}"
-        pnpm config set registry https://registry.npmjs.org
-
-    - name: Publish Package
-      env:
-        NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
-      run: pnpm publish --access public --no-git-checks
-
-    - name: Create Tarball
+    - name: Archive package
       run: pnpm pack
 
-    - name: Create Release
-      env:
-        GH_TOKEN: ${{github.token}}
-      run: |
-        gh release create "${{github.ref_name}}" \
-          --title "${{github.ref_name}}" \
-          --notes "See ${{github.server_url}}/${{github.repository}}/blob/main/CHANGELOG.md/"
+    - name: Upload package
+      uses: actions/upload-artifact@v4
+      with:
+        name: package
+        path: "*.tgz"
+        if-no-files-found: error
 
-    - name: Upload Tarball
-      env:
-        GH_TOKEN: ${{github.token}}
-      run: gh release upload "${{github.ref_name}}" *.tgz
+  npm:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup mise
+      uses: jdx/mise-action@v2
+
+    - name: Download package
+      uses: actions/download-artifact@v4
+      with:
+        name: package
+
+    - name: Configure registry
+      run: pnpm config set registry https://registry.npmjs.org
+
+    - name: Publish package
+      run: pnpm publish *.tgz --no-git-checks --provenance --access public
+
+  gr:
+    needs: [build, npm]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Download package
+      uses: actions/download-artifact@v4
+      with:
+        name: package
+
+    - name: Create release
+      run: |
+        v="${{needs.build.outputs.version}}"
+        a="${{needs.build.outputs.anchor}}"
+        u="${{github.server_url}}/${{github.repository}}/blob/main/CHANGELOG.md#$a"
+        gh release create "v$v" --title "v$v" --notes "See $u"
+
+    - name: Upload package
+      run: gh release upload "v${{needs.build.outputs.version}}" *.tgz
