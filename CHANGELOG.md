@@ -5,7 +5,9 @@ Changelog] format and adhering to [Semantic Versioning].
 
 ## [Unreleased]
 
-<!-- There are no notable changes in this release. -->
+There are no notable changes in this release.
+
+## [0.0.11] - 2026-02-01
 
 ### Added
 
@@ -439,7 +441,8 @@ some changes.
 [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 
-[Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.10...HEAD/
+[Unreleased]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.11...HEAD/
+[0.0.11]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.10...v0.0.11/
 [0.0.10]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.9...v0.0.10/
 [0.0.9]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.8...v0.0.9/
 [0.0.8]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.7...v0.0.8/
