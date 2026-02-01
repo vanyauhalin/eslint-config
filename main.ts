@@ -803,6 +803,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		files: ["**/package.json"],
 		rules: {
 			"package-json/bin-name-casing": e,
+			"package-json/exports-subpaths-style": e,
 			"package-json/no-empty-fields": e,
 			"package-json/no-redundant-files": e,
 			"package-json/no-redundant-publishConfig": e,
