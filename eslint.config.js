@@ -11,11 +11,9 @@ export default [
 	...config,
 	{
 		rules: {
-			// Some ESLint utility function names are capitalized.
-			"new-cap": "off",
-
 			// The ESLint ecosystem utilizes default exports.
 			"import-x/no-default-export": "off",
+			"import-x/no-named-as-default": "off",
 		},
 	},
 ]
