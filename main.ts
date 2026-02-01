@@ -11,7 +11,7 @@ import esX from "eslint-plugin-es-x"
 import github from "eslint-plugin-github"
 import importNewlines from "eslint-plugin-import-newlines"
 import importX from "eslint-plugin-import-x" // eslint-disable-line import-x/no-named-as-default
-import jsdoc from "eslint-plugin-jsdoc"
+import jsdoc from "eslint-plugin-jsdoc" // eslint-disable-line import-x/no-named-as-default
 import jsonc from "eslint-plugin-jsonc"
 import markdown from "eslint-plugin-markdown"
 import math from "eslint-plugin-math"
