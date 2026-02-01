@@ -366,7 +366,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"no-prototype-builtins": e,
 			"no-redeclare": e,
 			"no-regex-spaces": e,
-			"no-restricted-syntax": [e, "ImportSpecifier"],
 			"no-return-assign": e,
 			"no-script-url": e,
 			"no-self-assign": e,
