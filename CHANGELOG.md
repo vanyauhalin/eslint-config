@@ -23,6 +23,8 @@ Changelog] format and adhering to [Semantic Versioning].
 - Update `eslint-plugin-no-unsanitized` to v4.1.4 ([67d1474]).
 - Update `eslint-plugin-prefer-let` to v4.0.1 ([4db4321]).
 - Update `eslint-plugin-wc` to v3.0.2 ([dba7f99]).
+- Update `@eslint-community/eslint-plugin-eslint-comments` to v4.6.0
+  ([a6436f9]).
 
 ### Removed
 
@@ -374,6 +376,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[a6436f9]: https://github.com/vanyauhalin/eslint-config/commit/a6436f9e7959f810ce7854716312a7d702b85bbb/
 [dba7f99]: https://github.com/vanyauhalin/eslint-config/commit/dba7f99add8690cc6bc358d93d33dd0aea19c8b0/
 [4db4321]: https://github.com/vanyauhalin/eslint-config/commit/4db4321c4b50f8d9b1a666d6ba3160a0b17a68ac/
 [67d1474]: https://github.com/vanyauhalin/eslint-config/commit/67d147468a69b7682679e928bc8e3d0cae962846/
