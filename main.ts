@@ -697,7 +697,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"jsonc/no-undefined-value": e,
 			"jsonc/no-unicode-codepoint-escapes": e,
 			"jsonc/no-useless-escape": e,
-			"jsonc/object-curly-newline": e,
+			"jsonc/object-curly-newline": [e, "always"],
 			"jsonc/object-curly-spacing": e,
 			"jsonc/object-property-newline": e,
 			"jsonc/quote-props": e,
