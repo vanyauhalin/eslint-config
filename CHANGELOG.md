@@ -210,27 +210,38 @@ Changelog] format and adhering to [Semantic Versioning].
 
 ### Added
 
-- Enable new `@html-eslint/eslint-plugin` rules: `no-duplicate-class`,
-  `no-heading-inside-button`, `no-invalid-role`, `no-nested-interactive`,
-  `prefer-https`, `require-explicit-size`, `require-form-method`,
-  `require-input-label`, `use-baseline` ([b473eac]).
-- Enable new `@typescript-eslint/eslint-plugin` rules:
-  `typescript/no-misused-spread` ([b7e90d0]).
-- Enable new `eslint-plugin-es-x` rules:
-  `es-x/no-nonstandard-intl-durationformat-properties`,
-  `es-x/no-nonstandard-intl-durationformat-prototype-properties` ([caffcf9],
-  [df4ed73]).
-- Enable new `eslint-plugin-package-json` rules: `no-empty-fields`,
-  `no-redundant-files`, `require-author`, `require-keywords`, `require-name`,
-  `require-version`, `valid-package-definition` ([e859d13]).
-- Enable new `eslint-plugin-unicorn` rules: `consistent-assert`,
-  `consistent-date-clone`, `no-accessor-recursion`, `no-instanceof-builtins`,
-  `no-named-default`, `no-unnecessary-array-flat-depth`,
-  `no-unnecessary-array-splice-count`, `no-unnecessary-slice-end`,
-  `prefer-import-meta-properties` ([1a7bb67]).
-- Enable new `eslint-plugin-es-x` rules: `no-class-private-fields` and
-  `no-class-private-methods` ([5b32ce5]).
-- Enable new `eslint-plugin-import-x` rules: `order` ([06e08c2]).
+- Enable `html/no-duplicate-class` ([b473eac]).
+- Enable `html/no-heading-inside-button` ([b473eac]).
+- Enable `html/no-invalid-role` ([b473eac]).
+- Enable `html/no-nested-interactive` ([b473eac]).
+- Enable `html/prefer-https` ([b473eac]).
+- Enable `html/require-explicit-size` ([b473eac]).
+- Enable `html/require-form-method` ([b473eac]).
+- Enable `html/require-input-label` ([b473eac]).
+- Enable `html/use-baseline` ([b473eac]).
+- Enable `typescript/no-misused-spread` ([b7e90d0]).
+- Enable `es-x/no-nonstandard-intl-durationformat-properties` ([caffcf9]).
+- Enable `es-x/no-nonstandard-intl-durationformat-prototype-properties`
+[df4ed73]).
+- Enable `package-json/no-empty-fields` ([e859d13]).
+- Enable `package-json/no-redundant-files` ([e859d13]).
+- Enable `package-json/require-author` ([e859d13]).
+- Enable `package-json/require-keywords` ([e859d13]).
+- Enable `package-json/require-name` ([e859d13]).
+- Enable `package-json/require-version` ([e859d13]).
+- Enable `package-json/valid-package-definition` ([e859d13]).
+- Enable `unicorn/consistent-assert` ([1a7bb67]).
+- Enable `unicorn/consistent-date-clone` ([1a7bb67]).
+- Enable `unicorn/no-accessor-recursion` ([1a7bb67]).
+- Enable `unicorn/no-instanceof-builtins` ([1a7bb67]).
+- Enable `unicorn/no-named-default` ([1a7bb67]).
+- Enable `unicorn/no-unnecessary-array-flat-depth` ([1a7bb67]).
+- Enable `unicorn/no-unnecessary-array-splice-count` ([1a7bb67]).
+- Enable `unicorn/no-unnecessary-slice-end` ([1a7bb67]).
+- Enable `unicorn/prefer-import-meta-properties` ([1a7bb67]).
+- Enable `es-x/no-class-private-fields` ([5b32ce5]).
+- Enable `es-x/no-class-private-methods` ([5b32ce5]).
+- Enable `import-x/order` ([06e08c2]).
 
 ### Changed
 
