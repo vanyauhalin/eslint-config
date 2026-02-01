@@ -912,7 +912,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
 			"n/exports-style": e,
-			"n/hashbang": e,
 			"n/no-deprecated-api": e,
 			"n/no-exports-assign": e,
 			"n/no-new-require": e,
