@@ -554,7 +554,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/github-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		rules: {
-			"github/a11y-aria-label-is-well-formatted": e,
 			"github/a11y-no-title-attribute": e,
 			"github/a11y-role-supports-aria-props": e,
 			"github/a11y-svg-has-accessible-name": e,
