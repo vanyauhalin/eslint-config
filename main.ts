@@ -666,7 +666,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/jsonc-rules",
 		files: ["**/*.json", "**/*.json5", "**/*.jsonc"],
 		rules: {
-			"jsonc/array-bracket-newline": e,
+			"jsonc/array-bracket-newline": [e, "always"],
 			"jsonc/array-bracket-spacing": e,
 			"jsonc/comma-dangle": e,
 			"jsonc/comma-style": e,
@@ -1399,13 +1399,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		files: ["**/eslint.config.cjs", "**/eslint.config.js", "**/eslint.config.mjs", "**/eslint.config.cts", "**/eslint.config.mts", "**/eslint.config.ts"],
 		rules: {
 			"import-x/no-default-export": "off",
-		},
-	},
-	{
-		name: "@vanyauhalin/package-file",
-		files: ["**/package.json"],
-		rules: {
-			"jsonc/array-bracket-newline": [e, "always"],
 		},
 	},
 	{
