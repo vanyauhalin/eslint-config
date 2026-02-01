@@ -1303,7 +1303,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		rules: {
 			"yml/block-mapping-colon-indicator-newline": e,
 			"yml/block-mapping-question-indicator-newline": e,
-			"yml/block-mapping": e,
+			"yml/block-mapping": [e, "always"],
 			"yml/block-sequence-hyphen-indicator-newline": e,
 			"yml/block-sequence": e,
 			"yml/flow-mapping-curly-newline": e,
