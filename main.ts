@@ -974,7 +974,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"stylistic/generator-star-spacing": e,
 			"stylistic/implicit-arrow-linebreak": e,
 			"stylistic/indent-binary-ops": [e, "tab"],
-			"stylistic/indent": [e, "tab", {SwitchCase: 0}],
+			"stylistic/indent": [e, "tab", {assignmentOperator: 1, SwitchCase: 0}],
 			"stylistic/key-spacing": e,
 			"stylistic/keyword-spacing": e,
 			"stylistic/linebreak-style": e,
