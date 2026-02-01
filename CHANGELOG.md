@@ -41,6 +41,16 @@ Changelog] format and adhering to [Semantic Versioning].
 - Enable `package-json/valid-sideEffects` ([84b9b9d]).
 - Enable `package-json/valid-workspaces` ([84b9b9d]).
 - Enable `package-json/exports-subpaths-style` ([5916271]).
+- Enable `jsdoc/escape-inline-tags` ([ee6c36d]).
+- Enable `jsdoc/prefer-import-tag` ([ee6c36d]).
+- Enable `jsdoc/reject-any-type` ([ee6c36d]).
+- Enable `jsdoc/reject-function-type` ([ee6c36d]).
+- Enable `jsdoc/require-throws-type` ([ee6c36d]).
+- Enable `jsdoc/require-yields-type` ([ee6c36d]).
+- Enable `jsdoc/ts-method-signature-style` ([ee6c36d]).
+- Enable `jsdoc/ts-no-empty-object-type` ([ee6c36d]).
+- Enable `jsdoc/ts-no-unnecessary-template-expression` ([ee6c36d]).
+- Enable `jsdoc/ts-prefer-function-type` ([ee6c36d]).
 
 ### Changed
 
@@ -440,6 +450,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[ee6c36d]: https://github.com/vanyauhalin/eslint-config/commit/ee6c36dc010c833a071a886dcbee42971972d1d3/
 [e2af349]: https://github.com/vanyauhalin/eslint-config/commit/e2af349ca70adefede13558c5f826f3cabaebe2d/
 [5916271]: https://github.com/vanyauhalin/eslint-config/commit/5916271906b601844581763f58b32a278dae4c27/
 [84b9b9d]: https://github.com/vanyauhalin/eslint-config/commit/84b9b9d644ce4ab90c2b5cf694f43194660f89ee/
