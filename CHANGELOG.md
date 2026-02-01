@@ -32,6 +32,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Update `yaml-eslint-parser` to v2.0.0 ([3bd49af]).
 - Update `eslint-plugin-de-morgan` to v2.0.0 ([41a5ca9]).
 - Update `eslint-plugin-jsonc` to v2.21.0 ([9c765a5]).
+- Update `typescript` to v5.9.3 ([9351885]).
 
 ### Removed
 
@@ -383,6 +384,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[9351885]: https://github.com/vanyauhalin/eslint-config/commit/9351885c49610f521b87e8e59d58720ca6707864/
 [9c765a5]: https://github.com/vanyauhalin/eslint-config/commit/9c765a5d2469d602964590e1884f9190b1698caf/
 [41a5ca9]: https://github.com/vanyauhalin/eslint-config/commit/41a5ca998a88351d84e63d6d4349cf405b20d8f0/
 [3bd49af]: https://github.com/vanyauhalin/eslint-config/commit/3bd49af12ec56c1453819d9e0fd1bf58447d5747/
