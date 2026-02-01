@@ -18,6 +18,28 @@ Changelog] format and adhering to [Semantic Versioning].
 - Enable `unicorn/prefer-bigint-literals` ([6e3dcdd]).
 - Enable `unicorn/require-module-attributes` ([edef707]).
 - Enable `unicorn/require-module-specifiers` ([b8ea38e]).
+- Enable `package-json/bin-name-casing` ([84b9b9d]).
+- Enable `package-json/no-redundant-publishConfig` ([84b9b9d]).
+- Enable `package-json/require-homepage` ([84b9b9d]).
+- Enable `package-json/require-license` ([84b9b9d]).
+- Enable `package-json/require-repository` ([84b9b9d]).
+- Enable `package-json/restrict-private-properties` ([84b9b9d]).
+- Enable `package-json/scripts-name-casing` ([84b9b9d]).
+- Enable `package-json/specify-peers-locally` ([84b9b9d]).
+- Enable `package-json/valid-contributors` ([84b9b9d]).
+- Enable `package-json/valid-directories` ([84b9b9d]).
+- Enable `package-json/valid-engines` ([84b9b9d]).
+- Enable `package-json/valid-files` ([84b9b9d]).
+- Enable `package-json/valid-homepage` ([84b9b9d]).
+- Enable `package-json/valid-keywords` ([84b9b9d]).
+- Enable `package-json/valid-main` ([84b9b9d]).
+- Enable `package-json/valid-man` ([84b9b9d]).
+- Enable `package-json/valid-module` ([84b9b9d]).
+- Enable `package-json/valid-os` ([84b9b9d]).
+- Enable `package-json/valid-private` ([84b9b9d]).
+- Enable `package-json/valid-repository` ([84b9b9d]).
+- Enable `package-json/valid-sideEffects` ([84b9b9d]).
+- Enable `package-json/valid-workspaces` ([84b9b9d]).
 
 ### Changed
 
@@ -405,6 +427,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[84b9b9d]: https://github.com/vanyauhalin/eslint-config/commit/84b9b9d644ce4ab90c2b5cf694f43194660f89ee/
 [d45f70a]: https://github.com/vanyauhalin/eslint-config/commit/d45f70a0d285f2f41876bc8358c06946cce4d9cb/
 [ed4c9f8]: https://github.com/vanyauhalin/eslint-config/commit/ed4c9f8c6e46a133995e21392ebadb5b06f7acbe/
 [c2fc566]: https://github.com/vanyauhalin/eslint-config/commit/c2fc5667ec6951b86d028f37d55a67e60e3cb530/
