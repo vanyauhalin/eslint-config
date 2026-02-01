@@ -804,7 +804,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"node-dependencies/no-dupe-deps": e,
 			"node-dependencies/prefer-caret-range-version": e,
 			"node-dependencies/prefer-tilde-range-version": e,
-			"node-dependencies/require-provenance-deps": e,
 			"node-dependencies/valid-semver": e,
 		},
 	},
