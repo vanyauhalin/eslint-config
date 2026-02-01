@@ -11,6 +11,7 @@ Changelog] format and adhering to [Semantic Versioning].
 
 - Enable `unicorn/prefer-class-fields` ([a1c09d7]).
 - Enable `jsonc/array-element-newline` ([778ab6b]).
+- Enable `node-dependencies/require-provenance-deps` ([b54dc0f]).
 
 ### Changed
 
@@ -378,6 +379,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[b54dc0f]: https://github.com/vanyauhalin/eslint-config/commit/b54dc0f02cc6f809a6daac15a839e4b25153285d/
 [cfa44ec]: https://github.com/vanyauhalin/eslint-config/commit/cfa44ec44d8c5cbb6534c869760c35250ac2ef2f/
 [b23058b]: https://github.com/vanyauhalin/eslint-config/commit/b23058bc93664da786d7329bc23d4f2b50b875a6/
 [a6436f9]: https://github.com/vanyauhalin/eslint-config/commit/a6436f9e7959f810ce7854716312a7d702b85bbb/
