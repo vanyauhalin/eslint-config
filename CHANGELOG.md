@@ -76,6 +76,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Update `eslint-plugin-unicorn` to v62.0.0 ([d98dd91]).
 - Update `eslint-plugin-regexp` to v3.0.0 ([c2fc566]).
 - Update `eslint-plugin-package-json` to v0.88.2 ([ed4c9f8]).
+- Update `eslint-plugin-jsdoc` v62.5.0 ([e2af349]).
 
 ### Removed
 
@@ -439,6 +440,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[e2af349]: https://github.com/vanyauhalin/eslint-config/commit/e2af349ca70adefede13558c5f826f3cabaebe2d/
 [5916271]: https://github.com/vanyauhalin/eslint-config/commit/5916271906b601844581763f58b32a278dae4c27/
 [84b9b9d]: https://github.com/vanyauhalin/eslint-config/commit/84b9b9d644ce4ab90c2b5cf694f43194660f89ee/
 [d45f70a]: https://github.com/vanyauhalin/eslint-config/commit/d45f70a0d285f2f41876bc8358c06946cce4d9cb/
