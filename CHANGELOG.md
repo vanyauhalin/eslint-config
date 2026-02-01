@@ -11,7 +11,8 @@ There are no noticeable changes in version [unreleased].
 - Remove the `no-restricted-syntax` rule ([3083f41]);
 - Use comma delimiter for types on the same line ([28cd893]);
 - Remove the `unicorn/import-style` rule ([9dbbe67]);
-- Remove the `unicorn/prefer-top-level-await` rule ([79d1994]).
+- Remove the `unicorn/prefer-top-level-await` rule ([79d1994]);
+- Remove the `n/hashbang` rule ([024e407]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -284,6 +285,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[024e407]: https://github.com/vanyauhalin/eslint-config/commit/024e40718b8d83bd8d61f1140045fa665e0cf589/
 [79d1994]: https://github.com/vanyauhalin/eslint-config/commit/79d199460eae472703f6133b8428d1ef60d0a6ad/
 [9dbbe67]: https://github.com/vanyauhalin/eslint-config/commit/9dbbe67de3ded9653a52b6ab9346e363ee5b232f/
 [28cd893]: https://github.com/vanyauhalin/eslint-config/commit/28cd893360897f4eb9afab2a92fabb0074f3cbea/
