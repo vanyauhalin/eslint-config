@@ -972,7 +972,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"stylistic/implicit-arrow-linebreak": e,
 			"stylistic/indent-binary-ops": [e, "tab"],
 			"stylistic/indent": [e, "tab", {SwitchCase: 0}],
-			"stylistic/jsx-curly-newline": e,
 			"stylistic/jsx-curly-spacing": e,
 			"stylistic/jsx-equals-spacing": e,
 			"stylistic/jsx-first-prop-new-line": e,
