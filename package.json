@@ -46,7 +46,7 @@
 	},
 	"dependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "4.6.0",
-		"@stylistic/eslint-plugin": "5.2.3",
+		"@stylistic/eslint-plugin": "5.7.1",
 		"@typescript-eslint/eslint-plugin": "8.39.1",
 		"@typescript-eslint/parser": "8.39.1",
 		"@typescript-eslint/utils": "8.39.1",
