@@ -63,8 +63,8 @@ importers:
         specifier: 0.13.1
         version: 0.13.1(eslint@9.39.2(jiti@2.4.2))
       eslint-plugin-n:
-        specifier: 17.21.3
-        version: 17.21.3(eslint@9.39.2(jiti@2.4.2))(typescript@5.9.3)
+        specifier: 17.23.2
+        version: 17.23.2(eslint@9.39.2(jiti@2.4.2))(typescript@5.9.3)
       eslint-plugin-no-unsanitized:
         specifier: 4.1.4
         version: 4.1.4(eslint@9.39.2(jiti@2.4.2))
@@ -1286,8 +1286,8 @@ packages:
     peerDependencies:
       eslint: '>=8.57.0'
 
-  eslint-plugin-n@17.21.3:
-    resolution: {integrity: sha512-MtxYjDZhMQgsWRm/4xYLL0i2EhusWT7itDxlJ80l1NND2AL2Vi5Mvneqv/ikG9+zpran0VsVRXTEHrpLmUZRNw==}
+  eslint-plugin-n@17.23.2:
+    resolution: {integrity: sha512-RhWBeb7YVPmNa2eggvJooiuehdL76/bbfj/OJewyoGT80qn5PXdz8zMOTO6YHOsI7byPt7+Ighh/i/4a5/v7hw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
@@ -3629,7 +3629,7 @@ snapshots:
 
   eslint-plugin-es-x@7.8.0(eslint@9.39.2(jiti@2.4.2)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.7.0(eslint@9.39.2(jiti@2.4.2))
+      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.2(jiti@2.4.2))
       '@eslint-community/regexpp': 4.12.1
       eslint: 9.39.2(jiti@2.4.2)
       eslint-compat-utils: 0.5.1(eslint@9.39.2(jiti@2.4.2))
@@ -3810,9 +3810,9 @@ snapshots:
       eslint: 9.39.2(jiti@2.4.2)
       eslint-type-tracer: 0.4.1(eslint@9.39.2(jiti@2.4.2))
 
-  eslint-plugin-n@17.21.3(eslint@9.39.2(jiti@2.4.2))(typescript@5.9.3):
+  eslint-plugin-n@17.23.2(eslint@9.39.2(jiti@2.4.2))(typescript@5.9.3):
     dependencies:
-      '@eslint-community/eslint-utils': 4.7.0(eslint@9.39.2(jiti@2.4.2))
+      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.2(jiti@2.4.2))
       enhanced-resolve: 5.17.1
       eslint: 9.39.2(jiti@2.4.2)
       eslint-plugin-es-x: 7.8.0(eslint@9.39.2(jiti@2.4.2))
@@ -4945,7 +4945,7 @@ snapshots:
 
   ts-declaration-location@1.0.7(typescript@5.9.3):
     dependencies:
-      picomatch: 4.0.2
+      picomatch: 4.0.3
       typescript: 5.9.3
 
   tsconfig-paths@3.15.0:
