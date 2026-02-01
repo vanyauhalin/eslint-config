@@ -54,6 +54,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Remove `yml/flow-mapping-curly-newline` ([8b0abd6]).
 - Remove `yml/flow-mapping-curly-spacing` ([88d3cc5]).
 - Remove `yml/flow-sequence-bracket-newline` ([72c2287]).
+- Remove `yml/flow-sequence-bracket-spacing` ([2de428d]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -367,6 +368,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[2de428d]: https://github.com/vanyauhalin/eslint-config/commit/2de428d27d4013ec445bda68327cce3c8bede743/
 [72c2287]: https://github.com/vanyauhalin/eslint-config/commit/72c22875a9ad1440f808a582d6dbe07a0d849493/
 [88d3cc5]: https://github.com/vanyauhalin/eslint-config/commit/88d3cc52002e8f35b66ae8efdf129cfb59dc481e/
 [8b0abd6]: https://github.com/vanyauhalin/eslint-config/commit/8b0abd6bd27f0178718e10c11b2f15ac2d890abc/
