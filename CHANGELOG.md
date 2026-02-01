@@ -16,6 +16,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Modify `stylistic/member-delimiter-style`: use comma delimiter for types on
   the same line ([28cd893]).
 - Modify `yml/block-mapping`: set `always` ([4604ee5]).
+- Modify `yml/block-sequence`: set `always` ([174ffdc]).
 
 ### Removed
 
@@ -363,6 +364,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[174ffdc]: https://github.com/vanyauhalin/eslint-config/commit/174ffdc9099f65a0af9fc6e37704c21804d6b32c/
 [4604ee5]: https://github.com/vanyauhalin/eslint-config/commit/4604ee5707060d822d0df2c0db39454fc1d8933f/
 [db69ad6]: https://github.com/vanyauhalin/eslint-config/commit/db69ad60dd92cf78625af8529826063dcbde7bf1/
 [56aa4d9]: https://github.com/vanyauhalin/eslint-config/commit/56aa4d91f1c113734757c26d4459fc429c87ea8d/
