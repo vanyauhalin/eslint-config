@@ -972,7 +972,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"stylistic/implicit-arrow-linebreak": e,
 			"stylistic/indent-binary-ops": [e, "tab"],
 			"stylistic/indent": [e, "tab", {SwitchCase: 0}],
-			"stylistic/jsx-closing-bracket-location": [e, "line-aligned"],
 			"stylistic/jsx-closing-tag-location": [e, "line-aligned"],
 			"stylistic/jsx-curly-brace-presence": [e, {props: "never", children: "never", propElementValues: "always"}],
 			"stylistic/jsx-curly-newline": e,
