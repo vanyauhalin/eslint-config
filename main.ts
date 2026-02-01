@@ -1144,7 +1144,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"stylistic/linebreak-style": e,
 			"stylistic/max-len": [e, {code: 100, tabWidth: 2, ignorePattern: maxLen.ignorePattern, ignoreComments: false, ignoreTrailingComments: true, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true}],
 			"stylistic/max-statements-per-line": e,
-			"stylistic/member-delimiter-style": [e, {multiline: {delimiter: "none", requireLast: false}, singleline: {delimiter: "semi", requireLast: false}, multilineDetection: "brackets"}],
+			"stylistic/member-delimiter-style": [e, {multiline: {delimiter: "none", requireLast: false}, singleline: {delimiter: "comma", requireLast: false}, multilineDetection: "brackets"}],
 			"stylistic/multiline-ternary": e,
 			"stylistic/new-parens": e,
 			"stylistic/no-confusing-arrow": e,
