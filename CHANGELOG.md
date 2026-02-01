@@ -41,6 +41,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Update `eslint-plugin-n` to v17.23.2 ([8fdcb66]).
 - Update `@stylistic/eslint-plugin` to v5.7.1 ([b9da504]).
 - Update `eslint-plugin-es-x` to v9.3.0 ([ab1c2a7]).
+- Modify `stylistic/indent`: set `assignmentOperator` to `1` ([437794a]).
 
 ### Removed
 
@@ -392,6 +393,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[437794a]: https://github.com/vanyauhalin/eslint-config/commit/437794a14fa4ef6b06b97df3fe7d993d50f6a824/
 [ab1c2a7]: https://github.com/vanyauhalin/eslint-config/commit/ab1c2a71ee2e3216829b492bebb062f16c3e96ad/
 [b9da504]: https://github.com/vanyauhalin/eslint-config/commit/b9da504c46f08a01a347cc17cc68bc7013a57de4/
 [8fdcb66]: https://github.com/vanyauhalin/eslint-config/commit/8fdcb6650928c18e8ee34314d112e543657cb1e0/
