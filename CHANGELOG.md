@@ -9,7 +9,7 @@ Changelog] format and adhering to [Semantic Versioning].
 
 ### Added
 
-- Enable `unicorn/prefer-class-fields` rule ([a1c09d7]).
+- Enable `unicorn/prefer-class-fields` ([a1c09d7]).
 - Enable `jsonc/array-element-newline` ([778ab6b]).
 
 ### Changed
