@@ -40,7 +40,7 @@
 		"build-docs": "eslint-config-inspector build --config main.ts --outDir docs",
 		"build-package": "tsc --project tsconfig.build.json",
 		"build-package-json": "clear-package-json package.json --output package.json",
-		"lint-code": "eslint --no-warn-ignored .github *.*",
+		"lint-code": "eslint --no-warn-ignored --concurrency=auto .github *.*",
 		"lint-types": "tsc",
 		"serve-docs": "eslint-config-inspector --config main.ts --port 8080 --open false"
 	},
