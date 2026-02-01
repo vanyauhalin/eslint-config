@@ -26,6 +26,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Update `@eslint-community/eslint-plugin-eslint-comments` to v4.6.0
   ([a6436f9]).
 - Update `eslint-plugin-node-dependencies` to v1.3.0 ([b23058b]).
+- Update `eslint-plugin-math` to v0.13.1 ([cfa44ec]).
 
 ### Removed
 
@@ -377,6 +378,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[cfa44ec]: https://github.com/vanyauhalin/eslint-config/commit/cfa44ec44d8c5cbb6534c869760c35250ac2ef2f/
 [b23058b]: https://github.com/vanyauhalin/eslint-config/commit/b23058bc93664da786d7329bc23d4f2b50b875a6/
 [a6436f9]: https://github.com/vanyauhalin/eslint-config/commit/a6436f9e7959f810ce7854716312a7d702b85bbb/
 [dba7f99]: https://github.com/vanyauhalin/eslint-config/commit/dba7f99add8690cc6bc358d93d33dd0aea19c8b0/
