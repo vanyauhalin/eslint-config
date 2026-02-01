@@ -38,6 +38,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Update `eslint-plugin-yml` to v3.0.0 ([34a78b0]).
 - Update `eslint-plugin-toml` to v1.0.3 ([53c70a5]).
 - Update `toml-eslint-parser` to v1.0.3 ([55ad290]).
+- Update `eslint-plugin-n` to v17.23.2 ([8fdcb66]).
 
 ### Removed
 
@@ -389,6 +390,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[8fdcb66]: https://github.com/vanyauhalin/eslint-config/commit/8fdcb6650928c18e8ee34314d112e543657cb1e0/
 [55ad290]: https://github.com/vanyauhalin/eslint-config/commit/55ad2905a17f08ef3cb0f7c2293f6295c21757ff/
 [53c70a5]: https://github.com/vanyauhalin/eslint-config/commit/53c70a587a82ecaded05f5d12e0ff33d7b4bea51/
 [34a78b0]: https://github.com/vanyauhalin/eslint-config/commit/34a78b072578dfb28b21624224b3ef7ce90b9567/
