@@ -1306,7 +1306,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"yml/block-mapping": [e, "always"],
 			"yml/block-sequence-hyphen-indicator-newline": e,
 			"yml/block-sequence": [e, "always"],
-			"yml/flow-sequence-bracket-spacing": e,
 			"yml/indent": [e, 2, {indentBlockSequences: false, indicatorValueIndent: 2}],
 			"yml/key-spacing": e,
 			"yml/no-empty-document": e,
