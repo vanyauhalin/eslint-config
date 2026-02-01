@@ -383,6 +383,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"prefer-rest-params": e,
 			"prefer-spread": e,
 			"prefer-template": e,
+			"preserve-caught-error": e,
 			"radix": e,
 			"require-await": e,
 			"require-yield": e,
