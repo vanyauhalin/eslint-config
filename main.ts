@@ -1399,7 +1399,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/expiring-todo-comments": e,
 			"unicorn/explicit-length-check": [e, {"non-zero": "not-equal"}],
 			"unicorn/filename-case": e,
-			"unicorn/import-style": e,
 			"unicorn/new-for-builtins": e,
 			"unicorn/no-accessor-recursion": e,
 			"unicorn/no-anonymous-default-export": e,
