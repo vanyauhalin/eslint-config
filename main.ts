@@ -1276,6 +1276,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/prefer-structured-clone": e,
 			"unicorn/relative-url-style": e,
 			"unicorn/require-array-join-separator": e,
+			"unicorn/require-module-attributes": e,
 			"unicorn/require-number-to-fixed-digits-argument": e,
 			"unicorn/switch-case-braces": [e, "avoid"],
 			"unicorn/text-encoding-identifier-case": e,
