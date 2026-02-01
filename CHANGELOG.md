@@ -20,6 +20,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Modify `yml/block-sequence`: set `always` ([174ffdc]).
 - Modify `jsonc/array-bracket-newline`: set `always` for all files ([316e9de]).
 - Modify `jsonc/object-curly-newline`: set `always` ([d53cd41]).
+- Update `eslint-plugin-no-unsanitized` to v4.1.4 ([67d1474]).
 
 ### Removed
 
@@ -371,6 +372,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[67d1474]: https://github.com/vanyauhalin/eslint-config/commit/67d147468a69b7682679e928bc8e3d0cae962846/
 [778ab6b]: https://github.com/vanyauhalin/eslint-config/commit/778ab6b3fb5b1cb2145be539a3d6858131d96ca9/
 [d53cd41]: https://github.com/vanyauhalin/eslint-config/commit/d53cd4161d606a354570b931702bf27ac3a1df1f/
 [316e9de]: https://github.com/vanyauhalin/eslint-config/commit/316e9dee14b6b1173b9ad32c8b6c4df71fae0154/
