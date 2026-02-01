@@ -1,6 +1,4 @@
 import eslintComments from "@eslint-community/eslint-plugin-eslint-comments"
-import html from "@html-eslint/eslint-plugin"
-import htmlParser from "@html-eslint/parser"
 import stylistic from "@stylistic/eslint-plugin"
 import typescript from "@typescript-eslint/eslint-plugin"
 import typescriptParser from "@typescript-eslint/parser"
@@ -68,11 +66,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	{
 		name: "@vanyauhalin/builtin-linter",
 		linterOptions: {reportUnusedDisableDirectives: e},
-	},
-	{
-		name: "@vanyauhalin/html-parser",
-		files: ["**/*.html"],
-		languageOptions: {parser: htmlParser},
 	},
 	{
 		name: "@vanyauhalin/jsonc-parser",
@@ -160,11 +153,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/github-plugin",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		plugins: {github},
-	},
-	{
-		name: "@vanyauhalin/html-plugin",
-		files: ["**/*.html"],
-		plugins: {html},
 	},
 	{
 		name: "@vanyauhalin/html-script-plugin",
@@ -611,60 +599,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"github/no-useless-passive": e,
 			"github/prefer-observers": e,
 			"github/require-passive-events": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/html-rules",
-		files: ["**/*.html"],
-		rules: {
-			"html/element-newline": [e, {skip: ["pre", "code"], inline: ["$inline"]}],
-			"html/id-naming-convention": [e, "kebab-case"],
-			"html/indent": [e, "tab"],
-			"html/lowercase": e,
-			"html/no-abstract-roles": e,
-			"html/no-accesskey-attrs": e,
-			"html/no-aria-hidden-body": e,
-			"html/no-aria-hidden-on-focusable": e,
-			"html/no-duplicate-attrs": e,
-			"html/no-duplicate-class": e,
-			"html/no-duplicate-id": e,
-			"html/no-duplicate-in-head": e,
-			"html/no-empty-headings": e,
-			"html/no-extra-spacing-attrs": e,
-			"html/no-extra-spacing-text": e,
-			"html/no-heading-inside-button": e,
-			"html/no-ineffective-attrs": e,
-			"html/no-inline-styles": e,
-			"html/no-invalid-entity": e,
-			"html/no-invalid-role": e,
-			"html/no-multiple-empty-lines": e,
-			"html/no-multiple-h1": e,
-			"html/no-nested-interactive": e,
-			"html/no-non-scalable-viewport": e,
-			"html/no-obsolete-tags": e,
-			"html/no-positive-tabindex": e,
-			"html/no-script-style-type": e,
-			"html/no-skip-heading-levels": e,
-			"html/no-target-blank": e,
-			"html/no-trailing-spaces": e,
-			"html/prefer-https": e,
-			"html/quotes": e,
-			"html/require-button-type": e,
-			"html/require-closing-tags": e,
-			"html/require-explicit-size": e,
-			"html/require-form-method": e,
-			"html/require-frame-title": e,
-			"html/require-img-alt": e,
-			"html/require-input-label": e,
-			"html/require-lang": e,
-			"html/require-li-container": e,
-			"html/require-meta-charset": e,
-			"html/require-meta-description": e,
-			"html/require-meta-viewport": e,
-			"html/require-open-graph-protocol": e,
-			"html/require-title": e,
-			"html/sort-attrs": [e, {priority: ["id", "type", "class", "style"]}],
-			"html/use-baseline": e,
 		},
 	},
 	{
