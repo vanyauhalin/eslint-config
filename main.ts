@@ -10,7 +10,6 @@ import deMorgan from "eslint-plugin-de-morgan"
 import depend from "eslint-plugin-depend"
 import esX from "eslint-plugin-es-x"
 import github from "eslint-plugin-github"
-import htmlScript from "eslint-plugin-html"
 import importNewlines from "eslint-plugin-import-newlines"
 import importX from "eslint-plugin-import-x" // eslint-disable-line import-x/no-named-as-default
 import jsdoc from "eslint-plugin-jsdoc"
@@ -153,11 +152,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/github-plugin",
 		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
 		plugins: {github},
-	},
-	{
-		name: "@vanyauhalin/html-script-plugin",
-		files: ["**/*.html"],
-		plugins: {"html-script": htmlScript},
 	},
 	{
 		name: "@vanyauhalin/import-newlines-plugin",
@@ -599,14 +593,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"github/no-useless-passive": e,
 			"github/prefer-observers": e,
 			"github/require-passive-events": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/html-script-settings",
-		files: ["**/*.html"],
-		settings: {
-			"html-script/indent": "0",
-			"html-script/report-bad-indent": e,
 		},
 	},
 	{
@@ -1261,55 +1247,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		rules: {
 			"typescript/explicit-function-return-type": "off",
 			"typescript/explicit-module-boundary-types": "off",
-		},
-	},
-	{
-		name: "@vanyauhalin/typescript-rules/html-script-exceptions",
-		files: ["**/*.html"],
-		rules: {
-			"typescript/await-thenable": "off",
-			"typescript/consistent-type-imports": "off",
-			"typescript/dot-notation": "off",
-			"typescript/no-array-delete": "off",
-			"typescript/no-base-to-string": "off",
-			"typescript/no-confusing-void-expression": "off",
-			"typescript/no-deprecated": "off",
-			"typescript/no-duplicate-type-constituents": "off",
-			"typescript/no-floating-promises": "off",
-			"typescript/no-for-in-array": "off",
-			"typescript/no-implied-eval": "off",
-			"typescript/no-meaningless-void-operator": "off",
-			"typescript/no-misused-promises": "off",
-			"typescript/no-misused-spread": "off",
-			"typescript/no-mixed-enums": "off",
-			"typescript/no-redundant-type-constituents": "off",
-			"typescript/no-unnecessary-boolean-literal-compare": "off",
-			"typescript/no-unnecessary-qualifier": "off",
-			"typescript/no-unnecessary-template-expression": "off",
-			"typescript/no-unnecessary-type-arguments": "off",
-			"typescript/no-unnecessary-type-assertion": "off",
-			"typescript/no-unnecessary-type-conversion": "off",
-			"typescript/no-unsafe-enum-comparison": "off",
-			"typescript/no-unsafe-unary-minus": "off",
-			"typescript/non-nullable-type-assertion-style": "off",
-			"typescript/only-throw-error": "off",
-			"typescript/prefer-find": "off",
-			"typescript/prefer-includes": "off",
-			"typescript/prefer-promise-reject-errors": "off",
-			"typescript/prefer-reduce-type-parameter": "off",
-			"typescript/prefer-regexp-exec": "off",
-			"typescript/prefer-return-this-type": "off",
-			"typescript/prefer-string-starts-ends-with": "off",
-			"typescript/promise-function-async": "off",
-			"typescript/related-getter-setter-pairs": "off",
-			"typescript/require-array-sort-compare": "off",
-			"typescript/require-await": "off",
-			"typescript/restrict-plus-operands": "off",
-			"typescript/restrict-template-expressions": "off",
-			"typescript/return-await": "off",
-			"typescript/switch-exhaustiveness-check": "off",
-			"typescript/unbound-method": "off",
-			"typescript/use-unknown-in-catch-callback-variable": "off",
 		},
 	},
 	{
