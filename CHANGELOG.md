@@ -85,7 +85,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Update `eslint-plugin-unicorn` to v62.0.0 ([d98dd91]).
 - Update `eslint-plugin-regexp` to v3.0.0 ([c2fc566]).
 - Update `eslint-plugin-package-json` to v0.88.2 ([ed4c9f8]).
-- Update `eslint-plugin-jsdoc` v62.5.0 ([e2af349]).
+- Update `eslint-plugin-jsdoc` to v62.5.0 ([e2af349]).
 - Update `eslint-plugin-depend` to v1.4.0 ([ebddf02]).
 
 ### Removed
