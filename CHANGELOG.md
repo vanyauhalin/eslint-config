@@ -9,7 +9,8 @@ There are no noticeable changes in version [unreleased].
 ### Changed
 
 - Remove the `no-restricted-syntax` rule ([3083f41]);
-- Use comma delimiter for types on the same line ([28cd893]).
+- Use comma delimiter for types on the same line ([28cd893]);
+- Remove the `unicorn/import-style` rule ([9dbbe67]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -282,6 +283,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[9dbbe67]: https://github.com/vanyauhalin/eslint-config/commit/9dbbe67de3ded9653a52b6ab9346e363ee5b232f/
 [28cd893]: https://github.com/vanyauhalin/eslint-config/commit/28cd893360897f4eb9afab2a92fabb0074f3cbea/
 [3083f41]: https://github.com/vanyauhalin/eslint-config/commit/3083f419ce80095cd7e2ca84c09e4f2a727131b3/
 [a9b6dad]: https://github.com/vanyauhalin/eslint-config/commit/a9b6dadc98329eedadf9cfc7bb9000265785f6ce/
