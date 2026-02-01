@@ -27,7 +27,8 @@ There are no noticeable changes in version [unreleased].
 - Remove the `github/a11y-aria-label-is-well-formatted` rule ([5a2a31f]);
 - Remove the `github/a11y-no-title-attribute` rule ([e691514]);
 - Remove the `github/a11y-role-supports-aria-props` rule ([1c888d9]);
-- Remove the `github/a11y-svg-has-accessible-name` rule ([bdfb4e7]).
+- Remove the `github/a11y-svg-has-accessible-name` rule ([bdfb4e7]);
+- Remove the `stylistic/jsx-child-element-spacing` rule ([4a42be1]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -300,6 +301,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[4a42be1]: https://github.com/vanyauhalin/eslint-config/commit/4a42be195733c516edf40d6cd0c61de219083dcd/
 [bdfb4e7]: https://github.com/vanyauhalin/eslint-config/commit/bdfb4e728d3cacf31d2b1a568f90a1f666ac12bf/
 [1c888d9]: https://github.com/vanyauhalin/eslint-config/commit/1c888d9dc030d6404991f4b8b88b5f68f112d2bf/
 [e691514]: https://github.com/vanyauhalin/eslint-config/commit/e6915149b0b5f85057013b03d00f94275921d3a7/
