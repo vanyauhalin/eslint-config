@@ -10,6 +10,7 @@ Changelog] format and adhering to [Semantic Versioning].
 ### Added
 
 - Enable `unicorn/prefer-class-fields` rule ([a1c09d7]).
+- Enable `jsonc/array-element-newline` ([778ab6b]).
 
 ### Changed
 
@@ -370,6 +371,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[778ab6b]: https://github.com/vanyauhalin/eslint-config/commit/778ab6b3fb5b1cb2145be539a3d6858131d96ca9/
 [d53cd41]: https://github.com/vanyauhalin/eslint-config/commit/d53cd4161d606a354570b931702bf27ac3a1df1f/
 [316e9de]: https://github.com/vanyauhalin/eslint-config/commit/316e9dee14b6b1173b9ad32c8b6c4df71fae0154/
 [2de428d]: https://github.com/vanyauhalin/eslint-config/commit/2de428d27d4013ec445bda68327cce3c8bede743/
