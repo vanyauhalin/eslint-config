@@ -28,7 +28,7 @@ import unicorn from "eslint-plugin-unicorn"
 import wc from "eslint-plugin-wc"
 import yml from "eslint-plugin-yml"
 import jsoncParser from "jsonc-eslint-parser"
-import tomlParser from "toml-eslint-parser"
+import * as tomlParser from "toml-eslint-parser"
 import * as yamlParser from "yaml-eslint-parser"
 
 const e = "error"
