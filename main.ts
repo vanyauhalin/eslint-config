@@ -668,6 +668,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		rules: {
 			"jsonc/array-bracket-newline": [e, "always"],
 			"jsonc/array-bracket-spacing": e,
+			"jsonc/array-element-newline": e,
 			"jsonc/comma-dangle": e,
 			"jsonc/comma-style": e,
 			"jsonc/indent": [e, "tab"],
