@@ -35,7 +35,6 @@ import yml from "eslint-plugin-yml"
 import jsoncParser from "jsonc-eslint-parser"
 import tomlParser from "toml-eslint-parser"
 import yamlParser from "yaml-eslint-parser"
-import * as maxLen from "./fragments/max-len.ts"
 
 const e = "error"
 
@@ -1139,7 +1138,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"stylistic/key-spacing": e,
 			"stylistic/keyword-spacing": e,
 			"stylistic/linebreak-style": e,
-			"stylistic/max-len": [e, {code: 100, tabWidth: 2, ignorePattern: maxLen.ignorePattern, ignoreComments: false, ignoreTrailingComments: true, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true}],
 			"stylistic/max-statements-per-line": e,
 			"stylistic/member-delimiter-style": [e, {multiline: {delimiter: "none", requireLast: false}, singleline: {delimiter: "comma", requireLast: false}, multilineDetection: "brackets"}],
 			"stylistic/multiline-ternary": e,
