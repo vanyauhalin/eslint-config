@@ -6,7 +6,7 @@ This document records all notable changes to the project, following the [Keep a 
 
 There are no noticeable changes in version [unreleased].
 
-## [0.0.10]
+## [0.0.10] - 2025-08-17
 
 ### Added
 
