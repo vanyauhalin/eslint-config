@@ -15,6 +15,7 @@ Changelog] format and adhering to [Semantic Versioning].
 - Enable `preserve-caught-error` ([38bbb3f]).
 - Enable `typescript/strict-void-return` ([e7e028f]).
 - Enable `unicorn/no-useless-collection-argument` ([61baa1f]).
+- Enable `unicorn/prefer-bigint-literals` ([6e3dcdd]).
 
 ### Changed
 
@@ -399,6 +400,7 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[6e3dcdd]: https://github.com/vanyauhalin/eslint-config/commit/6e3dcdd479750a63b559348091141f2d217c953b/
 [61baa1f]: https://github.com/vanyauhalin/eslint-config/commit/61baa1f40b69eac7e13ebefceb52dcbb9dd143c2/
 [d98dd91]: https://github.com/vanyauhalin/eslint-config/commit/d98dd912a533b09748abd2008d17ab7354691e76/
 [e7e028f]: https://github.com/vanyauhalin/eslint-config/commit/e7e028fa0ba1ca340adc363100051d3661b206a5/
