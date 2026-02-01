@@ -6,6 +6,10 @@ This document records all notable changes to the project, following the [Keep a 
 
 There are no noticeable changes in version [unreleased].
 
+### Changed
+
+- Remove the `no-restricted-syntax` rule ([3083f41]).
+
 ## [0.0.10] - 2025-08-17
 
 ### Added
@@ -277,6 +281,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[3083f41]: https://github.com/vanyauhalin/eslint-config/commit/3083f419ce80095cd7e2ca84c09e4f2a727131b3/
 [a9b6dad]: https://github.com/vanyauhalin/eslint-config/commit/a9b6dadc98329eedadf9cfc7bb9000265785f6ce/
 [58afe2b]: https://github.com/vanyauhalin/eslint-config/commit/58afe2bb016eb057cee459fadfd4662364b4ef50/
 [3ead6b5]: https://github.com/vanyauhalin/eslint-config/commit/3ead6b521d3a17163b296a8000ffcc99f06598f4/
