@@ -98,7 +98,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	// This integration should be after the main TypeScript definition.
 	{
 		name: "@vanyauhalin/markdown-processor/typescript-integration",
-		files: ["**/*.md/*.cjs", "**/*.md/*.js", "**/*.md/*.jsx", "**/*.md/*.mjs", "**/*.md/*.cts", "**/*.md/*.mts", "**/*.md/*.ts", "**/*.md/*.tsx", "**/*.md/*.html"],
+		files: ["**/*.md/*.cjs", "**/*.md/*.js", "**/*.md/*.jsx", "**/*.md/*.mjs", "**/*.md/*.cts", "**/*.md/*.mts", "**/*.md/*.ts", "**/*.md/*.tsx"],
 		languageOptions: {
 			parser: typescriptParser,
 			parserOptions: {
@@ -118,47 +118,47 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 
 	{
 		name: "@vanyauhalin/ascii-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {ascii},
 	},
 	{
 		name: "@vanyauhalin/de-morgan",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {"de-morgan": deMorgan},
 	},
 	{
 		name: "@vanyauhalin/depend-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {depend},
 	},
 	{
 		name: "@vanyauhalin/es-x-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {"es-x": esX},
 	},
 	{
 		name: "@vanyauhalin/eslint-comments-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {"eslint-comments": eslintComments},
 	},
 	{
 		name: "@vanyauhalin/github-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {github},
 	},
 	{
 		name: "@vanyauhalin/import-newlines-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {"import-newlines": importNewlines},
 	},
 	{
 		name: "@vanyauhalin/import-x-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {"import-x": importX},
 	},
 	{
 		name: "@vanyauhalin/jsdoc-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {jsdoc},
 	},
 	{
@@ -173,17 +173,17 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/math-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {math},
 	},
 	{
 		name: "@vanyauhalin/n-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {n},
 	},
 	{
 		name: "@vanyauhalin/no-unsanitized-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {"no-unsanitized": noUnsanitized},
 	},
 	{
@@ -198,27 +198,27 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/prefer-let-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {"prefer-let": preferLet},
 	},
 	{
 		name: "@vanyauhalin/promise-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {promise},
 	},
 	{
 		name: "@vanyauhalin/regexp-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {regexp},
 	},
 	{
 		name: "@vanyauhalin/security-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {security},
 	},
 	{
 		name: "@vanyauhalin/stylistic-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {stylistic},
 	},
 	{
@@ -228,17 +228,17 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/typescript-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {typescript},
 	},
 	{
 		name: "@vanyauhalin/unicorn-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {unicorn},
 	},
 	{
 		name: "@vanyauhalin/wc-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		plugins: {wc},
 	},
 	{
@@ -253,7 +253,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 
 	{
 		name: "@vanyauhalin/builtin-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"constructor-super": e,
 			"curly": e,
@@ -398,14 +398,14 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/ascii-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"ascii/valid-name": e,
 		},
 	},
 	{
 		name: "@vanyauhalin/de-morgan-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"de-morgan/no-negated-conjunction": e,
 			"de-morgan/no-negated-disjunction": e,
@@ -413,14 +413,14 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/depend-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"depend/ban-dependencies": e,
 		},
 	},
 	{
 		name: "@vanyauhalin/es-x-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"es-x/no-array-of": e,
 			"es-x/no-array-prototype-at": e,
@@ -540,7 +540,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/eslint-comments-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"eslint-comments/disable-enable-pair": [e, {allowWholeFile: true}],
 			"eslint-comments/no-aggregating-enable": e,
@@ -552,7 +552,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/github-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"github/array-foreach": e,
 			"github/get-attribute": e,
@@ -568,14 +568,14 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/import-newlines-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"import-newlines/enforce": [e, {"items": Infinity, "max-len": 120, "semi": false}],
 		},
 	},
 	{
 		name: "@vanyauhalin/import-x-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"import-x/order": [e, {"alphabetize": {order: "asc", orderImportKind: "asc"}, "named": true, "newlines-between": "never", "warnOnUnassignedImports": true}],
 			"import-x/consistent-type-specifier-style": e,
@@ -609,7 +609,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/jsdoc-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"jsdoc/check-access": e,
 			"jsdoc/check-alignment": e,
@@ -724,7 +724,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/math-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"math/abs": [e, {prefer: "Math.abs"}],
 			"math/no-static-infinity-calculations": e,
@@ -757,7 +757,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/n-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"n/exports-style": e,
 			"n/no-deprecated-api": e,
@@ -776,7 +776,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/no-unsanitized-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"no-unsanitized/method": [e, {}, {import: {objectMatches: []}}],
 			"no-unsanitized/property": e,
@@ -835,7 +835,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/prefer-let-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"prefer-const": "off",
 			"prefer-let/prefer-let": e,
@@ -843,7 +843,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/promise-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"promise/always-return": e,
 			"promise/catch-or-return": e,
@@ -862,7 +862,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/regexp-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"regexp/confusing-quantifier": e,
 			"regexp/control-character-escape": e,
@@ -934,7 +934,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/security-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"security/detect-bidi-characters": e,
 			"security/detect-buffer-noassert": e,
@@ -950,7 +950,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/stylistic-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"stylistic/array-bracket-newline": [e, "consistent"],
 			"stylistic/array-bracket-spacing": e,
@@ -1045,7 +1045,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/typescript-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"typescript/adjacent-overload-signatures": e,
 			"typescript/array-type": e,
@@ -1143,7 +1143,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/typescript-rules/builtin-conflicts",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"default-param-last": "off",
 			"dot-notation": "off",
@@ -1168,7 +1168,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/unicorn-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"unicorn/better-regex": e,
 			"unicorn/catch-error-name": [e, {name: "err"}],
@@ -1278,7 +1278,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	},
 	{
 		name: "@vanyauhalin/wc-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx", "**/*.html"],
+		files: ["**/*.cjs", "**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
 		rules: {
 			"wc/attach-shadow-constructor": e,
 			"wc/guard-define-call": e,
@@ -1329,7 +1329,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	// This integration should be after the main TypeScript definition.
 	{
 		name: "@vanyauhalin/markdown-rules/typescript-integration",
-		files: ["**/*.md/*.cjs", "**/*.md/*.js", "**/*.md/*.jsx", "**/*.md/*.mjs", "**/*.md/*.cts", "**/*.md/*.mts", "**/*.md/*.ts", "**/*.md/*.tsx", "**/*.md/*.html"],
+		files: ["**/*.md/*.cjs", "**/*.md/*.js", "**/*.md/*.jsx", "**/*.md/*.mjs", "**/*.md/*.cts", "**/*.md/*.mts", "**/*.md/*.ts", "**/*.md/*.tsx"],
 		rules: {
 			"typescript/await-thenable": "off",
 			"typescript/consistent-type-imports": "off",
