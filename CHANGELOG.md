@@ -6,6 +6,10 @@ This document records all notable changes to the project, following the [Keep a 
 
 There are no noticeable changes in version [unreleased].
 
+### Added
+
+- Enable the `unicorn/prefer-class-fields` rule ([a1c09d7]).
+
 ### Changed
 
 - Remove the `no-restricted-syntax` rule ([3083f41]);
@@ -288,6 +292,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[a1c09d7]: https://github.com/vanyauhalin/eslint-config/commit/a1c09d74e8dfa8343a7870a1878d505b2adb6cc0/
 [2d3a08b]: https://github.com/vanyauhalin/eslint-config/commit/2d3a08bcd9f2f2a1b4bbb30e11e701282ca56f83/
 [a0c015d]: https://github.com/vanyauhalin/eslint-config/commit/a0c015d1f74985479e3621d4a89f7435dce95bf6/
 [87bde5c]: https://github.com/vanyauhalin/eslint-config/commit/87bde5c25dcc594c2228cf23ed107133c698135d/
