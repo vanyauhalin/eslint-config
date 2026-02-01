@@ -39,7 +39,8 @@ There are no noticeable changes in version [unreleased].
 - Remove the `stylistic/jsx-indent-props` rule ([82c0301]);
 - Remove the `stylistic/jsx-newline` rule ([f9f4051]);
 - Remove the `stylistic/jsx-pascal-case` rule ([e0c889a]);
-- Remove the `stylistic/jsx-props-no-multi-spaces` rule ([6035a4e]).
+- Remove the `stylistic/jsx-props-no-multi-spaces` rule ([6035a4e]);
+- Remove the `stylistic/jsx-quotes` rule ([4a5aca2]).
 
 ## [0.0.10] - 2025-08-17
 
@@ -312,6 +313,7 @@ This is the first, initial release. The version 0.0.1 was chosen to test the pub
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[4a5aca2]: https://github.com/vanyauhalin/eslint-config/commit/4a5aca246e418f334103a3124979ac8a8673e83c/
 [6035a4e]: https://github.com/vanyauhalin/eslint-config/commit/6035a4e0b51592ffe4ee0c40db39cf81e7dee48e/
 [e0c889a]: https://github.com/vanyauhalin/eslint-config/commit/e0c889a5949d1da24ef95d8c77afde35d0e67213/
 [f9f4051]: https://github.com/vanyauhalin/eslint-config/commit/f9f40511105c1249b12c90c2ecea14062d12cec1/
