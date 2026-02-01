@@ -77,7 +77,7 @@
 		"eslint-plugin-yml": "1.18.0",
 		"jsonc-eslint-parser": "2.4.2",
 		"toml-eslint-parser": "0.10.0",
-		"typescript": "5.9.2",
+		"typescript": "5.9.3",
 		"yaml-eslint-parser": "2.0.0"
 	},
 	"devDependencies": {
