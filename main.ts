@@ -577,7 +577,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"import-x/no-commonjs": e,
 			"import-x/no-cycle": e,
 			"import-x/no-default-export": e,
-			"import-x/no-deprecated": e,
 			"import-x/no-duplicates": e,
 			"import-x/no-empty-named-blocks": e,
 			"import-x/no-extraneous-dependencies": e,
