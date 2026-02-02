@@ -548,7 +548,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"github/no-dataset": e,
 			"github/no-dynamic-script-tag": e,
 			"github/no-implicit-buggy-globals": e,
-			"github/no-inner-html": e,
 			"github/no-useless-passive": e,
 			"github/prefer-observers": e,
 			"github/require-passive-events": e,
