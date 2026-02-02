@@ -313,7 +313,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"no-misleading-character-class": e,
 			"no-multi-assign": e,
 			"no-multi-str": e,
-			"no-nested-ternary": e,
 			"no-new-func": e,
 			"no-new-native-nonconstructor": e,
 			"no-new-wrappers": e,
