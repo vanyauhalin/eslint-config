@@ -380,7 +380,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"strict": [e, "never"],
 			"symbol-description": e,
 			"unicode-bom": e,
-			"use-isnan": e,
 			"valid-typeof": e,
 			"vars-on-top": e,
 			"yoda": e,
