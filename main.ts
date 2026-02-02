@@ -354,7 +354,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"no-useless-catch": e,
 			"no-useless-computed-key": e,
 			"no-useless-concat": e,
-			"no-useless-constructor": e,
 			"no-useless-escape": e,
 			"no-useless-rename": e,
 			"no-var": e,
