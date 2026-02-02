@@ -35,6 +35,8 @@ Changelog] format and adhering to [Semantic Versioning].
 - Remove `prefer-promise-reject-errors` ([23ecddb]).
 - Remove `no-implied-eval` ([2745f62]).
 - Remove `typescript/prefer-regexp-exec` ([4ce706d]).
+- Simplify structure ([1018d2b]).
+- Configure `reportUnusedDisableDirectives` for all files ([33d15ab]).
 
 ### Fixed
 
@@ -490,6 +492,8 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[33d15ab]: https://github.com/vanyauhalin/eslint-config/commit/33d15abb9a7c58c3a7eb6b02ebc06d46096c86cc/
+[1018d2b]: https://github.com/vanyauhalin/eslint-config/commit/1018d2b6b8ec2fc9fa89ced1bde49aa57d03b585/
 [4ce706d]: https://github.com/vanyauhalin/eslint-config/commit/4ce706dbad147ba8587f057cc17f95055b7ba40a/
 [2745f62]: https://github.com/vanyauhalin/eslint-config/commit/4ce706dbad147ba8587f057cc17f95055b7ba40a/
 [23ecddb]: https://github.com/vanyauhalin/eslint-config/commit/4ce706dbad147ba8587f057cc17f95055b7ba40a/
