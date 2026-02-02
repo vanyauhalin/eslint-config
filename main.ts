@@ -1259,7 +1259,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/prefer-module": e,
 			"unicorn/prefer-native-coercion-functions": e,
 			"unicorn/prefer-negative-index": e,
-			"unicorn/prefer-node-protocol": e,
 			"unicorn/prefer-number-properties": e,
 			"unicorn/prefer-object-from-entries": e,
 			"unicorn/prefer-optional-catch-binding": e,
