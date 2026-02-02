@@ -35,6 +35,12 @@ const e = "error"
 
 const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	{
+		name: "@vanyauhalin/languages",
+		linterOptions: {
+			reportUnusedDisableDirectives: e,
+		},
+	},
+	{
 		name: "@vanyauhalin/ignores",
 		ignores: [
 			"**/bun.lock",
@@ -59,9 +65,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"**/*.mts",
 			"**/*.ts",
 		],
-		linterOptions: {
-			reportUnusedDisableDirectives: e,
-		},
 		languageOptions: {
 			parser: typescriptParser,
 			parserOptions: {
