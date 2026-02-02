@@ -1038,7 +1038,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"stylistic/semi-style": [e, "first"],
 			"stylistic/semi": [e, "never"],
 			"stylistic/space-before-blocks": e,
-			"stylistic/space-before-function-paren": [e, "never"],
+			"stylistic/space-before-function-paren": [e, {anonymous: "never", asyncArrow: "never", catch: "always", named: "never"}],
 			"stylistic/space-in-parens": e,
 			"stylistic/space-infix-ops": e,
 			"stylistic/space-unary-ops": e,
