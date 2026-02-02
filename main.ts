@@ -1230,7 +1230,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/no-useless-undefined": [e, {checkArguments: false, checkArrowFunctionBody: false}],
 			"unicorn/no-zero-fractions": e,
 			"unicorn/number-literal-case": e,
-			"unicorn/prefer-array-flat-map": e,
 			"unicorn/prefer-array-flat": e,
 			"unicorn/prefer-array-index-of": e,
 			"unicorn/prefer-bigint-literals": e,
