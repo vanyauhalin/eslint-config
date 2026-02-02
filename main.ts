@@ -1254,7 +1254,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/prefer-keyboard-event-key": e,
 			"unicorn/prefer-logical-operator-over-ternary": e,
 			"unicorn/prefer-math-min-max": e,
-			"unicorn/prefer-math-trunc": e,
 			"unicorn/prefer-modern-dom-apis": e,
 			"unicorn/prefer-modern-math-apis": e,
 			"unicorn/prefer-module": e,
