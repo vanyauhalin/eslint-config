@@ -542,7 +542,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/github-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
 		rules: {
-			"github/array-foreach": e,
 			"github/get-attribute": e,
 			"github/no-blur": e,
 			"github/no-dataset": e,
