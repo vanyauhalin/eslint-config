@@ -366,7 +366,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"prefer-numeric-literals": e,
 			"prefer-object-has-own": e,
 			"prefer-object-spread": e,
-			"prefer-promise-reject-errors": e,
 			"prefer-regex-literals": e,
 			"prefer-rest-params": e,
 			"prefer-spread": e,
