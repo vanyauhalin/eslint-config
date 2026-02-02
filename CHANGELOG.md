@@ -5,7 +5,43 @@ Changelog] format and adhering to [Semantic Versioning].
 
 ## [Unreleased]
 
-There are no notable changes in this release.
+<!-- There are no notable changes in this release. -->
+
+### Added
+
+- Ignore `**/bun.lock` ([b68e766]).
+
+### Changed
+
+- Remove `@vanyauhalin/typescript-rules/builtin-conflicts` ([b38836a]).
+- Remove `no-nested-ternary` ([737afa2]).
+- Remove `unicorn/prefer-includes` ([8305c7b]).
+- Remove `use-isnan` ([337364d]).
+- Remove `unicorn/prefer-math-trunc` ([bf00d23]).
+- Remove `unicorn/prefer-node-protocol` ([b5a6ebf]).
+- Remove `unicorn/prefer-string-starts-ends-with` ([01ebe16]).
+- Remove `unicorn/prefer-regexp-test` ([a802526]).
+- Remove `prefer-const` ([e96a42c]).
+- Remove `github/no-inner-html` ([20c1dff]).
+- Remove `unicorn/no-array-reduce` ([fcf44df]).
+- Remove `unicorn/prefer-array-find` ([2b37041]).
+- Remove `unicorn/prefer-array-some` ([1826b59]).
+- Remove `unicorn/prefer-array-flat-map` ([6279b96]).
+- Remove `unicorn/prefer-array-flat` ([10fc21d]).
+- Remove `unicorn/no-array-for-each` ([dad8053]).
+- Remove `github/array-foreach` ([62f48fe]).
+- Remove `import-x/no-deprecated` ([b09c2a3]).
+- Remove `no-useless-constructor` ([004a234]).
+- Remove `prefer-promise-reject-errors` ([23ecddb]).
+- Remove `no-implied-eval` ([2745f62]).
+- Remove `typescript/prefer-regexp-exec` ([4ce706d]).
+
+### Fixed
+
+- Modify `stylistic/space-before-function-paren`: set `catch` to `always`
+  ([b3d4e1e]).
+- Modify `jsonc/array-bracket-newline`: set `minItems` to `1` ([ba7662c]).
+- Modify `jsonc/object-curly-newline`: set `minProperties` to `1` ([0179961]).
 
 ## [0.0.11] - 2026-02-01
 
@@ -454,6 +490,32 @@ some changes.
 [0.0.2]: https://github.com/vanyauhalin/eslint-config/compare/v0.0.1...v0.0.2/
 [0.0.1]: https://github.com/vanyauhalin/eslint-config/releases/tag/v0.0.1/
 
+[4ce706d]: https://github.com/vanyauhalin/eslint-config/commit/4ce706dbad147ba8587f057cc17f95055b7ba40a/
+[2745f62]: https://github.com/vanyauhalin/eslint-config/commit/4ce706dbad147ba8587f057cc17f95055b7ba40a/
+[23ecddb]: https://github.com/vanyauhalin/eslint-config/commit/4ce706dbad147ba8587f057cc17f95055b7ba40a/
+[004a234]: https://github.com/vanyauhalin/eslint-config/commit/4ce706dbad147ba8587f057cc17f95055b7ba40a/
+[b09c2a3]: https://github.com/vanyauhalin/eslint-config/commit/b09c2a34e3fd5bdf17471bed4d503b26aa0862cc/
+[62f48fe]: https://github.com/vanyauhalin/eslint-config/commit/62f48fe830de0187a0ba23776709e7964f9d72b3/
+[dad8053]: https://github.com/vanyauhalin/eslint-config/commit/dad8053161beba998a664695fa4609df12b1fe40/
+[10fc21d]: https://github.com/vanyauhalin/eslint-config/commit/10fc21d86df628ebb72b97a33b2753bd95dd345e/
+[6279b96]: https://github.com/vanyauhalin/eslint-config/commit/6279b96fd8667199112cbc829b168e734571f185/
+[1826b59]: https://github.com/vanyauhalin/eslint-config/commit/1826b592f6e181623dcb8cbcd86ea6b93370e288/
+[2b37041]: https://github.com/vanyauhalin/eslint-config/commit/2b370415f952479528d3f65ccb55b55683510fed/
+[fcf44df]: https://github.com/vanyauhalin/eslint-config/commit/fcf44df00230bf08afe52ffda948fb0b463ae547/
+[20c1dff]: https://github.com/vanyauhalin/eslint-config/commit/20c1dfff45b5da5f3bce2348f9488b035810923e/
+[e96a42c]: https://github.com/vanyauhalin/eslint-config/commit/e96a42c7003744b333b422a1a690a72d2d0994ad/
+[a802526]: https://github.com/vanyauhalin/eslint-config/commit/a802526cd566528543e0601842e4d405bf7c58c2/
+[01ebe16]: https://github.com/vanyauhalin/eslint-config/commit/01ebe16c8e54366567b86fb03021e4ffaa70d5fd/
+[b5a6ebf]: https://github.com/vanyauhalin/eslint-config/commit/b5a6ebff03c9630b94711adee8336c921face0c1/
+[bf00d23]: https://github.com/vanyauhalin/eslint-config/commit/bf00d23bb2fa1b68e91849cc21ab2e278611a2e7/
+[337364d]: https://github.com/vanyauhalin/eslint-config/commit/337364d37906eb217dbcc08a13028ae9e4a17aa9/
+[8305c7b]: https://github.com/vanyauhalin/eslint-config/commit/8305c7bce49601973f61a0e449d6d322552a985e/
+[737afa2]: https://github.com/vanyauhalin/eslint-config/commit/737afa2377c692deef335a8199adc0d8e2b51f73/
+[b38836a]: https://github.com/vanyauhalin/eslint-config/commit/b38836ab97ee48452963cbc609d28999c9037f68/
+[0179961]: https://github.com/vanyauhalin/eslint-config/commit/017996146775202009a3630b75976d0b1528d98c/
+[ba7662c]: https://github.com/vanyauhalin/eslint-config/commit/ba7662cd8022c792b89af66ab0588ccd01cf1c46/
+[b3d4e1e]: https://github.com/vanyauhalin/eslint-config/commit/b3d4e1e64748087bab0d222710c201d3958cde91/
+[b68e766]: https://github.com/vanyauhalin/eslint-config/commit/b68e7662b1cd104cbf589688c23b5d5138be3454/
 [e4e300b]: https://github.com/vanyauhalin/eslint-config/commit/e4e300b0241240f47f99f16fe99a5ed2d1de7c57/
 [ebddf02]: https://github.com/vanyauhalin/eslint-config/commit/ebddf02655b51254ce25f2c0e717cbc268b421d6/
 [ee6c36d]: https://github.com/vanyauhalin/eslint-config/commit/ee6c36dc010c833a071a886dcbee42971972d1d3/
