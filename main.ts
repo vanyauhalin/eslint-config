@@ -678,7 +678,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/jsonc-rules",
 		files: ["**/*.json", "**/*.json5", "**/*.jsonc"],
 		rules: {
-			"jsonc/array-bracket-newline": [e, "always"],
+			"jsonc/array-bracket-newline": [e, {minItems: 1}],
 			"jsonc/array-bracket-spacing": e,
 			"jsonc/array-element-newline": e,
 			"jsonc/comma-dangle": e,
