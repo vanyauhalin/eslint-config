@@ -34,227 +34,62 @@ import * as yamlParser from "yaml-eslint-parser"
 const e = "error"
 
 const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
-	//
-	// Ignores
-	//
-
 	{
-		name: "@vanyauhalin/git-ignores",
-		ignores: (() => {
-			try {
-				return gitignore().ignores
-			} catch {
-				return []
-			}
-		})(),
-	},
-	{
-		name: "@vanyauhalin/vanyauhalin-ignores",
+		name: "@vanyauhalin/ignores",
 		ignores: [
 			"**/bun.lock",
 			"**/mise.lock",
 			"**/pnpm-lock.yaml",
+			...(() => {
+				try {
+					return gitignore().ignores
+				} catch {
+					return []
+				}
+			})(),
 		],
 	},
-
-	//
-	// Linters, Parsers and Processors
-	//
-
 	{
-		name: "@vanyauhalin/builtin-linter",
-		linterOptions: {reportUnusedDisableDirectives: e},
-	},
-	{
-		name: "@vanyauhalin/jsonc-parser",
-		files: ["**/*.json", "**/*.json5", "**/*.jsonc"],
-		languageOptions: {parser: jsoncParser},
-	},
-	{
-		name: "@vanyauhalin/markdown-processor",
-		files: ["**/*.md"],
-		processor: markdown.processors.markdown,
-	},
-	{
-		name: "@vanyauhalin/toml-parser",
-		files: ["**/*.toml"],
-		languageOptions: {parser: tomlParser},
-	},
-	{
-		name: "@vanyauhalin/typescript-parser",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
+		name: "@vanyauhalin/javascript-typescript",
+		files: [
+			"**/*.cjs",
+			"**/*.js",
+			"**/*.mjs",
+			"**/*.cts",
+			"**/*.mts",
+			"**/*.ts",
+		],
+		linterOptions: {
+			reportUnusedDisableDirectives: e,
+		},
 		languageOptions: {
 			parser: typescriptParser,
 			parserOptions: {
 				projectService: true,
 			},
 		},
-	},
-	{
-		name: "@vanyauhalin/yaml-parser",
-		files: ["**/*.yaml", "**/*.yml"],
-		languageOptions: {parser: yamlParser},
-	},
-
-	// This integration should be after the main TypeScript definition.
-	{
-		name: "@vanyauhalin/markdown-processor/typescript-integration",
-		files: ["**/*.md/*.cjs", "**/*.md/*.js", "**/*.md/*.mjs", "**/*.md/*.cts", "**/*.md/*.mts", "**/*.md/*.ts"],
-		languageOptions: {
-			parser: typescriptParser,
-			parserOptions: {
-				ecmaFeatures: {
-					impliedStrict: true,
-				},
-				program: null,
-				project: false,
-				projectService: false,
-			},
+		plugins: {
+			ascii,
+			"de-morgan": deMorgan,
+			depend,
+			"es-x": esX,
+			"eslint-comments": eslintComments,
+			github,
+			"import-newlines": importNewlines,
+			"import-x": importX,
+			jsdoc,
+			math,
+			n,
+			"no-unsanitized": noUnsanitized,
+			"prefer-let": preferLet,
+			promise,
+			regexp,
+			security,
+			stylistic,
+			typescript,
+			unicorn,
+			wc,
 		},
-	},
-
-	//
-	// Plugins
-	//
-
-	{
-		name: "@vanyauhalin/ascii-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {ascii},
-	},
-	{
-		name: "@vanyauhalin/de-morgan",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {"de-morgan": deMorgan},
-	},
-	{
-		name: "@vanyauhalin/depend-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {depend},
-	},
-	{
-		name: "@vanyauhalin/es-x-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {"es-x": esX},
-	},
-	{
-		name: "@vanyauhalin/eslint-comments-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {"eslint-comments": eslintComments},
-	},
-	{
-		name: "@vanyauhalin/github-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {github},
-	},
-	{
-		name: "@vanyauhalin/import-newlines-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {"import-newlines": importNewlines},
-	},
-	{
-		name: "@vanyauhalin/import-x-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {"import-x": importX},
-	},
-	{
-		name: "@vanyauhalin/jsdoc-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {jsdoc},
-	},
-	{
-		name: "@vanyauhalin/jsonc-plugin",
-		files: ["**/*.json", "**/*.json5", "**/*.jsonc"],
-		plugins: {jsonc},
-	},
-	{
-		name: "@vanyauhalin/markdown-plugin",
-		files: ["**/*.md"],
-		plugins: {markdown},
-	},
-	{
-		name: "@vanyauhalin/math-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {math},
-	},
-	{
-		name: "@vanyauhalin/n-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {n},
-	},
-	{
-		name: "@vanyauhalin/no-unsanitized-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {"no-unsanitized": noUnsanitized},
-	},
-	{
-		name: "@vanyauhalin/node-dependencies-plugin",
-		files: ["**/package.json"],
-		plugins: {"node-dependencies": nodeDependencies},
-	},
-	{
-		name: "@vanyauhalin/package-json-plugin",
-		files: ["**/package.json"],
-		plugins: {"package-json": packageJson},
-	},
-	{
-		name: "@vanyauhalin/prefer-let-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {"prefer-let": preferLet},
-	},
-	{
-		name: "@vanyauhalin/promise-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {promise},
-	},
-	{
-		name: "@vanyauhalin/regexp-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {regexp},
-	},
-	{
-		name: "@vanyauhalin/security-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {security},
-	},
-	{
-		name: "@vanyauhalin/stylistic-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {stylistic},
-	},
-	{
-		name: "@vanyauhalin/toml-plugin",
-		files: ["**/*.toml"],
-		plugins: {toml},
-	},
-	{
-		name: "@vanyauhalin/typescript-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {typescript},
-	},
-	{
-		name: "@vanyauhalin/unicorn-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {unicorn},
-	},
-	{
-		name: "@vanyauhalin/wc-plugin",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		plugins: {wc},
-	},
-	{
-		name: "@vanyauhalin/yml-plugin",
-		files: ["**/*.yaml", "**/*.yml"],
-		plugins: {yml},
-	},
-
-	//
-	// Rules and Settings
-	//
-
-	{
-		name: "@vanyauhalin/builtin-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
 		rules: {
 			"constructor-super": e,
 			"curly": e,
@@ -379,34 +214,11 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"valid-typeof": e,
 			"vars-on-top": e,
 			"yoda": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/ascii-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
+			// end builtin
 			"ascii/valid-name": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/de-morgan-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"de-morgan/no-negated-conjunction": e,
 			"de-morgan/no-negated-disjunction": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/depend-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"depend/ban-dependencies": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/es-x-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"es-x/no-array-of": e,
 			"es-x/no-array-prototype-at": e,
 			"es-x/no-array-prototype-copywithin": e,
@@ -521,24 +333,12 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"es-x/no-string-prototype-substr": e,
 			"es-x/no-string-prototype-trimleft-trimright": e,
 			"es-x/no-unicode-codepoint-escapes": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/eslint-comments-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"eslint-comments/disable-enable-pair": [e, {allowWholeFile: true}],
 			"eslint-comments/no-aggregating-enable": e,
 			"eslint-comments/no-duplicate-disable": e,
 			"eslint-comments/no-unlimited-disable": e,
 			"eslint-comments/no-unused-disable": e,
 			"eslint-comments/no-unused-enable": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/github-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"github/get-attribute": e,
 			"github/no-blur": e,
 			"github/no-dataset": e,
@@ -547,19 +347,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"github/no-useless-passive": e,
 			"github/prefer-observers": e,
 			"github/require-passive-events": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/import-newlines-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"import-newlines/enforce": [e, {"items": Infinity, "max-len": 120, "semi": false}],
-		},
-	},
-	{
-		name: "@vanyauhalin/import-x-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"import-x/order": [e, {"alphabetize": {order: "asc", orderImportKind: "asc"}, "named": true, "newlines-between": "never", "warnOnUnassignedImports": true}],
 			"import-x/consistent-type-specifier-style": e,
 			"import-x/default": e,
@@ -587,12 +375,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"import-x/no-unused-modules": e,
 			"import-x/no-useless-path-segments": e,
 			"import-x/no-webpack-loader-syntax": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/jsdoc-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"jsdoc/check-access": e,
 			"jsdoc/check-alignment": e,
 			"jsdoc/check-param-names": e,
@@ -637,88 +419,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"jsdoc/ts-no-unnecessary-template-expression": e,
 			"jsdoc/ts-prefer-function-type": e,
 			"jsdoc/valid-types": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/jsdoc-rules/typescript-exceptions",
-		files: ["**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
-			"jsdoc/no-types": e,
-			"jsdoc/no-undefined-types": "off",
-			"jsdoc/require-param-type": "off",
-			"jsdoc/require-param": "off",
-			"jsdoc/require-property-type": "off",
-			"jsdoc/require-returns-type": "off",
-			"jsdoc/require-returns": "off",
-			"jsdoc/require-template": "off",
-			"jsdoc/require-yields": "off",
-		},
-	},
-	{
-		name: "@vanyauhalin/jsonc-rules",
-		files: ["**/*.json", "**/*.json5", "**/*.jsonc"],
-		rules: {
-			"jsonc/array-bracket-newline": [e, {minItems: 1}],
-			"jsonc/array-bracket-spacing": e,
-			"jsonc/array-element-newline": e,
-			"jsonc/comma-dangle": e,
-			"jsonc/comma-style": e,
-			"jsonc/indent": [e, "tab"],
-			"jsonc/key-spacing": e,
-			"jsonc/no-bigint-literals": e,
-			"jsonc/no-binary-expression": e,
-			"jsonc/no-binary-numeric-literals": e,
-			"jsonc/no-comments": e,
-			"jsonc/no-dupe-keys": e,
-			"jsonc/no-escape-sequence-in-identifier": e,
-			"jsonc/no-floating-decimal": e,
-			"jsonc/no-hexadecimal-numeric-literals": e,
-			"jsonc/no-infinity": e,
-			"jsonc/no-irregular-whitespace": e,
-			"jsonc/no-multi-str": e,
-			"jsonc/no-nan": e,
-			"jsonc/no-number-props": e,
-			"jsonc/no-numeric-separators": e,
-			"jsonc/no-octal-escape": e,
-			"jsonc/no-octal-numeric-literals": e,
-			"jsonc/no-octal": e,
-			"jsonc/no-parenthesized": e,
-			"jsonc/no-plus-sign": e,
-			"jsonc/no-regexp-literals": e,
-			"jsonc/no-sparse-arrays": e,
-			"jsonc/no-template-literals": e,
-			"jsonc/no-undefined-value": e,
-			"jsonc/no-unicode-codepoint-escapes": e,
-			"jsonc/no-useless-escape": e,
-			"jsonc/object-curly-newline": [e, {minProperties: 1}],
-			"jsonc/object-curly-spacing": e,
-			"jsonc/object-property-newline": e,
-			"jsonc/quote-props": e,
-			"jsonc/quotes": e,
-			"jsonc/space-unary-ops": e,
-			"jsonc/valid-json-number": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/jsonc-rules/json5-exceptions",
-		files: ["**/*.json5"],
-		rules: {
-			"jsonc/comma-dangle": [e, "always-multiline"],
-			"jsonc/no-comments": "off",
-			"jsonc/quote-props": [e, "consistent"],
-		},
-	},
-	{
-		name: "@vanyauhalin/jsonc-rules/jsonc-exceptions",
-		files: ["**/*.jsonc"],
-		rules: {
-			"jsonc/no-comments": "off",
-		},
-	},
-	{
-		name: "@vanyauhalin/math-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"math/abs": [e, {prefer: "Math.abs"}],
 			"math/no-static-infinity-calculations": e,
 			"math/no-static-nan-calculations": e,
@@ -746,12 +446,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"math/prefer-number-max-value": e,
 			"math/prefer-number-min-safe-integer": e,
 			"math/prefer-number-min-value": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/n-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"n/exports-style": e,
 			"n/no-deprecated-api": e,
 			"n/no-exports-assign": e,
@@ -765,101 +459,9 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"n/prefer-global/url": e,
 			"n/prefer-node-protocol": e,
 			"n/process-exit-as-throw": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/no-unsanitized-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"no-unsanitized/method": [e, {}, {import: {objectMatches: []}}],
 			"no-unsanitized/property": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/node-dependencies-rules",
-		files: ["**/package.json"],
-		rules: {
-			"node-dependencies/absolute-version": [e, {dependencies: "always", peerDependencies: "never", optionalDependencies: "always", devDependencies: "always"}],
-			"node-dependencies/compat-engines": e,
-			"node-dependencies/no-deprecated": e,
-			"node-dependencies/no-dupe-deps": e,
-			"node-dependencies/prefer-caret-range-version": e,
-			"node-dependencies/prefer-tilde-range-version": e,
-			"node-dependencies/valid-semver": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/package-json-rules",
-		files: ["**/package.json"],
-		rules: {
-			"package-json/bin-name-casing": e,
-			"package-json/exports-subpaths-style": e,
-			"package-json/no-empty-fields": e,
-			"package-json/no-redundant-files": e,
-			"package-json/no-redundant-publishConfig": e,
-			"package-json/order-properties": e,
-			"package-json/repository-shorthand": e,
-			"package-json/require-author": [e, {ignorePrivate: true}],
-			"package-json/require-bugs": [e, {ignorePrivate: true}],
-			"package-json/require-description": [e, {ignorePrivate: true}],
-			"package-json/require-engines": [e, {ignorePrivate: true}],
-			"package-json/require-homepage": [e, {ignorePrivate: true}],
-			"package-json/require-keywords": [e, {ignorePrivate: true}],
-			"package-json/require-license": [e, {ignorePrivate: true}],
-			"package-json/require-name": e,
-			"package-json/require-repository": [e, {ignorePrivate: true}],
-			"package-json/require-type": e,
-			"package-json/require-version": [e, {ignorePrivate: true}],
-			"package-json/restrict-private-properties": e,
-			"package-json/scripts-name-casing": e,
-			"package-json/sort-collections": e,
-			"package-json/specify-peers-locally": e,
-			"package-json/unique-dependencies": e,
-			"package-json/valid-author": e,
-			"package-json/valid-bin": e,
-			"package-json/valid-bundleDependencies": e,
-			"package-json/valid-config": e,
-			"package-json/valid-contributors": e,
-			"package-json/valid-cpu": e,
-			"package-json/valid-dependencies": e,
-			"package-json/valid-description": e,
-			"package-json/valid-devDependencies": e,
-			"package-json/valid-directories": e,
-			"package-json/valid-engines": e,
-			"package-json/valid-exports": e,
-			"package-json/valid-files": e,
-			"package-json/valid-homepage": e,
-			"package-json/valid-keywords": e,
-			"package-json/valid-license": e,
-			"package-json/valid-main": e,
-			"package-json/valid-man": e,
-			"package-json/valid-module": e,
-			"package-json/valid-name": e,
-			"package-json/valid-optionalDependencies": e,
-			"package-json/valid-os": e,
-			"package-json/valid-peerDependencies": e,
-			"package-json/valid-private": e,
-			"package-json/valid-publishConfig": e,
-			"package-json/valid-repository-directory": e,
-			"package-json/valid-repository": e,
-			"package-json/valid-scripts": e,
-			"package-json/valid-sideEffects": e,
-			"package-json/valid-type": e,
-			"package-json/valid-version": e,
-			"package-json/valid-workspaces": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/prefer-let-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"prefer-let/prefer-let": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/promise-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"promise/always-return": e,
 			"promise/catch-or-return": e,
 			"promise/no-callback-in-promise": e,
@@ -873,12 +475,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"promise/prefer-catch": e,
 			"promise/spec-only": e,
 			"promise/valid-params": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/regexp-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"regexp/confusing-quantifier": e,
 			"regexp/control-character-escape": e,
 			"regexp/hexadecimal-escape": [e, "never"],
@@ -945,12 +541,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"regexp/strict": e,
 			"regexp/unicode-escape": [e, "unicodeEscape"],
 			"regexp/use-ignore-case": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/security-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"security/detect-bidi-characters": e,
 			"security/detect-buffer-noassert": e,
 			"security/detect-child-process": e,
@@ -961,12 +551,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"security/detect-non-literal-require": e,
 			"security/detect-possible-timing-attacks": e,
 			"security/detect-pseudoRandomBytes": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/stylistic-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"stylistic/array-bracket-newline": [e, "consistent"],
 			"stylistic/array-bracket-spacing": e,
 			"stylistic/array-element-newline": [e, "consistent"],
@@ -1030,38 +614,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"stylistic/type-named-tuple-spacing": e,
 			"stylistic/wrap-iife": [e, "inside"],
 			"stylistic/yield-star-spacing": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/toml-rules",
-		files: ["**/*.toml"],
-		rules: {
-			"toml/array-bracket-newline": e,
-			"toml/array-bracket-spacing": [e, "never"],
-			"toml/array-element-newline": e,
-			"toml/comma-style": e,
-			"toml/indent": [e, "tab"],
-			"toml/inline-table-curly-spacing": [e, "never", {arraysInObjects: false, objectsInObjects: false}],
-			"toml/key-spacing": e,
-			"toml/keys-order": e,
-			"toml/no-mixed-type-in-array": e,
-			"toml/no-non-decimal-integer": e,
-			"toml/no-space-dots": e,
-			"toml/no-unreadable-number-separator": e,
-			"toml/padding-line-between-pairs": e,
-			"toml/padding-line-between-tables": e,
-			"toml/precision-of-fractional-seconds": e,
-			"toml/precision-of-integer": e,
-			"toml/quoted-keys": e,
-			"toml/spaced-comment": e,
-			"toml/table-bracket-spacing": e,
-			"toml/tables-order": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/typescript-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"typescript/adjacent-overload-signatures": e,
 			"typescript/array-type": e,
 			"typescript/await-thenable": e,
@@ -1154,20 +706,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"typescript/unbound-method": e,
 			"typescript/unified-signatures": e,
 			"typescript/use-unknown-in-catch-callback-variable": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/typescript-rules/javascript-exceptions",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs"],
-		rules: {
-			"typescript/explicit-function-return-type": "off",
-			"typescript/explicit-module-boundary-types": "off",
-		},
-	},
-	{
-		name: "@vanyauhalin/unicorn-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"unicorn/better-regex": e,
 			"unicorn/catch-error-name": [e, {name: "err"}],
 			"unicorn/consistent-assert": e,
@@ -1265,12 +803,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/switch-case-braces": [e, "avoid"],
 			"unicorn/text-encoding-identifier-case": e,
 			"unicorn/throw-new-error": e,
-		},
-	},
-	{
-		name: "@vanyauhalin/wc-rules",
-		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
-		rules: {
 			"wc/attach-shadow-constructor": e,
 			"wc/guard-define-call": e,
 			"wc/guard-super-call": e,
@@ -1289,8 +821,157 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		},
 	},
 	{
-		name: "@vanyauhalin/yml-rules",
-		files: ["**/*.yaml", "**/*.yml"],
+		name: "@vanyauhalin/javascript-overrides",
+		files: [
+			"**/*.cjs",
+			"**/*.js",
+			"**/*.mjs",
+		],
+		rules: {
+			"typescript/explicit-function-return-type": "off",
+			"typescript/explicit-module-boundary-types": "off",
+		},
+	},
+	{
+		name: "@vanyauhalin/typescript-overrides",
+		files: [
+			"**/*.cts",
+			"**/*.mts",
+			"**/*.ts",
+		],
+		rules: {
+			"jsdoc/no-types": e,
+			"jsdoc/no-undefined-types": "off",
+			"jsdoc/require-param-type": "off",
+			"jsdoc/require-param": "off",
+			"jsdoc/require-property-type": "off",
+			"jsdoc/require-returns-type": "off",
+			"jsdoc/require-returns": "off",
+			"jsdoc/require-template": "off",
+			"jsdoc/require-yields": "off",
+		},
+	},
+	{
+		name: "@vanyauhalin/json-json5-jsonc",
+		files: [
+			"**/*.json",
+			"**/*.json5",
+			"**/*.jsonc",
+		],
+		languageOptions: {
+			parser: jsoncParser,
+		},
+		plugins: {
+			jsonc,
+		},
+		rules: {
+			"jsonc/array-bracket-newline": [e, {minItems: 1}],
+			"jsonc/array-bracket-spacing": e,
+			"jsonc/array-element-newline": e,
+			"jsonc/comma-dangle": e,
+			"jsonc/comma-style": e,
+			"jsonc/indent": [e, "tab"],
+			"jsonc/key-spacing": e,
+			"jsonc/no-bigint-literals": e,
+			"jsonc/no-binary-expression": e,
+			"jsonc/no-binary-numeric-literals": e,
+			"jsonc/no-comments": e,
+			"jsonc/no-dupe-keys": e,
+			"jsonc/no-escape-sequence-in-identifier": e,
+			"jsonc/no-floating-decimal": e,
+			"jsonc/no-hexadecimal-numeric-literals": e,
+			"jsonc/no-infinity": e,
+			"jsonc/no-irregular-whitespace": e,
+			"jsonc/no-multi-str": e,
+			"jsonc/no-nan": e,
+			"jsonc/no-number-props": e,
+			"jsonc/no-numeric-separators": e,
+			"jsonc/no-octal-escape": e,
+			"jsonc/no-octal-numeric-literals": e,
+			"jsonc/no-octal": e,
+			"jsonc/no-parenthesized": e,
+			"jsonc/no-plus-sign": e,
+			"jsonc/no-regexp-literals": e,
+			"jsonc/no-sparse-arrays": e,
+			"jsonc/no-template-literals": e,
+			"jsonc/no-undefined-value": e,
+			"jsonc/no-unicode-codepoint-escapes": e,
+			"jsonc/no-useless-escape": e,
+			"jsonc/object-curly-newline": [e, {minProperties: 1}],
+			"jsonc/object-curly-spacing": e,
+			"jsonc/object-property-newline": e,
+			"jsonc/quote-props": e,
+			"jsonc/quotes": e,
+			"jsonc/space-unary-ops": e,
+			"jsonc/valid-json-number": e,
+		},
+	},
+	{
+		name: "@vanyauhalin/json5-overrides",
+		files: [
+			"**/*.json5",
+		],
+		rules: {
+			"jsonc/comma-dangle": [e, "always-multiline"],
+			"jsonc/no-comments": "off",
+			"jsonc/quote-props": [e, "consistent"],
+		},
+	},
+	{
+		name: "@vanyauhalin/jsonc-overrides",
+		files: [
+			"**/*.jsonc",
+		],
+		rules: {
+			"jsonc/no-comments": "off",
+		},
+	},
+	{
+		name: "@vanyauhalin/toml",
+		files: [
+			"**/*.toml",
+		],
+		languageOptions: {
+			parser: tomlParser,
+		},
+		plugins: {
+			toml,
+		},
+		rules: {
+			"toml/array-bracket-newline": e,
+			"toml/array-bracket-spacing": [e, "never"],
+			"toml/array-element-newline": e,
+			"toml/comma-style": e,
+			"toml/indent": [e, "tab"],
+			"toml/inline-table-curly-spacing": [e, "never", {arraysInObjects: false, objectsInObjects: false}],
+			"toml/key-spacing": e,
+			"toml/keys-order": e,
+			"toml/no-mixed-type-in-array": e,
+			"toml/no-non-decimal-integer": e,
+			"toml/no-space-dots": e,
+			"toml/no-unreadable-number-separator": e,
+			"toml/padding-line-between-pairs": e,
+			"toml/padding-line-between-tables": e,
+			"toml/precision-of-fractional-seconds": e,
+			"toml/precision-of-integer": e,
+			"toml/quoted-keys": e,
+			"toml/spaced-comment": e,
+			"toml/table-bracket-spacing": e,
+			"toml/tables-order": e,
+		},
+	},
+	{
+		name: "@vanyauhalin/yaml",
+		files: [
+			"**/*.yaml",
+			"**/*.yml",
+		],
+		languageOptions: {
+			parser: yamlParser,
+		},
+		plugins: {
+			yml,
+		},
 		rules: {
 			"yml/block-mapping-colon-indicator-newline": e,
 			"yml/block-mapping-question-indicator-newline": e,
@@ -1312,11 +993,37 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"yml/spaced-comment": e,
 		},
 	},
-
-	// This integration should be after the main TypeScript definition.
 	{
-		name: "@vanyauhalin/markdown-rules/typescript-integration",
-		files: ["**/*.md/*.cjs", "**/*.md/*.js", "**/*.md/*.mjs", "**/*.md/*.cts", "**/*.md/*.mts", "**/*.md/*.ts"],
+		name: "@vanyauhalin/markdown",
+		files: [
+			"**/*.md",
+		],
+		processor: markdown.processors.markdown,
+		plugins: {
+			markdown,
+		},
+	},
+	{
+		name: "@vanyauhalin/markdown-javascript-typescript-overrides",
+		files: [
+			"**/*.md/*.cjs",
+			"**/*.md/*.js",
+			"**/*.md/*.mjs",
+			"**/*.md/*.cts",
+			"**/*.md/*.mts",
+			"**/*.md/*.ts",
+		],
+		languageOptions: {
+			parser: typescriptParser,
+			parserOptions: {
+				ecmaFeatures: {
+					impliedStrict: true,
+				},
+				program: null,
+				project: false,
+				projectService: false,
+			},
+		},
 		rules: {
 			"typescript/await-thenable": "off",
 			"typescript/consistent-type-imports": "off",
@@ -1361,40 +1068,41 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"typescript/switch-exhaustiveness-check": "off",
 			"typescript/unbound-method": "off",
 			"typescript/use-unknown-in-catch-callback-variable": "off",
-		},
-	},
-
-	// This integration should be after the main unicorn definition.
-	{
-		name: "@vanyauhalin/markdown-rules/unicorn-integration",
-		files: ["**/*.md/*"],
-		rules: {
 			"unicorn/filename-case": "off",
 		},
 	},
-
-	//
-	// Files
-	//
-
 	{
-		name: "@vanyauhalin/c8-config-file",
-		files: ["**/c8.config.json"],
+		name: "@vanyauhalin/c8-config-json",
+		files: [
+			"**/c8.config.json",
+		],
 		rules: {
 			"jsonc/sort-array-values": [e, {pathPattern: "^reporter$", order: {type: "asc"}}],
 			"jsonc/sort-keys": [e, {pathPattern: "^$", order: {type: "asc"}}],
 		},
 	},
 	{
-		name: "@vanyauhalin/eslint-config-file",
-		files: ["**/eslint.config.cjs", "**/eslint.config.js", "**/eslint.config.mjs", "**/eslint.config.cts", "**/eslint.config.mts", "**/eslint.config.ts"],
+		name: "@vanyauhalin/eslint-config-js",
+		files: [
+			"**/eslint.config.cjs",
+			"**/eslint.config.js",
+			"**/eslint.config.mjs",
+			"**/eslint.config.cts",
+			"**/eslint.config.mts",
+			"**/eslint.config.ts",
+		],
 		rules: {
 			"import-x/no-default-export": "off",
 		},
 	},
 	{
-		name: "@vanyauhalin/tsconfig-file",
-		files: ["**/jsconfig.json", "**/jsconfig.*.json", "**/tsconfig.json", "**/tsconfig.*.json"],
+		name: "@vanyauhalin/jsconfig-json-tsconfig-json",
+		files: [
+			"**/jsconfig.json",
+			"**/jsconfig.*.json",
+			"**/tsconfig.json",
+			"**/tsconfig.*.json",
+		],
 		rules: {
 			"jsonc/no-comments": "off",
 			"jsonc/sort-keys": [
@@ -1411,8 +1119,84 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		},
 	},
 	{
-		name: "@vanyauhalin/typedoc-file",
-		files: ["**/typedoc.json"],
+		name: "@vanyauhalin/package-json",
+		files: [
+			"**/package.json",
+		],
+		plugins: {
+			"node-dependencies": nodeDependencies,
+			"package-json": packageJson,
+		},
+		rules: {
+			"node-dependencies/absolute-version": [e, {dependencies: "always", peerDependencies: "never", optionalDependencies: "always", devDependencies: "always"}],
+			"node-dependencies/compat-engines": e,
+			"node-dependencies/no-deprecated": e,
+			"node-dependencies/no-dupe-deps": e,
+			"node-dependencies/prefer-caret-range-version": e,
+			"node-dependencies/prefer-tilde-range-version": e,
+			"node-dependencies/valid-semver": e,
+			"package-json/bin-name-casing": e,
+			"package-json/exports-subpaths-style": e,
+			"package-json/no-empty-fields": e,
+			"package-json/no-redundant-files": e,
+			"package-json/no-redundant-publishConfig": e,
+			"package-json/order-properties": e,
+			"package-json/repository-shorthand": e,
+			"package-json/require-author": [e, {ignorePrivate: true}],
+			"package-json/require-bugs": [e, {ignorePrivate: true}],
+			"package-json/require-description": [e, {ignorePrivate: true}],
+			"package-json/require-engines": [e, {ignorePrivate: true}],
+			"package-json/require-homepage": [e, {ignorePrivate: true}],
+			"package-json/require-keywords": [e, {ignorePrivate: true}],
+			"package-json/require-license": [e, {ignorePrivate: true}],
+			"package-json/require-name": e,
+			"package-json/require-repository": [e, {ignorePrivate: true}],
+			"package-json/require-type": e,
+			"package-json/require-version": [e, {ignorePrivate: true}],
+			"package-json/restrict-private-properties": e,
+			"package-json/scripts-name-casing": e,
+			"package-json/sort-collections": e,
+			"package-json/specify-peers-locally": e,
+			"package-json/unique-dependencies": e,
+			"package-json/valid-author": e,
+			"package-json/valid-bin": e,
+			"package-json/valid-bundleDependencies": e,
+			"package-json/valid-config": e,
+			"package-json/valid-contributors": e,
+			"package-json/valid-cpu": e,
+			"package-json/valid-dependencies": e,
+			"package-json/valid-description": e,
+			"package-json/valid-devDependencies": e,
+			"package-json/valid-directories": e,
+			"package-json/valid-engines": e,
+			"package-json/valid-exports": e,
+			"package-json/valid-files": e,
+			"package-json/valid-homepage": e,
+			"package-json/valid-keywords": e,
+			"package-json/valid-license": e,
+			"package-json/valid-main": e,
+			"package-json/valid-man": e,
+			"package-json/valid-module": e,
+			"package-json/valid-name": e,
+			"package-json/valid-optionalDependencies": e,
+			"package-json/valid-os": e,
+			"package-json/valid-peerDependencies": e,
+			"package-json/valid-private": e,
+			"package-json/valid-publishConfig": e,
+			"package-json/valid-repository-directory": e,
+			"package-json/valid-repository": e,
+			"package-json/valid-scripts": e,
+			"package-json/valid-sideEffects": e,
+			"package-json/valid-type": e,
+			"package-json/valid-version": e,
+			"package-json/valid-workspaces": e,
+		},
+	},
+	{
+		name: "@vanyauhalin/typedoc-json",
+		files: [
+			"**/typedoc.json",
+		],
 		rules: {
 			"jsonc/no-comments": "off",
 		},
