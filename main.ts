@@ -1189,7 +1189,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/new-for-builtins": e,
 			"unicorn/no-accessor-recursion": e,
 			"unicorn/no-anonymous-default-export": e,
-			"unicorn/no-array-for-each": e,
 			"unicorn/no-array-method-this-argument": e,
 			"unicorn/no-await-expression-member": e,
 			"unicorn/no-await-in-promise-methods": e,
