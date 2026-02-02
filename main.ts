@@ -1252,7 +1252,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/prefer-export-from": e,
 			"unicorn/prefer-global-this": e,
 			"unicorn/prefer-import-meta-properties": e,
-			"unicorn/prefer-includes": e,
 			"unicorn/prefer-keyboard-event-key": e,
 			"unicorn/prefer-logical-operator-over-ternary": e,
 			"unicorn/prefer-math-min-max": e,
