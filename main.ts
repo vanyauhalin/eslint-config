@@ -300,7 +300,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"no-global-assign": e,
 			"no-implicit-coercion": e,
 			"no-implicit-globals": e,
-			"no-implied-eval": e,
 			"no-import-assign": e,
 			"no-invalid-regexp": e,
 			"no-irregular-whitespace": e,
