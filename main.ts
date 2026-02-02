@@ -364,7 +364,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"one-var": [e, "never"],
 			"operator-assignment": e,
 			"prefer-arrow-callback": e,
-			"prefer-const": e,
 			"prefer-numeric-literals": e,
 			"prefer-object-has-own": e,
 			"prefer-object-spread": e,
@@ -860,7 +859,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 		name: "@vanyauhalin/prefer-let-rules",
 		files: ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.cts", "**/*.mts", "**/*.ts"],
 		rules: {
-			"prefer-const": "off",
 			"prefer-let/prefer-let": e,
 		},
 	},
