@@ -51,6 +51,7 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 	{
 		name: "@vanyauhalin/vanyauhalin-ignores",
 		ignores: [
+			"**/bun.lock",
 			"**/mise.lock",
 			"**/pnpm-lock.yaml",
 		],
