@@ -1265,7 +1265,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/prefer-prototype-methods": e,
 			"unicorn/prefer-query-selector": e,
 			"unicorn/prefer-reflect-apply": e,
-			"unicorn/prefer-regexp-test": e,
 			"unicorn/prefer-set-size": e,
 			"unicorn/prefer-spread": e,
 			"unicorn/prefer-string-raw": e,
