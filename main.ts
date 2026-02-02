@@ -1271,7 +1271,6 @@ const config: typescriptUtils.TSESLint.FlatConfig.ConfigArray = [
 			"unicorn/prefer-string-raw": e,
 			"unicorn/prefer-string-replace-all": e,
 			"unicorn/prefer-string-slice": e,
-			"unicorn/prefer-string-starts-ends-with": e,
 			"unicorn/prefer-string-trim-start-end": e,
 			"unicorn/prefer-structured-clone": e,
 			"unicorn/relative-url-style": e,
