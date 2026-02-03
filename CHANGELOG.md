@@ -7,7 +7,7 @@ Changelog] format and adhering to [Semantic Versioning].
 
 There are no notable changes in this release.
 
-## [0.0.12] - 2026-02-02
+## [0.0.12] - 2026-02-03
 
 ### Added
 
